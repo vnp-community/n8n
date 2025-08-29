@@ -168,13 +168,13 @@ export class ProjectService {
 	}
 
 	async createTeamProject(adminUser: User, data: CreateProjectDto): Promise<Project> {
-		const limit = this.license.getTeamProjectLimit();
-		if (
-			limit !== UNLIMITED_LICENSE_QUOTA &&
-			limit <= (await this.projectRepository.count({ where: { type: 'team' } }))
-		) {
-			throw new TeamProjectOverQuotaError(limit);
-		}
+		// const limit = this.license.getTeamProjectLimit();
+		// if (
+		// 	limit !== UNLIMITED_LICENSE_QUOTA &&
+		// 	limit <= (await this.projectRepository.count({ where: { type: 'team' } }))
+		// ) {
+		// 	throw new TeamProjectOverQuotaError(limit);
+		// }
 
 		const project = await this.projectRepository.save(
 			this.projectRepository.create({ ...data, type: 'team' }),

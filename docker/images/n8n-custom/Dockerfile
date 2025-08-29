@@ -4,10 +4,27 @@ ARG NODE_VERSION=20
 FROM --platform=linux/amd64 n8nio/base:${NODE_VERSION} AS builder
 
 # Build the application from source
+
 WORKDIR /src
 COPY . /src
+
+USER root
+RUN mkdir -p /src/.turbo && chown -R node:node /src/.turbo
+RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN chown -R node:node /src
+
+USER node
+
+
+ENV TURBO_CACHE_DIR=/src/.turbo
+ENV TURBO_LOG_STDIO=1
+ENV TURBO_RUN_SUMMARY=0
+ENV TURBO_DISABLE_LOGGING=1
+ENV TURBO_TELEMETRY_DISABLED=1
+
+
 RUN --mount=type=cache,id=pnpm-store,target=/root/.local/share/pnpm/store --mount=type=cache,id=pnpm-metadata,target=/root/.cache/pnpm/metadata DOCKER_BUILD=true pnpm install --frozen-lockfile
-RUN pnpm build
+RUN --mount=type=cache,target=/src/.turbo pnpm build
 
 # Delete all dev dependencies
 RUN jq 'del(.pnpm.patchedDependencies)' package.json > package.json.tmp; mv package.json.tmp package.json

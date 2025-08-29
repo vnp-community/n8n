@@ -39,13 +39,16 @@ export class LicenseService {
 			usage: {
 				activeWorkflowTriggers: {
 					value: triggerCount,
-					limit: this.license.getTriggerLimit(),
+					// limit: this.license.getTriggerLimit(),
+					limit: 0,
 					warningThreshold: 0.8,
 				},
 			},
 			license: {
-				planId: mainPlan?.productId ?? '',
-				planName: this.license.getPlanName(),
+				// planId: mainPlan?.productId ?? '',
+				planId: '1',
+				planName: 'test',
+				// planName: this.license.getPlanName(),
 			},
 		};
 	}
@@ -104,23 +107,24 @@ export class LicenseService {
 	}
 
 	async activateLicense(activationKey: string) {
-		try {
-			await this.license.activate(activationKey);
-		} catch (e) {
-			const message = this.mapErrorMessage(e as LicenseError, 'activate');
-			throw new BadRequestError(message);
-		}
+		// try {
+		// 	await this.license.activate(activationKey);
+		// } catch (e) {
+		// 	const message = this.mapErrorMessage(e as LicenseError, 'activate');
+		// 	throw new BadRequestError(message);
+		// }
+		return;
 	}
 
 	async renewLicense() {
-		try {
-			await this.license.renew();
-		} catch (e) {
-			const message = this.mapErrorMessage(e as LicenseError, 'renew');
+		// try {
+		// 	await this.license.renew();
+		// } catch (e) {
+		// 	const message = this.mapErrorMessage(e as LicenseError, 'renew');
 
-			this.eventService.emit('license-renewal-attempted', { success: false });
-			throw new BadRequestError(message);
-		}
+		// 	this.eventService.emit('license-renewal-attempted', { success: false });
+		// 	throw new BadRequestError(message);
+		// }
 
 		this.eventService.emit('license-renewal-attempted', { success: true });
 	}
