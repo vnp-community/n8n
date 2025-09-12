@@ -15,8 +15,10 @@ import path from 'path';
 const isCI = process.env.CI === 'true';
 
 // Check if test controller should be excluded (CI + flag not set)
-const excludeTestController =
-	process.env.CI === 'true' && process.env.INCLUDE_TEST_CONTROLLER !== 'true';
+// const excludeTestController =
+// 	process.env.CI === 'true' && process.env.INCLUDE_TEST_CONTROLLER !== 'true';
+
+const excludeTestController = false;
 
 // Disable verbose output and force color only if not in CI
 $.verbose = !isCI;

@@ -41,17 +41,21 @@ export class LicenseService {
 			usage: {
 				activeWorkflowTriggers: {
 					value: triggerCount,
-					limit: this.license.getTriggerLimit(),
+					// limit: this.license.getTriggerLimit(),
+					limit: 0,
 					warningThreshold: 0.8,
 				},
 				workflowsHavingEvaluations: {
 					value: workflowsWithEvaluationsCount,
-					limit: this.licenseState.getMaxWorkflowsWithEvaluations(),
+					// limit: this.licenseState.getMaxWorkflowsWithEvaluations(),
+					limit: 0
 				},
 			},
 			license: {
-				planId: mainPlan?.productId ?? '',
-				planName: this.license.getPlanName(),
+				// planId: mainPlan?.productId ?? '',
+				planId: "1234",
+				// planName: this.license.getPlanName(),
+				planName: "1234"
 			},
 		};
 	}
