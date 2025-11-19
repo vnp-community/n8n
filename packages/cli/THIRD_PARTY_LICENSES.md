@@ -8,6 +8,10 @@ The n8n software includes open source packages, libraries, and modules, each of 
 
 * json-schema 0.4.0, Copyright (c) 2005-2015, The Dojo Foundation. All rights reserved.
 
+## (Apache-2.0 OR UPL-1.0)
+
+* oracledb 6.9.0, Copyright (c) 2015, 2025 Oracle and/or its affiliates.
+
 ## (BSD-2-Clause OR MIT OR Apache-2.0)
 
 * rc 1.2.8, Copyright (c) 2011 Dominic Tarr
@@ -15,11 +19,6 @@ The n8n software includes open source packages, libraries, and modules, each of 
 ## (BSD-3-Clause OR GPL-2.0)
 
 * node-forge 1.3.1
-
-## (CC-BY-4.0 AND MIT)
-
-* @fortawesome/free-regular-svg-icons 6.2.0, Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com). with Reserved Font Name: "Font Awesome".*
-* @fortawesome/free-solid-svg-icons 5.15.4
 
 ## (MIT AND BSD-3-Clause)
 
@@ -51,19 +50,17 @@ The n8n software includes open source packages, libraries, and modules, each of 
 
 ## (MPL-2.0 OR Apache-2.0)
 
-* dompurify 3.1.7
+* dompurify 3.3.0
 
 ## 0BSD
 
-* tslib 2.6.2, Copyright (c) Microsoft Corporation.
+* tslib 2.8.1, Copyright (c) Microsoft Corporation.
 
 ## Apache*
 
 * @browserbasehq/sdk 2.6.0
-* @mistralai/mistralai 1.3.4
-* @zilliz/milvus2-sdk-node 2.5.7
+* @mistralai/mistralai 1.10.0
 * browser-request 0.3.3
-* esm-resolve 1.0.8
 
 ## Apache-2.0
 
@@ -75,81 +72,81 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @aws-crypto/sha256-js 5.2.0
 * @aws-crypto/supports-web-crypto 5.2.0
 * @aws-crypto/util 5.2.0
-* @aws-sdk/client-bedrock-agent-runtime 3.808.0
-* @aws-sdk/client-bedrock-runtime 3.808.0
-* @aws-sdk/client-cognito-identity 3.808.0
-* @aws-sdk/client-kendra 3.808.0
+* @aws-sdk/client-bedrock-agent-runtime 3.932.0
+* @aws-sdk/client-bedrock-runtime 3.932.0
+* @aws-sdk/client-cognito-identity 3.932.0
+* @aws-sdk/client-kendra 3.932.0
 * @aws-sdk/client-s3 3.808.0
-* @aws-sdk/client-sagemaker 3.808.0
+* @aws-sdk/client-sagemaker 3.932.0
 * @aws-sdk/client-secrets-manager 3.808.0
-* @aws-sdk/client-sso 3.808.0
+* @aws-sdk/client-sesv2 3.932.0
+* @aws-sdk/client-sso 3.932.0
 * @aws-sdk/client-sso-oidc 3.808.0
-* @aws-sdk/core 3.808.0
-* @aws-sdk/credential-provider-cognito-identity 3.808.0
-* @aws-sdk/credential-provider-env 3.808.0
-* @aws-sdk/credential-provider-http 3.808.0
-* @aws-sdk/credential-provider-ini 3.808.0
-* @aws-sdk/credential-provider-node 3.808.0
-* @aws-sdk/credential-provider-process 3.808.0
-* @aws-sdk/credential-provider-sso 3.808.0
-* @aws-sdk/credential-provider-web-identity 3.808.0
-* @aws-sdk/credential-providers 3.808.0
-* @aws-sdk/eventstream-handler-node 3.804.0
+* @aws-sdk/core 3.932.0
+* @aws-sdk/credential-provider-cognito-identity 3.932.0
+* @aws-sdk/credential-provider-env 3.932.0
+* @aws-sdk/credential-provider-http 3.932.0
+* @aws-sdk/credential-provider-ini 3.932.0
+* @aws-sdk/credential-provider-node 3.932.0
+* @aws-sdk/credential-provider-process 3.932.0
+* @aws-sdk/credential-provider-sso 3.932.0
+* @aws-sdk/credential-provider-web-identity 3.932.0
+* @aws-sdk/credential-providers 3.932.0
+* @aws-sdk/eventstream-handler-node 3.930.0
 * @aws-sdk/middleware-bucket-endpoint 3.808.0
-* @aws-sdk/middleware-eventstream 3.804.0
+* @aws-sdk/middleware-eventstream 3.930.0
 * @aws-sdk/middleware-expect-continue 3.804.0
 * @aws-sdk/middleware-flexible-checksums 3.808.0
-* @aws-sdk/middleware-host-header 3.804.0
+* @aws-sdk/middleware-host-header 3.930.0
 * @aws-sdk/middleware-location-constraint 3.804.0
-* @aws-sdk/middleware-logger 3.804.0
-* @aws-sdk/middleware-recursion-detection 3.804.0
+* @aws-sdk/middleware-logger 3.930.0
+* @aws-sdk/middleware-recursion-detection 3.930.0
 * @aws-sdk/middleware-sdk-s3 3.808.0
 * @aws-sdk/middleware-ssec 3.804.0
-* @aws-sdk/middleware-user-agent 3.808.0
-* @aws-sdk/nested-clients 3.808.0
+* @aws-sdk/middleware-user-agent 3.932.0
+* @aws-sdk/middleware-websocket 3.930.0
+* @aws-sdk/nested-clients 3.932.0
 * @aws-sdk/protocol-http 3.374.0
-* @aws-sdk/region-config-resolver 3.808.0
+* @aws-sdk/region-config-resolver 3.930.0
 * @aws-sdk/signature-v4 3.374.0
 * @aws-sdk/signature-v4-multi-region 3.808.0
-* @aws-sdk/token-providers 3.808.0
+* @aws-sdk/token-providers 3.932.0
 * @aws-sdk/types 3.804.0
 * @aws-sdk/util-arn-parser 3.804.0
-* @aws-sdk/util-endpoints 3.808.0
-* @aws-sdk/util-locate-window 3.310.0
-* @aws-sdk/util-user-agent-browser 3.804.0
-* @aws-sdk/util-user-agent-node 3.808.0
+* @aws-sdk/util-endpoints 3.930.0
+* @aws-sdk/util-format-url 3.930.0
+* @aws-sdk/util-locate-window 3.893.0
+* @aws-sdk/util-user-agent-browser 3.930.0
+* @aws-sdk/util-user-agent-node 3.932.0
 * @aws-sdk/util-utf8-browser 3.259.0
 * @aws-sdk/xml-builder 3.804.0
+* @aws/lambda-invoke-store 0.1.1
 * @balena/dockerignore 1.0.2
-* @cypress/request 3.0.8
 * @eslint/config-array 0.20.1
 * @eslint/config-helpers 0.2.3
 * @eslint/core 0.14.0
-* @eslint/object-schema 2.1.6
+* @eslint/object-schema 2.1.7
 * @eslint/plugin-kit 0.2.8
 * @getzep/zep-js 0.9.0
-* @google-ai/generativelanguage 2.6.0
 * @google-cloud/paginator 5.0.2
 * @google-cloud/projectify 4.0.0
 * @google-cloud/promisify 4.0.0
 * @google-cloud/resource-manager 5.3.0
 * @google-cloud/secret-manager 5.6.0
-* @google-cloud/storage 7.12.1
+* @google-cloud/storage 7.17.3
+* @google/genai 1.19.0
 * @google/generative-ai 0.21.0
-* @grpc/grpc-js 1.13.2
-* @grpc/proto-loader 0.7.13
+* @grpc/grpc-js 1.7.3
+* @grpc/proto-loader 0.7.15
 * @humanfs/core 0.19.1
-* @humanfs/node 0.16.6
-* @humanwhocodes/config-array 0.13.0
+* @humanfs/node 0.16.7
 * @humanwhocodes/module-importer 1.0.1
 * @humanwhocodes/momoa 2.0.4
 * @humanwhocodes/retry 0.4.3
-* @ibm-cloud/watsonx-ai 1.1.2
-* @iconify-json/mdi 1.1.63
-* @img/sharp-linux-x64 0.33.5
-* @img/sharp-linuxmusl-x64 0.33.5
-* @internationalized/date 3.8.1
-* @internationalized/number 3.6.2
+* @ibm-cloud/watsonx-ai 1.7.3
+* @iconify-json/mdi 1.2.3
+* @internationalized/date 3.10.0
+* @internationalized/number 3.6.5
 * @mozilla/readability 0.6.0, Copyright (c) 2010 Arc90 Inc
 * @opentelemetry/api 1.9.0
 * @opentelemetry/api-logs 0.57.2
@@ -161,7 +158,6 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @opentelemetry/instrumentation-connect 0.43.1
 * @opentelemetry/instrumentation-dataloader 0.16.1
 * @opentelemetry/instrumentation-express 0.47.1
-* @opentelemetry/instrumentation-fastify 0.43.0
 * @opentelemetry/instrumentation-fs 0.19.1
 * @opentelemetry/instrumentation-generic-pool 0.43.1
 * @opentelemetry/instrumentation-graphql 0.47.1
@@ -176,7 +172,6 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @opentelemetry/instrumentation-mongoose 0.46.1
 * @opentelemetry/instrumentation-mysql 0.45.1
 * @opentelemetry/instrumentation-mysql2 0.45.2
-* @opentelemetry/instrumentation-nestjs-core 0.43.0
 * @opentelemetry/instrumentation-pg 0.51.1
 * @opentelemetry/instrumentation-redis-4 0.46.1
 * @opentelemetry/instrumentation-tedious 0.18.1
@@ -191,78 +186,78 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @opentelemetry/sdk-metrics 1.26.0
 * @opentelemetry/sdk-trace-base 1.30.1
 * @opentelemetry/sdk-trace-node 1.26.0
-* @opentelemetry/semantic-conventions 1.36.0
+* @opentelemetry/semantic-conventions 1.38.0
 * @opentelemetry/sql-common 0.40.1
 * @pinecone-database/pinecone 5.1.2
-* @playwright/test 1.54.2
+* @playwright/test 1.56.0
 * @prisma/instrumentation 6.11.1
 * @qdrant/js-client-rest 1.14.1
 * @scarf/scarf 1.4.0
-* @smithy/abort-controller 4.0.2
-* @smithy/chunked-blob-reader 5.0.0
-* @smithy/chunked-blob-reader-native 4.0.0
-* @smithy/config-resolver 4.1.2
-* @smithy/core 3.3.2
-* @smithy/credential-provider-imds 4.0.4
-* @smithy/eventstream-codec 2.2.0
-* @smithy/eventstream-serde-browser 4.0.2
-* @smithy/eventstream-serde-config-resolver 4.1.0
-* @smithy/eventstream-serde-node 4.0.2
-* @smithy/eventstream-serde-universal 4.0.2
-* @smithy/fetch-http-handler 5.0.2
-* @smithy/hash-blob-browser 4.0.2
-* @smithy/hash-node 4.0.2
-* @smithy/hash-stream-node 4.0.2
-* @smithy/invalid-dependency 4.0.2
-* @smithy/is-array-buffer 4.0.0
-* @smithy/md5-js 4.0.2
-* @smithy/middleware-content-length 4.0.2
-* @smithy/middleware-endpoint 4.1.5
-* @smithy/middleware-retry 4.1.6
-* @smithy/middleware-serde 4.0.4
-* @smithy/middleware-stack 4.0.2
-* @smithy/node-config-provider 4.1.1
-* @smithy/node-http-handler 4.0.4
-* @smithy/property-provider 4.0.2
-* @smithy/protocol-http 5.1.0
-* @smithy/querystring-builder 4.0.2
-* @smithy/querystring-parser 4.0.2
-* @smithy/service-error-classification 4.0.3
-* @smithy/shared-ini-file-loader 4.0.2
-* @smithy/signature-v4 2.2.1
-* @smithy/smithy-client 4.2.5
-* @smithy/types 4.2.0
-* @smithy/url-parser 4.0.2
-* @smithy/util-base64 4.0.0
-* @smithy/util-body-length-browser 4.0.0
-* @smithy/util-body-length-node 4.0.0
-* @smithy/util-buffer-from 4.0.0
-* @smithy/util-config-provider 4.0.0
-* @smithy/util-defaults-mode-browser 4.0.13
-* @smithy/util-defaults-mode-node 4.0.13
-* @smithy/util-endpoints 3.0.4
-* @smithy/util-hex-encoding 2.2.0
-* @smithy/util-middleware 4.0.2
-* @smithy/util-retry 4.0.3
-* @smithy/util-stream 4.2.0
-* @smithy/util-uri-escape 2.2.0
-* @smithy/util-utf8 4.0.0
-* @smithy/util-waiter 4.0.3
+* @smithy/abort-controller 4.2.5
+* @smithy/chunked-blob-reader 5.2.0
+* @smithy/chunked-blob-reader-native 4.2.1
+* @smithy/config-resolver 4.4.3
+* @smithy/core 3.18.4
+* @smithy/credential-provider-imds 4.2.5
+* @smithy/eventstream-codec 4.2.5
+* @smithy/eventstream-serde-browser 4.2.5
+* @smithy/eventstream-serde-config-resolver 4.3.5
+* @smithy/eventstream-serde-node 4.2.5
+* @smithy/eventstream-serde-universal 4.2.5
+* @smithy/fetch-http-handler 5.3.6
+* @smithy/hash-blob-browser 4.2.6
+* @smithy/hash-node 4.2.5
+* @smithy/hash-stream-node 4.2.5
+* @smithy/invalid-dependency 4.2.5
+* @smithy/is-array-buffer 4.2.0
+* @smithy/md5-js 4.2.5
+* @smithy/middleware-content-length 4.2.5
+* @smithy/middleware-endpoint 4.3.11
+* @smithy/middleware-retry 4.4.11
+* @smithy/middleware-serde 4.2.6
+* @smithy/middleware-stack 4.2.5
+* @smithy/node-config-provider 4.3.5
+* @smithy/node-http-handler 4.4.5
+* @smithy/property-provider 4.2.5
+* @smithy/protocol-http 5.3.5
+* @smithy/querystring-builder 4.2.5
+* @smithy/querystring-parser 4.2.5
+* @smithy/service-error-classification 4.2.5
+* @smithy/shared-ini-file-loader 4.4.0
+* @smithy/signature-v4 5.3.5
+* @smithy/smithy-client 4.9.7
+* @smithy/types 4.9.0
+* @smithy/url-parser 4.2.5
+* @smithy/util-base64 4.3.0
+* @smithy/util-body-length-browser 4.2.0
+* @smithy/util-body-length-node 4.2.1
+* @smithy/util-buffer-from 2.2.0
+* @smithy/util-config-provider 4.2.0
+* @smithy/util-defaults-mode-browser 4.3.10
+* @smithy/util-defaults-mode-node 4.2.13
+* @smithy/util-endpoints 3.2.5
+* @smithy/util-hex-encoding 4.2.0
+* @smithy/util-middleware 4.2.5
+* @smithy/util-retry 4.2.5
+* @smithy/util-stream 4.5.6
+* @smithy/util-uri-escape 4.2.0
+* @smithy/util-utf8 2.3.0
+* @smithy/util-waiter 4.2.5
+* @smithy/uuid 1.1.0
 * @sqlite.org/sqlite-wasm 3.50.4-build1
 * @swc/helpers 0.5.17, Copyright 2024 SWC contributors.
 * @xata.io/client 0.28.4
-* aria-query 5.3.0, Copyright 2020 A11yance
-* aws-sign2 0.7.0
+* @zilliz/milvus2-sdk-node 2.6.4
+* aria-query 5.1.3, Copyright 2020 A11yance
 * axios-retry 4.5.0, Copyright 2019 Softonic International S.A.
-* b4a 1.6.7
-* bare-events 2.5.4
+* b4a 1.7.3
+* bare-events 2.8.2
+* baseline-browser-mapping 2.8.28
 * better-ajv-errors 1.2.0, Copyright 2018 Atlassian Pty Ltd
-* blob-util 2.0.2
 * bser 2.1.1
-* bson 6.10.0
-* caseless 0.12.0
+* bson 6.10.4
 * cluster-key-slot 1.1.2, Copyright (c) 2018 Mike Diarmid (Salakar) <mike.diarmid@gmail.com>
-* comlink 4.4.1
+* comlink 4.4.2
 * convict 6.2.4, Copyright 2012 the lloydster
 * crc-32 1.2.2
 * denque 2.1.0
@@ -270,50 +265,49 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * didyoumean 1.2.2
 * diff-match-patch 1.0.5
 * docker-modem 5.0.6
-* dockerode 4.0.7
+* dockerode 4.0.9
 * doctrine 2.1.0
 * ecdsa-sig-formatter 1.0.11
 * ejs 3.1.10
 * eslint-visitor-keys 4.2.1
-* expect-type 1.2.1
-* fake-indexeddb 6.0.0
-* fast-text-encoding 1.0.6
+* esm-resolve 1.0.11
+* events-universal 1.0.1
+* expect-type 1.2.2
+* fake-indexeddb 6.2.5
 * fb-watchman 2.0.2
 * filelist 1.0.4
-* forever-agent 0.6.1
-* gaxios 6.6.0
-* gcp-metadata 5.3.0
-* google-auth-library 10.1.0
+* gaxios 6.7.1
+* gcp-metadata 8.1.2
+* google-auth-library 10.5.0
 * google-gax 4.6.1
-* google-logging-utils 1.1.1
+* google-logging-utils 1.1.3
 * groq-sdk 0.19.0
-* human-signals 1.1.1
-* ibm-cloud-sdk-core 5.3.2
-* import-in-the-middle 1.14.2
-* jake 10.8.5
+* human-signals 8.0.1
+* ibm-cloud-sdk-core 5.4.4
+* import-in-the-middle 1.15.0
+* jake 10.9.4
 * jest-junit 16.0.0
 * jmespath 0.16.0, Copyright 2014 James Saryerwinnie
-* jsbi 4.3.0
-* long 5.2.3
+* jsbi 4.3.2
+* long 5.3.2
 * mockserver-client 5.15.0
 * mongodb 6.11.0
-* mongodb-connection-string-url 3.0.0
+* mongodb-connection-string-url 3.0.2
 * openai 5.12.2
 * pdfjs-dist 5.3.31
-* playwright 1.54.2
-* playwright-core 1.54.2
+* playwright 1.56.0
+* playwright-core 1.56.0
 * prom-client 15.1.3
 * proto3-json-serializer 2.0.2
 * readdir-glob 1.1.3
 * reflect-metadata 0.2.2
 * retry-axios 2.6.0
-* rhea 1.0.24
+* rhea 3.0.4
 * rxjs 6.6.7
-* sharp 0.33.5
 * snowflake-sdk 2.1.0
 * spdx-correct 3.2.0
 * ssh2-sftp-client 12.0.1
-* swagger-ui-dist 5.11.0
+* swagger-ui-dist 5.30.2
 * teeny-request 9.0.0
 * text-decoder 1.2.3
 * ts-interface-checker 0.1.13
@@ -324,11 +318,10 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * walker 1.0.8, Copyright 2013 Naitik Shah
 * weak-map 1.0.8
 * websocket 1.0.35
-* workerpool 9.3.3
 * xlsx 0.20.2
 * xml-name-validator 4.0.0
 * yaml-ast-parser 0.0.43, Copyright 2015 (c) MuleSoft, Inc.
-* zx 8.1.4
+* zx 8.8.5
 
 ## BSD
 
@@ -347,43 +340,39 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * app-module-path 2.2.0
 * cheerio-select 2.1.0, Copyright (c) Felix Böhm. All rights reserved.
 * css-select 4.3.0, Copyright (c) Felix Böhm. All rights reserved.
-* css-what 6.1.0, Copyright (c) Felix Böhm. All rights reserved.
+* css-what 6.2.2, Copyright (c) Felix Böhm. All rights reserved.
 * dingbat-to-unicode 1.0.1
 * domelementtype 2.3.0, Copyright (c) Felix Böhm. All rights reserved.
 * domhandler 5.0.3, Copyright (c) Felix Böhm. All rights reserved.
-* domutils 3.1.0, Copyright (c) Felix Böhm. All rights reserved.
+* domutils 3.2.2, Copyright (c) Felix Böhm. All rights reserved.
 * dotenv 8.6.0, Copyright (c) 2015, Scott Motte. All rights reserved.
 * entities 6.0.1, Copyright (c) Felix Böhm. All rights reserved.
-* escodegen 2.0.0, Copyright (C) 2012 Yusuke Suzuki (twitter: @Constellation) and other contributors.
+* escodegen 2.1.0, Copyright (C) 2012 Yusuke Suzuki (twitter: @Constellation) and other contributors.
 * eslint-scope 8.4.0, Copyright JS Foundation and other contributors, https://js.foundation. Copyright (C) 2012-2013 Yusuke Suzuki (twitter: @Constellation) and other contributors.
 * espree 10.4.0, Copyright (c) Open JS Foundation. All rights reserved.
 * esprima-next 5.8.4, Copyright JS Foundation and other contributors, https://js.foundation/
 * esrecurse 4.3.0, Copyright (C) 2014 [Yusuke Suzuki](https://github.com/Constellation).  (twitter: [@Constellation](https://twitter.com/Constellation)) and other contributors.
 * estraverse 5.3.0
 * esutils 2.0.3
-* extract-zip 2.0.1, Copyright (c) 2014 Max Ogden and other contributors. All rights reserved.
 * github-buttons 2.29.1, Copyright (c) 2023, なつき. All rights reserved.
-* http-cache-semantics 4.1.1, Copyright 2016-2018 Kornel Lesiński
-* lop 0.4.1, Copyright (c) 2013, Michael Williamson. All rights reserved.
-* mammoth 1.7.2, Copyright (c) 2013, Michael Williamson. All rights reserved.
+* http-cache-semantics 4.2.0, Copyright 2016-2018 Kornel Lesiński
+* lop 0.4.2, Copyright (c) 2013, Michael Williamson. All rights reserved.
+* mammoth 1.11.0, Copyright (c) 2013, Michael Williamson. All rights reserved.
 * normalize-package-data 2.5.0, Copyright (c) Meryn Stol ("Author"). All rights reserved.
 * nth-check 2.1.1, Copyright (c) Felix Böhm. All rights reserved.
 * option 0.2.4, Copyright (c) 2013, Michael Williamson. All rights reserved.
 * regjsparser 0.12.0, Copyright (c) Julian Viereck and Contributors, All Rights Reserved.
 * shimmer 1.2.1, Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
 * stringify-object 3.3.0, Copyright (c) 2015, Yeoman team. All rights reserved.
-* terser 5.16.1, Copyright 2012-2018 (c) Mihai Bazon <mihai.bazon@gmail.com>
-* uglify-js 3.17.4, Copyright 2012-2019 (c) Mihai Bazon <mihai.bazon@gmail.com>
+* terser 5.44.1, Copyright 2012-2018 (c) Mihai Bazon <mihai.bazon@gmail.com>
+* uglify-js 3.19.3, Copyright 2012-2024 (c) Mihai Bazon <mihai.bazon@gmail.com>
 * uri-js 4.4.1, Copyright 2011 Gary Court. All rights reserved.
 * vue-github-button 3.1.3, Copyright (c) 2022, なつき. All rights reserved.
 * webidl-conversions 7.0.0, Copyright (c) 2014, Domenic Denicola. All rights reserved.
 
 ## BSD-3-Clause
 
-* @hapi/hoek 9.3.0, Copyright (c) 2011-2020, Sideway Inc, and project contributors  . Copyright (c) 2011-2014, Walmart  . Copyright (c) 2011, Yahoo Inc.
-* @hapi/topo 5.1.0, Copyright (c) 2012-2020, Sideway Inc, and project contributors  . Copyright (c) 2012-2014, Walmart.  . All rights reserved.
-* @humanwhocodes/object-schema 2.0.3, Copyright (c) 2019, Human Who Codes. All rights reserved.
-* @js-joda/core 5.6.1, Copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper.  . All rights reserved..  . Redistribution and use in source and binary forms, with or without. modification, are permitted provided that the following conditions are met:.  .  * Redistributions of source code must retain the above copyright notice,.    this list of conditions and the following disclaimer..  .  * Redistributions in binary form must reproduce the above copyright notice,.    this list of conditions and the following disclaimer in the documentation.    and/or other materials provided with the distribution..  .  * Neither the name of js-joda nor the names of its contributors.    may be used to endorse or promote products derived from this software.    without specific prior written permission..  . THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS. "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT. LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR. A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR. CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,. EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,. PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR. PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF. LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING. NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS. SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+* @js-joda/core 5.6.5, Copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper.  . All rights reserved..  . Redistribution and use in source and binary forms, with or without. modification, are permitted provided that the following conditions are met:.  .  * Redistributions of source code must retain the above copyright notice,.    this list of conditions and the following disclaimer..  .  * Redistributions in binary form must reproduce the above copyright notice,.    this list of conditions and the following disclaimer in the documentation.    and/or other materials provided with the distribution..  .  * Neither the name of js-joda nor the names of its contributors.    may be used to endorse or promote products derived from this software.    without specific prior written permission..  . THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS. "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT. LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR. A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR. CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,. EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,. PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR. PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF. LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING. NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS. SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * @protobufjs/aspromise 1.1.2, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
 * @protobufjs/base64 1.1.2, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
 * @protobufjs/codegen 2.0.4, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
@@ -394,11 +383,10 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @protobufjs/path 1.1.2, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
 * @protobufjs/pool 1.1.0, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
 * @protobufjs/utf8 1.1.0, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
-* @sideway/address 4.1.5, Copyright (c) 2019-2020, Sideway, Inc. and Project contributors. All rights reserved.
-* @sideway/formula 3.0.1, Copyright (c) 2019-2020, Sideway. Inc, and project contributors. All rights reserved.
-* @sideway/pinpoint 2.0.0, Copyright (c) 2019-2020, Sideway. Inc, and project contributors
+* @sentry/cli 2.58.2, Copyright (c) 2016-2025 Sentry (https://sentry.io/) and individual contributors.. All rights reserved.
+* @sentry/cli-linux-x64 2.58.2
 * @sinonjs/commons 3.0.1, Copyright (c) 2018, Sinon.JS. All rights reserved.
-* @sinonjs/fake-timers 13.0.2, Copyright (c) 2010-2014, Christian Johansen, christian@cjohansen.no. All rights reserved.
+* @sinonjs/fake-timers 10.3.0, Copyright (c) 2010-2014, Christian Johansen, christian@cjohansen.no. All rights reserved.
 * abab 2.0.6, Copyright © 2019 W3C and Jeff Carpenter \<jeffcarp@chromium.org\>
 * babel-plugin-istanbul 6.1.1, Copyright (c) 2016, Istanbul Code Coverage. All rights reserved.
 * babel-plugin-transform-import-meta 2.3.3
@@ -408,19 +396,20 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * crypt 0.0.2, Copyright © 2011, Paul Vorbach. All rights reserved.. Copyright © 2009, Jeff Mott. All rights reserved.
 * d3-dsv 2.0.0, Copyright 2013-2016 Mike Bostock. All rights reserved.
 * d3-ease 3.0.1, Copyright 2010-2021 Mike Bostock. Copyright 2001 Robert Penner. All rights reserved.
-* diff 5.2.0, Copyright (c) 2009-2015, Kevin Decker <kpdecker@gmail.com>. All rights reserved.
+* diff 8.0.2, Copyright (c) 2009-2015, Kevin Decker <kpdecker@gmail.com>. All rights reserved.
 * esquery 1.6.0, Copyright (c) 2013, Joel Feenstra. All rights reserved.
 * express-handlebars 8.0.1, Copyright (c) 2014, Yahoo Inc.  All rights reserved.
-* filesize 10.1.0, Copyright (c) 2023, Jason Mulligan. All rights reserved.
+* fast-uri 3.1.0, Copyright (c) 2011-2021, Gary Court until https://github.com/garycourt/uri-js/commit/a1acf730b4bba3f1097c9f52e7d9d3aba8cdcaae. Copyright (c) 2021-present The Fastify team. All rights reserved.
+* filesize 10.1.6, Copyright (c) 2024, Jason Mulligan. All rights reserved.
 * flat 5.0.2, Copyright (c) 2014, Hugh Kennedy. All rights reserved.
 * highlight.js 11.11.1, Copyright (c) 2006, Ivan Sagalaev.. All rights reserved.
 * ieee754 1.2.1, Copyright 2008 Fair Oaks Labs, Inc.
 * istanbul-lib-coverage 3.2.2, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
-* istanbul-lib-instrument 5.2.1, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
+* istanbul-lib-hook 3.0.0, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
+* istanbul-lib-instrument 6.0.3, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
 * istanbul-lib-report 3.0.1, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
 * istanbul-lib-source-maps 5.0.6, Copyright 2015 Yahoo! Inc.. All rights reserved.
-* istanbul-reports 3.1.7, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
-* joi 17.13.3, Copyright (c) 2012-2022, Project contributors.. Copyright (c) 2012-2022, Sideway. Inc.. Copyright (c) 2012-2014, Walmart.. All rights reserved.
+* istanbul-reports 3.2.0, Copyright 2012-2015 Yahoo! Inc.. All rights reserved.
 * js-base64 3.7.2, Copyright (c) 2014, Dan Kogai. All rights reserved.
 * jssha 3.3.1, Copyright (c) 2008-2023 Brian Turek, 1998-2009 Paul Johnston & Contributors. All rights reserved.
 * license-checker 25.0.1, Copyright 2012 Yahoo Inc.
@@ -433,7 +422,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * oas-resolver 2.5.6, Copyright (c) 2016, Mermade Software. All rights reserved.
 * oas-schema-walker 1.1.5, Copyright (c) 2016, Mermade Software. All rights reserved.
 * oas-validator 5.0.8, Copyright (c) 2016, Mermade Software. All rights reserved.
-* protobufjs 7.4.0, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
+* protobufjs 7.5.4, Copyright (c) 2016, Daniel Wirtz  All rights reserved.
 * qs 6.11.0, Copyright (c) 2014, Nathan LaFreniere and other [contributors](https://github.com/ljharb/qs/graphs/contributors). All rights reserved.
 * reftools 1.1.9, Copyright (c) 2017, Mike Ralphson. All rights reserved.
 * replacestream 4.0.3, Copyright (c) 2014, Eugene Ware. All rights reserved.
@@ -444,18 +433,19 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * shelljs 0.8.5, Copyright (c) 2012, Artur Adib <arturadib@gmail.com>. All rights reserved.
 * source-map 0.6.1
 * source-map-js 1.2.1
-* sprintf-js 1.0.3, Copyright (c) 2007-2014, Alexandru Marasteanu <hello [at) alexei (dot] ro>. All rights reserved.
+* sprintf-js 1.1.3, Copyright (c) 2007-present, Alexandru Mărășteanu <hello@alexei.ro>. All rights reserved.
 * sqlite3 5.1.7, Copyright (c) MapBox. All rights reserved.
 * swagger2openapi 7.0.8, Copyright (c) 2016, Mermade Software. All rights reserved.
 * table 6.9.0, Copyright (c) 2018, Gajus Kuizinas (http://gajus.com/). All rights reserved.
 * tmpl 1.0.5, Copyright (c) 2014, Naitik Shah. All rights reserved.
-* tough-cookie 4.1.3, Copyright (c) 2015, Salesforce.com, Inc.. All rights reserved.
+* tough-cookie 4.1.4, Copyright (c) 2015, Salesforce.com, Inc.. All rights reserved.
 
 ## BlueOak-1.0.0
 
-* jackspeak 2.3.6
-* package-json-from-dist 1.0.0
+* jackspeak 3.4.3
+* package-json-from-dist 1.0.1
 * path-scurry 1.11.1
+* sax 1.4.3
 
 ## CC-BY-3.0
 
@@ -463,11 +453,11 @@ The n8n software includes open source packages, libraries, and modules, each of 
 
 ## CC-BY-4.0
 
-* caniuse-lite 1.0.30001677
+* caniuse-lite 1.0.30001755
 
 ## CC0-1.0
 
-* mdn-data 2.23.0
+* mdn-data 2.25.0
 * spdx-license-ids 3.0.22
 
 ## Custom: http://en.wikipedia.org/wiki/Uuencoding
@@ -492,24 +482,21 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @istanbuljs/load-nyc-config 1.1.0, Copyright (c) 2019, Contributors
 * @npmcli/fs 1.1.1, Copyright npm, Inc.
 * @trysound/sax 0.2.0, Copyright (c) Isaac Z. Schlueter and Contributors
-* @ungap/structured-clone 1.3.0, Copyright (c) 2021, Andrea Giammarchi, @WebReflection
 * abbrev 1.1.1, Copyright (c) Isaac Z. Schlueter and Contributors*
-* ansis 3.2.0, Copyright (c) 2024, webdiscus
+* ansis 3.17.0, Copyright (c) 2025, webdiscus
 * anymatch 3.1.3, Copyright (c) 2019 Elan Shanker, Paul Miller (https://paulmillr.com)
-* aproba 2.0.0, Copyright (c) 2015, Rebecca Turner <me@re-becca.org>
+* aproba 2.1.0, Copyright (c) 2015, Rebecca Turner <me@re-becca.org>
 * are-we-there-yet 3.0.1, Copyright npm, Inc.
-* array-hyper-unique 2.1.4
-* at-least-node 1.0.0
+* array-hyper-unique 2.1.6
 * boolbase 1.0.0
-* browser-stdout 1.3.1, Copyright 2018 kumavis
-* browserify-sign 4.2.3, Copyright (c) 2014-2015 Calvin Metcalf and browserify-sign contributors
+* browserify-sign 4.2.5, Copyright (c) 2014-2015 Calvin Metcalf and browserify-sign contributors
 * cacache 15.3.0, Copyright (c) npm, Inc.
 * chownr 1.1.4, Copyright (c) Isaac Z. Schlueter and Contributors
 * cli-width 3.0.0, Copyright (c) 2015, Ilya Radchenko <ilya@burstcreations.com>
-* cliui 7.0.4, Copyright (c) 2015, Contributors
+* cliui 6.0.0, Copyright (c) 2015, Contributors
 * color-support 1.1.3, Copyright (c) Isaac Z. Schlueter and Contributors
 * console-control-strings 1.1.0, Copyright (c) 2014, Rebecca Turner <me@re-becca.org>
-* crlf-normalize 1.0.19
+* crlf-normalize 1.0.20
 * css-color-keywords 1.0.0, Copyright (c) 2017, Jakob Krigovsky
 * d 1.0.2, Copyright (c) 2013-2024, Mariusz Nowak, @medikoo, medikoo.com
 * d3-color 3.1.0, Copyright 2010-2022 Mike Bostock
@@ -521,18 +508,18 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * d3-transition 3.0.1, Copyright 2010-2021 Mike Bostock
 * d3-zoom 3.0.0, Copyright 2010-2021 Mike Bostock
 * dezalgo 1.0.4, Copyright (c) Isaac Z. Schlueter and Contributors
-* electron-to-chromium 1.5.114, Copyright 2018 Kilian Valkhof
-* email-providers 2.0.1, Copyright (c) 2023, Jannis R
+* electron-to-chromium 1.5.254, Copyright 2018 Kilian Valkhof
+* email-providers 2.18.0, Copyright (c) 2025, Jannis R
 * epub2 3.0.2, Copyright (c) 2011 Andris Reinman
 * es5-ext 0.10.64, Copyright (c) 2011-2024, Mariusz Nowak, @medikoo, medikoo.com
 * es6-symbol 3.1.4, Copyright (c) 2013-2024, Mariusz Nowak, @medikoo, medikoo.com
-* eslint-import-resolver-typescript 4.4.3, Copyright 2021 Alex Gorbatchev <alex.gorbatchev@gmail.com>
+* eslint-doc-generator 2.3.0
+* eslint-import-resolver-typescript 4.4.4, Copyright 2021 Alex Gorbatchev <alex.gorbatchev@gmail.com>
 * esniff 2.0.1, Copyright (c) 2013-2024, Mariusz Nowak, @medikoo, medikoo.com
-* express-async-errors 3.1.1
 * ext 1.7.0, Copyright (c) 2011-2022, Mariusz Nowak, @medikoo, medikoo.com
-* fastq 1.15.0, Copyright (c) 2015-2020, Matteo Collina <matteo.collina@gmail.com>
+* fastq 1.19.1, Copyright (c) 2015-2020, Matteo Collina <matteo.collina@gmail.com>
 * flatted 3.2.7, Copyright (c) 2018-2020, Andrea Giammarchi, @WebReflection
-* foreground-child 3.1.1, Copyright (c) 2015-2023 Isaac Z. Schlueter and Contributors
+* foreground-child 3.3.1, Copyright (c) 2015-2023 Isaac Z. Schlueter and Contributors
 * fs-minipass 2.1.0, Copyright (c) Isaac Z. Schlueter and Contributors
 * fs.realpath 1.0.0, Copyright (c) Isaac Z. Schlueter and Contributors
 * gauge 4.0.4, Copyright npm, Inc.
@@ -550,7 +537,8 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * inflight 1.0.6, Copyright (c) Isaac Z. Schlueter
 * inherits 2.0.4, Copyright (c) Isaac Z. Schlueter
 * ini 1.3.8, Copyright (c) Isaac Z. Schlueter and Contributors
-* isexe 3.1.1, Copyright (c) 2016-2022 Isaac Z. Schlueter and Contributors
+* isexe 2.0.0, Copyright (c) Isaac Z. Schlueter and Contributors
+* istanbul-lib-processinfo 2.0.3, Copyright (c) Isaac Z. Schlueter and Contributors
 * json-stringify-safe 5.0.1, Copyright (c) Isaac Z. Schlueter and Contributors
 * lru-cache 9.1.2, Copyright (c) 2010-2023 Isaac Z. Schlueter and Contributors
 * make-error 1.3.6, Copyright 2014 Julien Fontanet
@@ -558,7 +546,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * markdown-it-task-lists 2.1.1, Copyright (c) 2016, Revin Guillen
 * minifaker 1.34.1
 * minimalistic-assert 1.0.1, Copyright 2015 Calvin Metcalf
-* minimatch 9.0.5, Copyright (c) 2011-2023 Isaac Z. Schlueter and Contributors
+* minimatch 10.0.3, Copyright (c) 2011-2023 Isaac Z. Schlueter and Contributors
 * minipass 7.1.2, Copyright (c) 2017-2023 npm, Inc., Isaac Z. Schlueter, and Contributors
 * minipass-collect 1.0.2, Copyright (c) Isaac Z. Schlueter and Contributors
 * minipass-flush 1.0.5, Copyright (c) Isaac Z. Schlueter and Contributors
@@ -569,310 +557,282 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * nopt 4.0.3, Copyright (c) Isaac Z. Schlueter and Contributors
 * npm-normalize-package-bin 4.0.0, Copyright (c) npm, Inc.
 * npmlog 6.0.2, Copyright npm, Inc.
+* nyc 17.1.0, Copyright (c) 2015, Contributors
 * once 1.4.0, Copyright (c) Isaac Z. Schlueter and Contributors
 * osenv 0.1.5, Copyright (c) Isaac Z. Schlueter and Contributors
-* parse-asn1 5.1.7, Copyright (c) 2017, crypto-browserify contributors
+* package-hash 4.0.0
+* parse-asn1 5.1.9, Copyright (c) 2017, crypto-browserify contributors
 * pg-int8 1.0.1, Copyright © 2017, Charmander <~@charmander.me>
-* pg-numeric 1.0.2, Copyright 2019 Charmander <~@charmander.me>
 * picocolors 1.0.1, Copyright (c) 2021 Alexey Raspopov, Kostiantyn Denysov, Anton Verinov
 * promise-inflight 1.0.1, Copyright (c) 2017, Rebecca Turner <me@re-becca.org>
 * proto-list 1.2.4, Copyright (c) Isaac Z. Schlueter and Contributors
-* pseudomap 1.0.2, Copyright (c) Isaac Z. Schlueter and Contributors
 * read-installed 4.0.3, Copyright (c) Isaac Z. Schlueter
 * read-package-json 2.1.2, Copyright (c) Isaac Z. Schlueter
 * read-package-json-fast 4.0.0, Copyright (c) npm, Inc. and Contributors
 * readdir-scoped-modules 1.1.0, Copyright (c) Isaac Z. Schlueter and Contributors
-* rimraf 5.0.1, Copyright (c) 2011-2023 Isaac Z. Schlueter and Contributors
-* sax 1.2.4, Copyright (c) Isaac Z. Schlueter and Contributors
+* release-zalgo 1.0.0
+* require-main-filename 2.0.0, Copyright (c) 2016, Contributors
+* rimraf 5.0.10, Copyright (c) 2011-2023 Isaac Z. Schlueter and Contributors
 * saxes 6.0.0
-* semver 7.7.2, Copyright (c) Isaac Z. Schlueter and Contributors
+* semver 7.7.3, Copyright (c) Isaac Z. Schlueter and Contributors
 * set-blocking 2.0.0, Copyright (c) 2016, Contributors
 * setprototypeof 1.2.0, Copyright (c) 2015, Wes Todd
 * siginfo 2.0.0, Copyright (c) 2017, Emil Bay <github@tixz.dk>
 * signal-exit 3.0.7, Copyright (c) 2015, Contributors
 * slide 1.1.6, Copyright (c) Isaac Z. Schlueter
+* spawn-wrap 2.0.0, Copyright (c) Isaac Z. Schlueter and Contributors
 * split-ca 1.0.1
 * split2 4.2.0, Copyright (c) 2014-2018, Matteo Collina <hello@matteocollina.com>
 * ssri 8.0.1, Copyright (c) npm, Inc.
 * strict-event-emitter-types 2.0.0
 * tar 6.2.1, Copyright (c) Isaac Z. Schlueter and Contributors
 * test-exclude 7.0.1, Copyright (c) 2016, Contributors
-* touch 3.1.0, Copyright (c) Isaac Z. Schlueter
+* touch 3.1.1, Copyright (c) Isaac Z. Schlueter
 * ts-type 3.0.1
 * type 2.7.3, Copyright (c) 2019-2024, Mariusz Nowak, @medikoo, medikoo.com
 * unique-filename 1.1.1, Copyright npm, Inc
 * unique-slug 2.0.2, Copyright npm, Inc
-* v8-to-istanbul 9.1.0, Copyright (c) 2017, Contributors
-* which 5.0.0, Copyright (c) Isaac Z. Schlueter and Contributors
+* v8-to-istanbul 9.3.0, Copyright (c) 2017, Contributors
+* which 2.0.2, Copyright (c) Isaac Z. Schlueter and Contributors
+* which-module 2.0.1, Copyright (c) 2016, Contributors
 * wide-align 1.1.5, Copyright (c) 2015, Rebecca Turner <me@re-becca.org>
 * wrappy 1.0.2, Copyright (c) Isaac Z. Schlueter and Contributors
 * write-file-atomic 5.0.1, Copyright (c) 2015, Rebecca Turner
-* y18n 5.0.8, Copyright (c) 2015, Contributors
+* y18n 4.0.3, Copyright (c) 2015, Contributors
 * yallist 4.0.0, Copyright (c) Isaac Z. Schlueter and Contributors
-* yaml 2.3.4, Copyright Eemeli Aro <eemeli@gmail.com>
+* yaml 2.8.1, Copyright Eemeli Aro <eemeli@gmail.com>
 * yargs-parser 21.1.1, Copyright (c) 2016, Contributors
-* zod-to-json-schema 3.23.3, Copyright (c) 2020, Stefan Terdell
-
-## LGPL-3.0-or-later
-
-* @img/sharp-libvips-linux-x64 1.0.4
-* @img/sharp-libvips-linuxmusl-x64 1.0.4
+* zod-to-json-schema 3.24.6, Copyright (c) 2020, Stefan Terdell
 
 ## MIT
 
-* @aashutoshrathi/word-wrap 1.2.6, Copyright (c) 2014-2016, Jon Schlinkert
 * @acuminous/bitsyntax 0.1.2
-* @adobe/css-tools 4.4.0, Copyright (c) 2012 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2022 Jean-Philippe Zolesio <holblin@gmail.com>
+* @adobe/css-tools 4.4.4, Copyright (c) 2012 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2022 Jean-Philippe Zolesio <holblin@gmail.com>
 * @alloc/quick-lru 5.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* @antfu/install-pkg 0.3.3, Copyright (c) 2021 Anthony Fu <https://github.com/antfu>
+* @antfu/install-pkg 0.4.1, Copyright (c) 2021 Anthony Fu <https://github.com/antfu>
 * @antfu/utils 0.7.10, Copyright (c) 2021 Anthony Fu <https://github.com/antfu>
-* @anthropic-ai/sdk 0.56.0, Copyright 2023 Anthropic, PBC.
+* @anthropic-ai/sdk 0.27.3, Copyright 2023 Anthropic, PBC.
 * @apidevtools/json-schema-ref-parser 12.0.2, Copyright (c) 2015 James Messinger
 * @authenio/xml-encryption 2.0.2, Copyright (c) 2015 Auth0, Inc. <support@auth0.com> (http://auth0.com)
-* @azure/abort-controller 1.1.0, Copyright (c) 2020 Microsoft
-* @azure/core-auth 1.9.0, Copyright (c) 2020 Microsoft
-* @azure/core-client 1.9.2, Copyright (c) 2020 Microsoft
-* @azure/core-http-compat 2.1.2, Copyright (c) 2020 Microsoft
-* @azure/core-lro 2.4.0, Copyright (c) 2020 Microsoft
-* @azure/core-paging 1.3.0, Copyright (c) 2020 Microsoft
-* @azure/core-rest-pipeline 1.20.0, Copyright (c) Microsoft Corporation.
-* @azure/core-tracing 1.2.0, Copyright (c) 2020 Microsoft
-* @azure/core-util 1.12.0, Copyright (c) Microsoft Corporation.
-* @azure/core-xml 1.4.5, Copyright (c) Microsoft Corporation.
-* @azure/identity 4.3.0, Copyright (c) 2020 Microsoft
-* @azure/keyvault-keys 4.6.0, Copyright (c) 2020 Microsoft
+* @azure-rest/core-client 2.5.1, Copyright (c) Microsoft Corporation.
+* @azure/abort-controller 2.1.2, Copyright (c) 2020 Microsoft
+* @azure/core-auth 1.10.1, Copyright (c) Microsoft Corporation.
+* @azure/core-client 1.10.1, Copyright (c) Microsoft Corporation.
+* @azure/core-http-compat 2.3.1, Copyright (c) Microsoft Corporation.
+* @azure/core-lro 2.7.2, Copyright (c) 2020 Microsoft
+* @azure/core-paging 1.6.2, Copyright (c) 2020 Microsoft
+* @azure/core-rest-pipeline 1.22.2, Copyright (c) Microsoft Corporation.
+* @azure/core-tracing 1.3.1, Copyright (c) Microsoft Corporation.
+* @azure/core-util 1.13.1, Copyright (c) Microsoft Corporation.
+* @azure/core-xml 1.5.0, Copyright (c) Microsoft Corporation.
+* @azure/identity 4.13.0, Copyright (c) Microsoft Corporation.
+* @azure/keyvault-common 2.0.0, Copyright (c) 2022 Microsoft
+* @azure/keyvault-keys 4.10.0, Copyright (c) Microsoft Corporation.
 * @azure/keyvault-secrets 4.8.0, Copyright (c) 2020 Microsoft
-* @azure/logger 1.0.3, Copyright (c) 2020 Microsoft
-* @azure/msal-browser 3.19.0, Copyright (c) Microsoft Corporation. All rights reserved.
-* @azure/msal-common 14.13.0, Copyright (c) Microsoft Corporation. All rights reserved.
-* @azure/msal-node 2.11.0, Copyright (c) 2020 Microsoft
+* @azure/logger 1.3.0, Copyright (c) Microsoft Corporation.
+* @azure/msal-browser 4.26.1, Copyright (c) Microsoft Corporation. All rights reserved.
+* @azure/msal-common 15.13.1, Copyright (c) Microsoft Corporation. All rights reserved.
+* @azure/msal-node 3.8.2, Copyright (c) 2020 Microsoft
 * @azure/storage-blob 12.26.0, Copyright (c) 2020 Microsoft
 * @babel/code-frame 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/compat-data 7.26.8, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/core 7.26.10, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/generator 7.26.10, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-annotate-as-pure 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/compat-data 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/core 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/generator 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-annotate-as-pure 7.27.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/helper-compilation-targets 7.27.2, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-create-class-features-plugin 7.26.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-create-regexp-features-plugin 7.26.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-define-polyfill-provider 0.6.3, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
-* @babel/helper-member-expression-to-functions 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-module-imports 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-module-transforms 7.26.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-optimise-call-expression 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-plugin-utils 7.26.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-remap-async-to-generator 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-replace-supers 7.26.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-skip-transparent-expression-wrappers 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-string-parser 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-validator-identifier 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-validator-option 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helper-wrap-function 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/helpers 7.26.10, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/parser 7.27.5, Copyright (C) 2012-2014 by various contributors (see AUTHORS)
-* @babel/plugin-bugfix-firefox-class-in-computed-class-key 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-bugfix-safari-class-field-initializer-scope 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-bugfix-v8-static-class-fields-redefine-readonly 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-create-class-features-plugin 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-create-regexp-features-plugin 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-define-polyfill-provider 0.6.5, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
+* @babel/helper-globals 7.28.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-member-expression-to-functions 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-module-imports 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-module-transforms 7.28.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-optimise-call-expression 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-plugin-utils 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-remap-async-to-generator 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-replace-supers 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-skip-transparent-expression-wrappers 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-string-parser 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-validator-identifier 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-validator-option 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helper-wrap-function 7.28.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/helpers 7.28.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors. Copyright (c) 2014-present, Facebook, Inc. (ONLY ./src/helpers/regenerator* files)
+* @babel/parser 7.28.5, Copyright (C) 2012-2014 by various contributors (see AUTHORS)
+* @babel/plugin-bugfix-firefox-class-in-computed-class-key 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-bugfix-safari-class-field-initializer-scope 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-bugfix-v8-static-class-fields-redefine-readonly 7.28.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-proposal-private-property-in-object 7.21.0-placeholder-for-preset-env.2, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-async-generators 7.8.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-bigint 7.8.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-class-properties 7.12.13, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-syntax-import-assertions 7.26.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-syntax-import-attributes 7.26.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-syntax-class-static-block 7.14.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-syntax-import-assertions 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-syntax-import-attributes 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-import-meta 7.10.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-json-strings 7.8.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-syntax-jsx 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-syntax-jsx 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-logical-assignment-operators 7.10.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-nullish-coalescing-operator 7.8.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-numeric-separator 7.10.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-object-rest-spread 7.8.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-optional-catch-binding 7.8.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-optional-chaining 7.8.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-syntax-private-property-in-object 7.14.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-top-level-await 7.14.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-syntax-typescript 7.20.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-syntax-typescript 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/plugin-syntax-unicode-sets-regex 7.18.6, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-arrow-functions 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-async-generator-functions 7.26.8, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-async-to-generator 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-block-scoped-functions 7.26.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-block-scoping 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-class-properties 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-class-static-block 7.26.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-classes 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-computed-properties 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-destructuring 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-dotall-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-duplicate-keys 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-duplicate-named-capturing-groups-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-dynamic-import 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-exponentiation-operator 7.26.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-export-namespace-from 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-for-of 7.26.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-function-name 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-json-strings 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-literals 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-logical-assignment-operators 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-member-expression-literals 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-modules-amd 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-modules-commonjs 7.26.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-modules-systemjs 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-modules-umd 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-named-capturing-groups-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-new-target 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-nullish-coalescing-operator 7.26.6, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-numeric-separator 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-object-rest-spread 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-object-super 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-optional-catch-binding 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-optional-chaining 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-parameters 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-private-methods 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-private-property-in-object 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-property-literals 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-regenerator 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-regexp-modifiers 7.26.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-reserved-words 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-shorthand-properties 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-spread 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-sticky-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-template-literals 7.26.8, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-typeof-symbol 7.26.7, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-unicode-escapes 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-unicode-property-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-unicode-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/plugin-transform-unicode-sets-regex 7.25.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/preset-env 7.26.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-arrow-functions 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-async-generator-functions 7.28.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-async-to-generator 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-block-scoped-functions 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-block-scoping 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-class-properties 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-class-static-block 7.28.3, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-classes 7.28.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-computed-properties 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-destructuring 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-dotall-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-duplicate-keys 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-duplicate-named-capturing-groups-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-dynamic-import 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-explicit-resource-management 7.28.0, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-exponentiation-operator 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-export-namespace-from 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-for-of 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-function-name 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-json-strings 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-literals 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-logical-assignment-operators 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-member-expression-literals 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-modules-amd 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-modules-commonjs 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-modules-systemjs 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-modules-umd 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-named-capturing-groups-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-new-target 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-nullish-coalescing-operator 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-numeric-separator 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-object-rest-spread 7.28.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-object-super 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-optional-catch-binding 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-optional-chaining 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-parameters 7.27.7, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-private-methods 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-private-property-in-object 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-property-literals 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-regenerator 7.28.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors. Copyright (c) 2014-present Facebook, Inc.
+* @babel/plugin-transform-regexp-modifiers 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-reserved-words 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-shorthand-properties 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-spread 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-sticky-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-template-literals 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-typeof-symbol 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-unicode-escapes 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-unicode-property-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-unicode-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/plugin-transform-unicode-sets-regex 7.27.1, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/preset-env 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @babel/preset-modules 0.1.6-no-external-plugins, Copyright (c) 2020 Babel
-* @babel/runtime 7.26.10, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/template 7.26.9, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/traverse 7.26.10, Copyright (c) 2014-present Sebastian McKenzie and other contributors
-* @babel/types 7.27.6, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/runtime 7.28.4, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/template 7.27.2, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/traverse 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
+* @babel/types 7.28.5, Copyright (c) 2014-present Sebastian McKenzie and other contributors
 * @bcoe/v8-coverage 1.0.2, Copyright © 2015-2017 Charles Samborski
-* @browserbasehq/stagehand 1.9.0, Copyright (c) 2024 Browserbase Inc.
-* @cfworker/json-schema 4.1.0
-* @chromatic-com/storybook 3.2.5, Copyright (c) 2023 Storybook contributors
+* @browserbasehq/stagehand 1.14.0, Copyright (c) 2024 Browserbase Inc.
+* @cacheable/memoize 2.0.3
+* @cacheable/memory 2.0.4
+* @cacheable/utils 2.2.0
+* @cfworker/json-schema 4.1.1
+* @chromatic-com/storybook 3.2.7, Copyright (c) 2023 Storybook contributors
 * @clack/core 0.5.0, Copyright (c) Nate Moore
 * @clack/prompts 0.11.0, Copyright (c) Nate Moore
-* @codemirror/autocomplete 6.16.0, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/commands 6.5.0, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/lang-css 6.0.1, Copyright (C) 2018-2021 by Marijn Haverbeke <marijnh@gmail.com> and others
-* @codemirror/lang-javascript 6.2.2, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/lang-json 6.0.1, Copyright (C) 2018-2021 by Marijn Haverbeke <marijnh@gmail.com> and others
-* @codemirror/lang-python 6.1.6, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/language 6.9.3, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/lint 6.8.0, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/search 6.5.6, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/state 6.4.1, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @codemirror/view 6.26.3, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/autocomplete 6.19.1, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/commands 6.10.0, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/lang-css 6.3.1, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/lang-javascript 6.2.4, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/lang-json 6.0.2, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/lang-python 6.2.1, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/language 6.11.3, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/lint 6.9.2, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/search 6.5.11, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/state 6.5.2, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @codemirror/text 0.19.6, Copyright (C) 2018-2021 by Marijn Haverbeke <marijnh@gmail.com> and others
+* @codemirror/view 6.38.7, Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
 * @colors/colors 1.5.0
 * @commander-js/extra-typings 12.1.0, Copyright (c) 2022 commander-js
-* @common.js/is-network-error 1.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* @cspotcode/source-map-support 0.8.1, Copyright (c) 2014 Evan Wallace
 * @csstools/css-parser-algorithms 3.0.5, Copyright 2022 Romain Menke, Antonio Laguna <antonio@laguna.es>
 * @csstools/css-tokenizer 3.0.4, Copyright 2022 Romain Menke, Antonio Laguna <antonio@laguna.es>
 * @csstools/media-query-list-parser 4.0.3, Copyright 2022 Romain Menke, Antonio Laguna <antonio@laguna.es>
-* @ctrl/tinycolor 3.6.0, Copyright (c) Scott Cooper <scttcper@gmail.com>
+* @ctrl/tinycolor 3.6.1, Copyright (c) Scott Cooper <scttcper@gmail.com>
 * @currents/commit-info 1.0.1-beta.0, Copyright (c) 2017 Cypress.io
-* @currents/playwright 1.15.3, Copyright 2024 Currents Software Inc
-* @cypress/grep 4.1.0
-* @cypress/xvfb 1.2.4
-* @dabh/diagnostics 2.0.3, Copyright (c) 2015 Arnout Kazemier, Martijn Swaagman, the Contributors.
-* @dagrejs/dagre 1.1.4, Copyright (c) 2012-2014 Chris Pettitt
+* @currents/playwright 1.19.0, Copyright 2024 Currents Software Inc
+* @dabh/diagnostics 2.0.8, Copyright (c) 2015 Arnout Kazemier, Martijn Swaagman, the Contributors.
+* @dagrejs/dagre 1.1.8, Copyright (c) 2012-2014 Chris Pettitt
 * @dagrejs/graphlib 2.2.4, Copyright (c) 2012-2014 Chris Pettitt
 * @dependents/detective-less 5.0.1, Copyright (c) 2022 Dependents
-* @dual-bundle/import-meta-resolve 4.1.0, Copyright (c) 2021 Titus Wormer <mailto:tituswormer@gmail.com>
-* @element-plus/icons-vue 2.3.1, Copyright (c) 2020-PRESENT Element Plus (https://github.com/element-plus)
-* @emnapi/core 1.5.0, Copyright (c) 2021-present Toyobayashi
-* @emnapi/runtime 1.5.0, Copyright (c) 2021-present Toyobayashi
-* @emnapi/wasi-threads 1.1.0, Copyright (c) 2021-present Toyobayashi
-* @emotion/is-prop-valid 1.2.1, Copyright (c) Emotion team and other contributors
+* @dual-bundle/import-meta-resolve 4.2.1, Copyright (c) Titus Wormer <mailto:tituswormer@gmail.com>
+* @element-plus/icons-vue 2.3.2, Copyright (c) 2020-PRESENT Element Plus (https://github.com/element-plus)
+* @emotion/is-prop-valid 1.2.2, Copyright (c) Emotion team and other contributors
 * @emotion/memoize 0.8.1, Copyright (c) Emotion team and other contributors
-* @emotion/unitless 0.8.0, Copyright (c) Emotion team and other contributors
-* @esbuild/aix-ppc64 0.24.2
-* @esbuild/android-arm 0.24.2
-* @esbuild/android-arm64 0.24.2
-* @esbuild/android-x64 0.24.2
-* @esbuild/darwin-arm64 0.24.2
-* @esbuild/darwin-x64 0.24.2
-* @esbuild/freebsd-arm64 0.24.2
-* @esbuild/freebsd-x64 0.24.2
-* @esbuild/linux-arm 0.24.2
-* @esbuild/linux-arm64 0.24.2
-* @esbuild/linux-ia32 0.24.2
-* @esbuild/linux-loong64 0.24.2
-* @esbuild/linux-mips64el 0.24.2
-* @esbuild/linux-ppc64 0.24.2
-* @esbuild/linux-riscv64 0.24.2
-* @esbuild/linux-s390x 0.24.2
-* @esbuild/linux-x64 0.25.9
-* @esbuild/netbsd-arm64 0.24.2
-* @esbuild/netbsd-x64 0.24.2
-* @esbuild/openbsd-arm64 0.24.2
-* @esbuild/openbsd-x64 0.24.2
-* @esbuild/sunos-x64 0.24.2
-* @esbuild/win32-arm64 0.24.2
-* @esbuild/win32-ia32 0.24.2
-* @esbuild/win32-x64 0.24.2
-* @eslint-community/eslint-utils 4.7.0, Copyright (c) 2018 Toru Nagashima
-* @eslint-community/regexpp 4.12.1, Copyright (c) 2018 Toru Nagashima
+* @emotion/unitless 0.8.1, Copyright (c) Emotion team and other contributors
+* @esbuild/linux-x64 0.25.12
+* @eslint-community/eslint-utils 4.9.0, Copyright (c) 2018 Toru Nagashima
+* @eslint-community/regexpp 4.12.2, Copyright (c) 2018 Toru Nagashima
 * @eslint/eslintrc 3.3.1, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>
-* @eslint/js 9.29.0, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>
+* @eslint/js 9.39.1, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>
 * @exodus/schemasafe 1.3.0, Copyright (c) 2014 Mathias Buus. Copyright (c) 2020 Exodus Movement
 * @faker-js/faker 8.4.1
-* @fastify/busboy 2.1.1, Copyright Brian White. All rights reserved.
-* @floating-ui/core 1.7.0, Copyright (c) 2021-present Floating UI contributors
-* @floating-ui/dom 1.7.0, Copyright (c) 2021-present Floating UI contributors
-* @floating-ui/utils 0.2.9, Copyright (c) 2021-present Floating UI contributors
-* @floating-ui/vue 1.1.6, Copyright (c) 2021 Floating UI contributors
-* @fontsource/open-sans 4.5.14
-* @fortawesome/fontawesome-common-types 0.2.36
-* @fortawesome/fontawesome-svg-core 1.2.36
-* @fortawesome/vue-fontawesome 3.0.3, Copyright 2018 Fonticons, Inc.
+* @floating-ui/core 1.7.3, Copyright (c) 2021-present Floating UI contributors
+* @floating-ui/dom 1.7.4, Copyright (c) 2021-present Floating UI contributors
+* @floating-ui/utils 0.2.10, Copyright (c) 2021-present Floating UI contributors
+* @floating-ui/vue 1.1.9, Copyright (c) 2021 Floating UI contributors
 * @gar/promisify 1.1.3, Copyright © 2020-2022 Michael Garvin
 * @graphql-typed-document-node/core 3.2.0, Copyright (c) 2020-2023 Dotan Simha
 * @huggingface/inference 4.0.5, Copyright (c) 2022 Tim Mikeladze and the Hugging Face team
 * @huggingface/jinja 0.5.1, Copyright (c) 2023 Hugging Face
-* @huggingface/tasks 0.19.34, Copyright (c) 2023 Hugging Face
+* @huggingface/tasks 0.19.63, Copyright (c) 2023 Hugging Face
 * @icetee/ftp 0.3.15, Copyright Brian White. All rights reserved.
-* @iconify/json 2.2.354
+* @iconify/json 2.2.407
 * @iconify/types 2.0.0, Copyright (c) 2021 - 2022 Vjacheslav Trushkin / Iconify OÜ
-* @iconify/utils 2.1.25, Copyright (c) 2021-PRESENT Vjacheslav Trushkin
-* @intlify/core-base 11.1.10, Copyright (c) 2020 kazuya kawaguchi
-* @intlify/message-compiler 11.1.10, Copyright (c) 2020 kazuya kawaguchi
-* @intlify/shared 11.1.10, Copyright (c) 2020 kazuya kawaguchi
+* @iconify/utils 2.3.0, Copyright (c) 2021-PRESENT Vjacheslav Trushkin
+* @intlify/core-base 11.1.12, Copyright (c) 2020 kazuya kawaguchi
+* @intlify/message-compiler 11.1.12, Copyright (c) 2020 kazuya kawaguchi
+* @intlify/shared 11.1.12, Copyright (c) 2020 kazuya kawaguchi
 * @ioredis/as-callback 3.0.0, Copyright (c) 2018-2022 Zihua Li. Copyright (c) 2013-2017 Petka Antonov
-* @ioredis/commands 1.2.0, Copyright (c) 2022 Zihua Li. Copyright (c) 2015 NodeRedis
+* @ioredis/commands 1.5.0, Copyright (c) 2022 Zihua Li. Copyright (c) 2015 NodeRedis
 * @isaacs/balanced-match 4.0.1
 * @isaacs/brace-expansion 5.0.0, Copyright Julian Gruber <julian@juliangruber.com>
 * @istanbuljs/schema 0.1.3, Copyright (c) 2019 CFWare, LLC
-* @jest/console 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/core 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/environment 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/expect 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/expect-utils 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/fake-timers 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/globals 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/reporters 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/console 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/core 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/environment 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/expect 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/expect-utils 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/fake-timers 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/globals 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/reporters 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
 * @jest/schemas 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/source-map 29.6.0, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/test-result 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/test-sequencer 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/transform 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* @jest/types 29.6.1, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/source-map 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/test-result 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/test-sequencer 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/transform 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* @jest/types 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
 * @jridgewell/gen-mapping 0.3.13, Copyright 2024 Justin Ridgewell <justin@ridgewell.name>
+* @jridgewell/remapping 2.3.5, Copyright 2024 Justin Ridgewell <justin@ridgewell.name>
 * @jridgewell/resolve-uri 3.1.2, Copyright 2019 Justin Ridgewell <jridgewell@google.com>
 * @jridgewell/source-map 0.3.11, Copyright 2024 Justin Ridgewell <justin@ridgewell.name>
-* @jridgewell/sourcemap-codec 1.5.0, Copyright (c) 2015 Rich Harris
-* @jridgewell/trace-mapping 0.3.30, Copyright 2024 Justin Ridgewell <justin@ridgewell.name>
+* @jridgewell/sourcemap-codec 1.5.5, Copyright 2024 Justin Ridgewell <justin@ridgewell.name>
+* @jridgewell/trace-mapping 0.3.31, Copyright 2024 Justin Ridgewell <justin@ridgewell.name>
 * @js-sdsl/ordered-map 4.4.2, Copyright (c) 2021 Zilong Yao
-* @jsdevtools/ez-spawn 3.0.4, Copyright (c) 2016 Randall Krauskopf
 * @jsdevtools/ono 7.1.3, Copyright (c) 2015 James Messinger
 * @jsep-plugin/assignment 1.3.0, Copyright (c) 2013 Stephen Oney, https://ericsmekens.github.io/jsep/
 * @jsep-plugin/regex 1.0.4, Copyright (c) 2013 Stephen Oney, https://ericsmekens.github.io/jsep/
-* @keyv/serialize 1.1.0, Copyright (c) 2017-2021 Luke Childs. Copyright (c) 2021-2022 Jared Wray
-* @kurkle/color 0.3.2, Copyright (c) 2018-2021 Jukka Kurkela
+* @keyv/bigmap 1.2.0, Copyright (c) Jared Wray
+* @keyv/serialize 1.1.1, Copyright (c) 2017-2021 Luke Childs. Copyright (c) 2021-2022 Jared Wray
+* @kurkle/color 0.3.4, Copyright (c) 2018-2024 Jukka Kurkela
 * @kwsites/file-exists 1.1.1, Copyright (c) 2015 Steve King
 * @kwsites/promise-deferred 1.1.1, Copyright (c) 2018 kwsites
 * @langchain/anthropic 0.3.26, Copyright (c) Harrison Chase
@@ -880,62 +840,53 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @langchain/cohere 0.3.4, Copyright (c) 2023 LangChain
 * @langchain/community 0.3.50, Copyright (c) 2023 LangChain
 * @langchain/core 0.3.68, Copyright (c) Harrison Chase
-* @langchain/google-common 0.2.13, Copyright (c) 2023 LangChain
-* @langchain/google-gauth 0.2.13, Copyright (c) 2023 LangChain
-* @langchain/google-genai 0.2.13, Copyright (c) 2023 LangChain
-* @langchain/google-vertexai 0.2.13, Copyright (c) 2023 LangChain
+* @langchain/google-common 0.2.18, Copyright (c) 2023 LangChain
+* @langchain/google-gauth 0.2.18, Copyright (c) 2023 LangChain
+* @langchain/google-genai 0.2.17, Copyright (c) 2023 LangChain
+* @langchain/google-vertexai 0.2.18, Copyright (c) 2023 LangChain
 * @langchain/groq 0.2.3, Copyright (c) 2023 LangChain
 * @langchain/langgraph 0.2.74, Copyright (c) 2024 LangChain
-* @langchain/langgraph-checkpoint 0.0.17, Copyright (c) 2024 LangChain
-* @langchain/langgraph-sdk 0.0.70, Copyright (c) 2024 LangChain, Inc.
-* @langchain/mistralai 0.2.1, Copyright (c) 2023 LangChain
-* @langchain/mongodb 0.1.0, Copyright (c) 2023 LangChain
+* @langchain/langgraph-checkpoint 0.0.18, Copyright (c) 2024 LangChain
+* @langchain/langgraph-sdk 0.0.112, Copyright (c) 2024 LangChain, Inc.
+* @langchain/mistralai 0.2.3, Copyright (c) 2023 LangChain
+* @langchain/mongodb 0.1.1, Copyright (c) 2023 LangChain
 * @langchain/ollama 0.2.3, Copyright (c) 2023 LangChain
-* @langchain/openai 0.6.7, Copyright (c) Harrison Chase
+* @langchain/openai 0.6.16, Copyright (c) Harrison Chase
 * @langchain/pinecone 0.2.0, Copyright (c) 2023 LangChain
 * @langchain/qdrant 0.1.2, Copyright (c) 2023 LangChain
 * @langchain/redis 0.1.1, Copyright (c) 2023 LangChain
 * @langchain/textsplitters 0.1.0, Copyright (c) 2023 LangChain
 * @langchain/weaviate 0.2.0, Copyright (c) 2023 LangChain
-* @lezer/common 1.1.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @lezer/css 1.1.1, Copyright (C) 2018 by Marijn Haverbeke <marijnh@gmail.com> and others
-* @lezer/generator 1.7.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @lezer/highlight 1.1.1, Copyright (C) 2018 by Marijn Haverbeke <marijnh@gmail.com> and others
-* @lezer/html 1.3.0, Copyright (C) 2018 by Marijn Haverbeke <marijnh@gmail.com> and others
-* @lezer/javascript 1.0.2, Copyright (C) 2018 by Marijn Haverbeke <marijnh@gmail.com> and others
-* @lezer/json 1.0.0, Copyright (C) 2020 by Marijn Haverbeke <marijnh@gmail.com>, Arun Srinivasan <rulfzid@gmail.com>, and others
-* @lezer/lr 1.4.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* @lezer/python 1.1.5, Copyright (C) 2020 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/common 1.3.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/css 1.3.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/generator 1.8.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/highlight 1.2.3, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/html 1.3.12, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/javascript 1.5.4, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/json 1.0.3, Copyright (C) 2020 by Marijn Haverbeke <marijn@haverbeke.berlin>, Arun Srinivasan <rulfzid@gmail.com>, and others
+* @lezer/lr 1.4.3, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* @lezer/python 1.1.18, Copyright (C) 2020 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
 * @marijn/find-cluster-break 1.0.2, Copyright (C) 2024 by Marijn Haverbeke <marijn@haverbeke.berlin>
-* @mdx-js/react 3.0.1, Copyright (c) 2017 Compositor and Vercel, Inc.
-* @microsoft/api-extractor 7.52.1, Copyright (c) Microsoft Corporation. All rights reserved.
-* @microsoft/api-extractor-model 7.30.4, Copyright (c) Microsoft Corporation. All rights reserved.
-* @microsoft/tsdoc 0.15.1, Copyright (c) Microsoft Corporation. All rights reserved.
-* @microsoft/tsdoc-config 0.17.1, Copyright (c) Microsoft Corporation. All rights reserved.
+* @mdx-js/react 3.1.1, Copyright (c) 2017 Compositor and Vercel, Inc.
+* @microsoft/api-extractor 7.55.0, Copyright (c) Microsoft Corporation. All rights reserved.
+* @microsoft/api-extractor-model 7.32.0, Copyright (c) Microsoft Corporation. All rights reserved.
+* @microsoft/tsdoc 0.16.0, Copyright (c) Microsoft Corporation. All rights reserved.
+* @microsoft/tsdoc-config 0.18.0, Copyright (c) Microsoft Corporation. All rights reserved.
 * @miragejs/pretender-node-polyfill 0.1.2
-* @modelcontextprotocol/sdk 1.12.0, Copyright (c) 2024 Anthropic, PBC
-* @mongodb-js/saslprep 1.1.9, Copyright (c) 2014 Dmitry Tsvettsikh
-* @msgpackr-extract/msgpackr-extract-darwin-arm64 3.0.3
-* @msgpackr-extract/msgpackr-extract-darwin-x64 3.0.3
-* @msgpackr-extract/msgpackr-extract-linux-arm 3.0.3
-* @msgpackr-extract/msgpackr-extract-linux-arm64 3.0.3
-* @msgpackr-extract/msgpackr-extract-linux-x64 3.0.2
-* @msgpackr-extract/msgpackr-extract-win32-x64 3.0.3
-* @mswjs/interceptors 0.37.5, Copyright (c) 2018–present Artem Zakharchenko
-* @napi-rs/canvas 0.1.70, Copyright (c) 2020 lynweklm@gmail.com
-* @napi-rs/canvas-linux-x64-gnu 0.1.70
-* @napi-rs/canvas-linux-x64-musl 0.1.70
-* @napi-rs/wasm-runtime 0.2.12, Copyright (c) 2020-present LongYinan*
-* @ngneat/falso 7.4.0
+* @modelcontextprotocol/sdk 1.20.0, Copyright (c) 2024 Anthropic, PBC
+* @mongodb-js/saslprep 1.3.2, Copyright (c) 2014 Dmitry Tsvettsikh
+* @msgpackr-extract/msgpackr-extract-linux-x64 3.0.3
+* @mswjs/interceptors 0.39.8, Copyright (c) 2018–present Artem Zakharchenko
+* @napi-rs/canvas 0.1.82, Copyright (c) 2020 lynweklm@gmail.com
+* @napi-rs/canvas-linux-x64-gnu 0.1.82
 * @noble/hashes 1.8.0, Copyright (c) 2022 Paul Miller (https://paulmillr.com)
 * @nodelib/fs.scandir 2.1.5, Copyright (c) Denis Malinochkin
 * @nodelib/fs.stat 2.0.5, Copyright (c) Denis Malinochkin
 * @nodelib/fs.walk 1.2.8, Copyright (c) Denis Malinochkin
-* @nolyfill/is-core-module 1.0.39, Copyright (c) 2023 Sukka
 * @npmcli/move-file 1.1.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com). Copyright (c) npm, Inc.
 * @oclif/core 4.0.7, Copyright (c) 2018 Salesforce.com
-* @oclif/test 4.1.13, Copyright (c) 2018 Salesforce.com
-* @one-ini/wasm 0.1.1, Copyright (c) 2019 Jed Mao
+* @oclif/test 4.1.15, Copyright (c) 2018 Salesforce.com
+* @one-ini/wasm 0.2.0, Copyright (c) 2019 Jed Mao
 * @open-draft/deferred-promise 2.2.0
 * @open-draft/logger 0.3.0, Copyright (c) 2023—present Artem Zakharchenko
 * @open-draft/until 2.1.0, Copyright (c) 2021 Artem Zakharchenko
@@ -944,113 +895,79 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @otplib/plugin-thirty-two 12.0.1, Copyright (c) 2014 Gerald Yeo <contact@fusedthought.com>
 * @otplib/preset-default 12.0.1, Copyright (c) 2014 Gerald Yeo <contact@fusedthought.com>
 * @otplib/preset-v11 12.0.1, Copyright (c) 2014 Gerald Yeo <contact@fusedthought.com>
-* @paralleldrive/cuid2 2.2.2, Copyright (c) 2022 Eric Elliott
+* @oxc-project/runtime 0.97.0, Copyright (c) 2024-present VoidZero Inc. & Contributors. Copyright (c) 2023 Boshen
+* @oxc-project/types 0.95.0, Copyright (c) 2024-present VoidZero Inc. & Contributors. Copyright (c) 2023 Boshen
+* @paralleldrive/cuid2 2.3.1, Copyright (c) 2022 Eric Elliott
 * @parcel/watcher 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-android-arm64 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-darwin-arm64 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-darwin-x64 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-freebsd-x64 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-linux-arm-glibc 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-linux-arm-musl 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-linux-arm64-glibc 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-linux-arm64-musl 2.5.1, Copyright (c) 2017-present Devon Govett
 * @parcel/watcher-linux-x64-glibc 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-linux-x64-musl 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-win32-arm64 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-win32-ia32 2.5.1, Copyright (c) 2017-present Devon Govett
-* @parcel/watcher-win32-x64 2.5.1, Copyright (c) 2017-present Devon Govett
-* @petamoriken/float16 3.9.2, Copyright (c) 2017-2025 Kenta Moriuchi
-* @pinia/testing 0.1.6, Copyright (c) 2019-present Eduardo San Martin Morote
+* @petamoriken/float16 3.9.3, Copyright (c) 2017-2025 Kenta Moriuchi
+* @pinia/testing 0.1.7, Copyright (c) 2019-present Eduardo San Martin Morote
+* @pinojs/redact 0.4.0, Copyright (c) 2025 pinojs contributors
 * @pkgjs/parseargs 0.11.0
 * @qdrant/openapi-typescript-fetch 1.2.6, Copyright 2021 Ajai Shankar
+* @quansync/fs 0.1.5, Copyright © 2024 三咲智子 Kevin Deng (https://github.com/sxzz)
 * @redis/bloom 1.2.0
-* @redis/client 1.5.13
+* @redis/client 1.5.16
 * @redis/graph 1.1.1
 * @redis/json 1.0.6
 * @redis/search 1.1.6
 * @redis/time-series 1.0.5
-* @redocly/ajv 8.11.2, Copyright (c) 2015-2021 Evgeny Poberezkin
-* @redocly/cli 1.28.5
-* @redocly/config 0.20.3, Copyright 2024 Redocly Inc.
-* @redocly/openapi-core 1.28.5
+* @redocly/ajv 8.17.1, Copyright (c) 2015-2021 Evgeny Poberezkin
+* @redocly/cli 1.34.5
+* @redocly/config 0.22.2, Copyright 2024 Redocly Inc.
+* @redocly/openapi-core 1.34.5
 * @redocly/respect-core 1.34.5
 * @replit/codemirror-indentation-markers 6.5.3, Copyright (c) 2022 Replit
+* @rolldown/binding-linux-x64-gnu 1.0.0-beta.45
+* @rolldown/pluginutils 1.0.0-beta.45, Copyright (c) 2024-present VoidZero Inc. & Contributors
 * @rollup/plugin-inject 5.0.5
-* @rollup/pluginutils 5.1.4, Copyright (c) 2019 RollupJS Plugin Contributors (https://github.com/rollup/plugins/graphs/contributors)
-* @rollup/rollup-android-arm-eabi 4.50.0
-* @rollup/rollup-android-arm64 4.50.0
-* @rollup/rollup-darwin-arm64 4.50.0
-* @rollup/rollup-darwin-x64 4.50.0
-* @rollup/rollup-freebsd-arm64 4.50.0
-* @rollup/rollup-freebsd-x64 4.50.0
-* @rollup/rollup-linux-arm-gnueabihf 4.50.0
-* @rollup/rollup-linux-arm-musleabihf 4.50.0
-* @rollup/rollup-linux-arm64-gnu 4.50.0
-* @rollup/rollup-linux-arm64-musl 4.50.0
-* @rollup/rollup-linux-loongarch64-gnu 4.50.0
-* @rollup/rollup-linux-ppc64-gnu 4.50.0
-* @rollup/rollup-linux-riscv64-gnu 4.50.0
-* @rollup/rollup-linux-riscv64-musl 4.50.0
-* @rollup/rollup-linux-s390x-gnu 4.50.0
-* @rollup/rollup-linux-x64-gnu 4.46.2
-* @rollup/rollup-linux-x64-musl 4.46.2
-* @rollup/rollup-openharmony-arm64 4.50.0
-* @rollup/rollup-win32-arm64-msvc 4.50.0
-* @rollup/rollup-win32-ia32-msvc 4.50.0
-* @rollup/rollup-win32-x64-msvc 4.50.0
+* @rollup/pluginutils 5.3.0, Copyright (c) 2019 RollupJS Plugin Contributors (https://github.com/rollup/plugins/graphs/contributors)
+* @rollup/rollup-linux-x64-gnu 4.53.2
 * @rtsao/scc 1.1.0, Copyright (c) 2019 Ryan Tsao
-* @rushstack/node-core-library 5.12.0, Copyright (c) Microsoft Corporation. All rights reserved.
-* @rushstack/rig-package 0.5.3, Copyright (c) Microsoft Corporation. All rights reserved.
-* @rushstack/terminal 0.15.1, Copyright (c) Microsoft Corporation. All rights reserved.
-* @rushstack/ts-command-line 4.23.6, Copyright (c) Microsoft Corporation. All rights reserved.
+* @rushstack/node-core-library 5.18.0, Copyright (c) Microsoft Corporation. All rights reserved.
+* @rushstack/problem-matcher 0.1.1, Copyright (c) Microsoft Corporation. All rights reserved.
+* @rushstack/rig-package 0.6.0, Copyright (c) Microsoft Corporation. All rights reserved.
+* @rushstack/terminal 0.19.3, Copyright (c) Microsoft Corporation. All rights reserved.
+* @rushstack/ts-command-line 5.1.3, Copyright (c) Microsoft Corporation. All rights reserved.
 * @sec-ant/readable-stream 0.4.1, Copyright (c) 2022 Ze-Zheng Wu
 * @selderee/plugin-htmlparser2 0.11.0, Copyright (c) 2021-2022 KillyMXI <killy@mxii.eu.org>
-* @sentry-internal/browser-utils 9.42.1, Copyright (c) 2020 Functional Software, Inc. dba Sentry
-* @sentry-internal/feedback 9.42.1, Copyright (c) 2023 Functional Software, Inc. dba Sentry
-* @sentry-internal/node-native-stacktrace 0.2.2, Copyright (c) 2025 Functional Software, Inc. dba Sentry
-* @sentry-internal/replay 9.42.1, Copyright (c) 2022 Functional Software, Inc. dba Sentry
-* @sentry-internal/replay-canvas 9.42.1, Copyright (c) 2024 Functional Software, Inc. dba Sentry
-* @sentry/browser 9.42.1, Copyright (c) 2019 Functional Software, Inc. dba Sentry
-* @sentry/core 9.42.1, Copyright (c) 2019 Functional Software, Inc. dba Sentry
-* @sentry/node 9.42.1, Copyright (c) 2023 Functional Software, Inc. dba Sentry
-* @sentry/node-core 9.42.1, Copyright (c) 2025 Functional Software, Inc. dba Sentry
-* @sentry/node-native 9.42.1, Copyright (c) 2025 Functional Software, Inc. dba Sentry
-* @sentry/opentelemetry 9.42.1, Copyright (c) 2023 Functional Software, Inc. dba Sentry
-* @sentry/vue 9.42.1, Copyright (c) 2019 Functional Software, Inc. dba Sentry
+* @sentry-internal/browser-utils 9.46.0, Copyright (c) 2020 Functional Software, Inc. dba Sentry
+* @sentry-internal/feedback 9.46.0, Copyright (c) 2023 Functional Software, Inc. dba Sentry
+* @sentry-internal/node-native-stacktrace 0.2.3, Copyright (c) 2025 Functional Software, Inc. dba Sentry
+* @sentry-internal/replay 9.46.0, Copyright (c) 2022 Functional Software, Inc. dba Sentry
+* @sentry-internal/replay-canvas 9.46.0, Copyright (c) 2024 Functional Software, Inc. dba Sentry
+* @sentry/babel-plugin-component-annotate 4.6.0, Copyright (c) 2024, Sentry. All rights reserved.
+* @sentry/browser 9.46.0, Copyright (c) 2019 Functional Software, Inc. dba Sentry
+* @sentry/bundler-plugin-core 4.6.0, Copyright (c) 2022, Sentry. All rights reserved.
+* @sentry/core 9.46.0, Copyright (c) 2019 Functional Software, Inc. dba Sentry
+* @sentry/node 9.46.0, Copyright (c) 2023 Functional Software, Inc. dba Sentry
+* @sentry/node-core 9.46.0, Copyright (c) 2025 Functional Software, Inc. dba Sentry
+* @sentry/node-native 9.46.0, Copyright (c) 2025 Functional Software, Inc. dba Sentry
+* @sentry/opentelemetry 9.46.0, Copyright (c) 2023 Functional Software, Inc. dba Sentry
+* @sentry/vite-plugin 4.6.0, Copyright (c) 2022, Sentry. All rights reserved.
+* @sentry/vue 9.46.0, Copyright (c) 2019 Functional Software, Inc. dba Sentry
 * @sevinf/maybe 0.5.0, Copyright (c) 2019 Sergey Tatarintsev
-* @sinclair/typebox 0.25.21, Copyright (c) 2017-2023 Haydn Paterson (sinclair) <haydn.developer@gmail.com>
+* @sinclair/typebox 0.27.8, Copyright (c) 2017-2023 Haydn Paterson (sinclair) <haydn.developer@gmail.com>
 * @sindresorhus/merge-streams 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* @sqltools/formatter 1.2.5, Copyright (c) 2019-present Matheus Teixeira
-* @storybook/addon-a11y 8.6.4
-* @storybook/addon-actions 8.6.4
-* @storybook/addon-backgrounds 8.6.4
-* @storybook/addon-controls 8.6.4
-* @storybook/addon-docs 8.6.4
-* @storybook/addon-essentials 8.6.4
-* @storybook/addon-highlight 8.6.4
-* @storybook/addon-interactions 8.6.4
-* @storybook/addon-links 8.6.4
-* @storybook/addon-measure 8.6.4
-* @storybook/addon-outline 8.6.4
-* @storybook/addon-themes 8.6.4
-* @storybook/addon-toolbars 8.6.4
-* @storybook/addon-viewport 8.6.4
-* @storybook/blocks 8.6.4
-* @storybook/builder-vite 8.6.4
-* @storybook/components 8.6.4
-* @storybook/core 8.6.4
-* @storybook/csf-plugin 8.6.4
+* @so-ric/colorspace 1.1.6, Copyright (c) 2015 Arnout Kazemier, Martijn Swaagman, the Contributors.
+* @storybook/addon-a11y 9.1.7
+* @storybook/addon-actions 9.0.8
+* @storybook/addon-docs 9.1.7
+* @storybook/addon-links 9.1.7
+* @storybook/addon-themes 9.1.7
+* @storybook/builder-vite 9.1.7
+* @storybook/components 8.6.14
+* @storybook/core-events 8.6.14
+* @storybook/csf-plugin 9.1.7
 * @storybook/global 5.0.0, Copyright (c) 2022 Norbert de Langen.
-* @storybook/icons 1.2.12, Copyright (c) 2022 Tim Mikeladze
-* @storybook/instrumenter 8.6.4
-* @storybook/manager-api 8.6.4
-* @storybook/preview-api 8.6.4
-* @storybook/react-dom-shim 8.6.4
-* @storybook/test 8.6.4
-* @storybook/theming 8.6.4
-* @storybook/vue3 8.6.4
-* @storybook/vue3-vite 8.6.4
-* @stylistic/eslint-plugin 5.0.0, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>. Copyright (c) 2023-PRESENT ESLint Stylistic contributors
+* @storybook/icons 1.6.0, Copyright (c) 2022 Tim Mikeladze
+* @storybook/manager-api 8.6.14
+* @storybook/react-dom-shim 9.1.7
+* @storybook/theming 8.6.14
+* @storybook/types 8.6.14
+* @storybook/vue3 9.1.7
+* @storybook/vue3-vite 9.1.7
+* @stylistic/eslint-plugin 5.5.0, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>. Copyright (c) 2023-PRESENT ESLint Stylistic contributors
 * @supabase/auth-js 2.69.1, Copyright (c) 2020 Supabase
 * @supabase/functions-js 2.4.4, Copyright (c) 2020 Supabase
 * @supabase/node-fetch 2.6.15, Copyright (c) 2016 David Frank
@@ -1058,18 +975,18 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @supabase/realtime-js 2.11.9, Copyright (c) 2020 Supabase
 * @supabase/storage-js 2.7.1
 * @supabase/supabase-js 2.49.9, Copyright (c) 2020 Supabase
-* @supercharge/promise-pool 3.1.0, Copyright (c) 2019 The Supercharge Node.js Framework
+* @supercharge/promise-pool 3.2.0, Copyright (c) 2019 The Supercharge Node.js Framework
 * @sxzz/popperjs-es 2.11.7, Copyright (c) 2019 Federico Zivolo
-* @tanstack/table-core 8.21.2, Copyright (c) 2016 Tanner Linsley
-* @tanstack/virtual-core 3.13.9, Copyright (c) 2021-present Tanner Linsley
-* @tanstack/vue-table 8.21.2, Copyright (c) 2016 Tanner Linsley
-* @tanstack/vue-virtual 3.13.9, Copyright (c) 2021-present Tanner Linsley
+* @tanstack/table-core 8.21.3, Copyright (c) 2016 Tanner Linsley
+* @tanstack/virtual-core 3.13.12, Copyright (c) 2021-present Tanner Linsley
+* @tanstack/vue-table 8.21.3, Copyright (c) 2016 Tanner Linsley
+* @tanstack/vue-virtual 3.13.12, Copyright (c) 2021-present Tanner Linsley
 * @techteamer/ocsp 1.0.1, Copyright (c) 2022 forkfork2
 * @tediousjs/connection-string 0.5.0, Copyright (c) 2022 Daniel Hensby
-* @testcontainers/postgresql 11.0.3, Copyright (c) 2018 - 2025 Cristian Greco
-* @testcontainers/redis 11.0.3, Copyright (c) 2018 - 2025 Cristian Greco
-* @testing-library/dom 10.4.0
-* @testing-library/jest-dom 6.6.3
+* @testcontainers/postgresql 11.8.1, Copyright (c) 2018 - 2025 Cristian Greco
+* @testcontainers/redis 11.8.1, Copyright (c) 2018 - 2025 Cristian Greco
+* @testing-library/dom 9.3.4
+* @testing-library/jest-dom 6.9.1
 * @testing-library/user-event 14.6.1
 * @testing-library/vue 8.1.0
 * @tokenizer/token 0.3.0, Copyright (c) 2020 Borewit
@@ -1079,228 +996,190 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @ts-graphviz/common 2.1.5, Copyright (c) 2019-2024 Yuki Yamazaki
 * @ts-graphviz/core 2.0.7, Copyright (c) 2019-2025 Yuki Yamazaki
 * @ts-morph/common 0.27.0, Copyright (c) 2017 David Sherret
-* @tsconfig/node10 1.0.11, Copyright (c) Microsoft Corporation.
-* @tsconfig/node12 1.0.11, Copyright (c) Microsoft Corporation.
-* @tsconfig/node14 1.0.3, Copyright (c) Microsoft Corporation.
-* @tsconfig/node16 1.0.4, Copyright (c) Microsoft Corporation.
-* @tybys/wasm-util 0.10.0
-* @types/amqplib 0.10.1
+* @types/amqplib 0.10.8
 * @types/argparse 1.0.38
-* @types/aria-query 5.0.1
-* @types/asn1 0.2.0
-* @types/aws4 1.11.2
-* @types/babel__core 7.20.0
-* @types/babel__generator 7.6.4
-* @types/babel__template 7.4.1
-* @types/babel__traverse 7.18.2
-* @types/basic-auth 1.1.3
-* @types/bcryptjs 2.4.2
-* @types/bluebird 3.5.37
-* @types/body-parser 1.19.2
+* @types/aria-query 5.0.4
+* @types/asn1 0.2.4
+* @types/aws4 1.11.6
+* @types/babel__core 7.20.5
+* @types/babel__generator 7.6.8
+* @types/babel__template 7.4.4
+* @types/babel__traverse 7.28.0
+* @types/basic-auth 1.1.8
+* @types/bcryptjs 2.4.6
+* @types/bluebird 3.5.42
+* @types/body-parser 1.19.6
 * @types/caseless 0.12.5
-* @types/chai 5.2.2
-* @types/cheerio 0.22.31
+* @types/chai 5.2.3
+* @types/cheerio 0.22.35
 * @types/cli-progress 3.11.6
-* @types/compression 1.7.5
-* @types/concat-stream 2.0.3
+* @types/compression 1.8.1
 * @types/connect 3.4.38
-* @types/convict 6.1.1
-* @types/cookie-parser 1.4.8
+* @types/convict 6.1.6
+* @types/cookie-parser 1.4.10
 * @types/cookiejar 2.1.5
 * @types/dateformat 3.0.1
 * @types/debug 4.1.12
 * @types/deep-eql 4.0.2
-* @types/deep-equal 1.0.4
 * @types/docker-modem 3.0.6
-* @types/dockerode 3.3.42
+* @types/dockerode 3.3.46
 * @types/eslint 9.6.1
 * @types/estree 1.0.8
-* @types/eventsource 1.1.9
-* @types/express 5.0.1
-* @types/express-serve-static-core 5.0.6
-* @types/file-saver 2.0.5
+* @types/eventsource 1.1.15
+* @types/express 5.0.5
+* @types/express-serve-static-core 5.1.0
+* @types/file-saver 2.0.7
 * @types/flat 5.0.5
-* @types/formidable 3.4.5
-* @types/fs-extra 11.0.4
-* @types/ftp 0.3.33
-* @types/glob 8.0.0
-* @types/gm 1.25.0
-* @types/graceful-fs 4.1.6
+* @types/formidable 3.4.6
+* @types/ftp 0.3.36
+* @types/gm 1.25.4
+* @types/graceful-fs 4.1.9
 * @types/html-to-text 9.0.4
 * @types/http-errors 2.0.5
-* @types/http-proxy 1.17.16
-* @types/humanize-duration 3.27.1
-* @types/imap 0.8.40
+* @types/http-proxy 1.17.17
+* @types/humanize-duration 3.27.4
+* @types/imap 0.8.42
 * @types/inquirer 6.5.0
-* @types/ioredis-mock 8.2.2
-* @types/istanbul-lib-coverage 2.0.4
-* @types/istanbul-lib-report 3.0.0
-* @types/istanbul-reports 3.0.1
-* @types/jest 29.5.3
-* @types/jmespath 0.15.0
-* @types/js-nacl 1.3.0
+* @types/ioredis-mock 8.2.6
+* @types/istanbul-lib-coverage 2.0.6
+* @types/istanbul-lib-report 3.0.3
+* @types/istanbul-reports 3.0.4
+* @types/jest 29.5.14
+* @types/jmespath 0.15.2
+* @types/js-nacl 1.3.4
 * @types/jsdom 20.0.1
-* @types/json-diff 1.0.0
+* @types/json-diff 1.0.3
 * @types/json-schema 7.0.15
-* @types/jsonfile 6.1.4
-* @types/jsonpath 0.2.0
-* @types/jsonwebtoken 9.0.9
+* @types/jsonpath 0.2.4
+* @types/jsonwebtoken 9.0.10
 * @types/k6 0.52.0
 * @types/linkify-it 3.0.5
 * @types/lodash 4.17.17
 * @types/lodash-es 4.17.12
 * @types/long 4.0.2
-* @types/lossless-json 1.0.1
+* @types/lossless-json 1.0.4
 * @types/luxon 3.2.0
-* @types/mailparser 3.4.4
+* @types/mailparser 3.4.6
 * @types/markdown-it 13.0.9
 * @types/markdown-it-emoji 2.0.5
 * @types/markdown-it-link-attributes 3.0.5
-* @types/md5 2.3.5
+* @types/md5 2.3.6
 * @types/mdurl 1.0.5
-* @types/mdx 2.0.3
+* @types/mdx 2.0.13
 * @types/methods 1.1.4
-* @types/mime 3.0.1
-* @types/mime-types 2.1.1
-* @types/minimatch 5.1.2
+* @types/mime 1.3.5
+* @types/mime-types 2.1.4
 * @types/ms 2.1.0
-* @types/mssql 9.1.5
-* @types/multer 1.4.12
+* @types/mssql 9.1.8
+* @types/multer 1.4.13
 * @types/mysql 2.15.26
-* @types/node 20.17.57
+* @types/node 20.19.25
 * @types/node-fetch 2.6.13
-* @types/nodemailer 6.4.14
-* @types/normalize-package-data 2.4.4
-* @types/pg 8.11.6
+* @types/nodemailer 7.0.3
+* @types/oracledb 6.10.0
+* @types/pg 8.15.6
 * @types/pg-pool 2.0.6
 * @types/phoenix 1.6.6
-* @types/promise-ftp 1.3.4
-* @types/promise-ftp-common 1.1.0
-* @types/prop-types 15.7.15
+* @types/promise-ftp 1.3.9
+* @types/promise-ftp-common 1.1.3
 * @types/proxy-from-env 1.0.4
-* @types/psl 1.1.0
-* @types/qs 6.9.15
+* @types/qs 6.14.0
 * @types/quoted-printable 1.0.2
-* @types/range-parser 1.2.4
-* @types/react 18.0.27
-* @types/readable-stream 4.0.10
-* @types/replacestream 4.0.1
-* @types/request 2.48.12
-* @types/retry 0.12.5
-* @types/rfc2047 2.0.1
-* @types/sanitize-html 2.11.0
-* @types/scheduler 0.26.0
-* @types/semver 7.7.0
-* @types/send 0.17.4
-* @types/serve-static 1.15.0
-* @types/shelljs 0.8.11
+* @types/range-parser 1.2.7
+* @types/react 19.2.5
+* @types/readable-stream 4.0.22
+* @types/replacestream 4.0.4
+* @types/request 2.48.13
+* @types/retry 0.12.0
+* @types/rfc2047 2.0.3
+* @types/sanitize-html 2.16.0
+* @types/semver 7.7.1
+* @types/send 1.2.1
+* @types/serve-static 1.15.10
+* @types/shelljs 0.8.17
 * @types/shimmer 1.2.0
 * @types/showdown 1.9.4
-* @types/sinonjs__fake-timers 8.1.1
-* @types/sizzle 2.3.3
-* @types/snowflake-sdk 1.6.24
-* @types/ssh2 1.11.6
+* @types/ssh2 1.15.5
 * @types/ssh2-sftp-client 9.0.5
-* @types/ssh2-streams 0.1.12
+* @types/ssh2-streams 0.1.13
 * @types/sshpk 1.17.4
-* @types/stack-utils 2.0.1
-* @types/stylis 4.2.0
+* @types/stack-utils 2.0.3
+* @types/stylis 4.2.5
 * @types/superagent 8.1.9
 * @types/supertest 6.0.3
 * @types/swagger-ui-express 4.1.8
-* @types/syslog-client 1.1.2
-* @types/tedious 4.0.9
+* @types/syslog-client 1.1.5
+* @types/tedious 4.0.14
 * @types/temp 0.9.4
-* @types/through 0.0.30
-* @types/tough-cookie 4.0.2
+* @types/through 0.0.33
+* @types/tough-cookie 4.0.5
 * @types/triple-beam 1.3.5
 * @types/trusted-types 2.0.7
-* @types/tunnel 0.0.3
 * @types/utf8 3.0.3
 * @types/uuencode 0.0.3
 * @types/uuid 10.0.0
-* @types/validator 13.7.7
+* @types/validator 13.15.9
 * @types/web-bluetooth 0.0.20
-* @types/webidl-conversions 7.0.0
-* @types/whatwg-url 11.0.4
+* @types/webidl-conversions 7.0.3
+* @types/whatwg-url 11.0.5
 * @types/ws 8.18.1
 * @types/xml2js 0.4.14
-* @types/yamljs 0.2.31
-* @types/yargs 17.0.19
+* @types/yamljs 0.2.34
+* @types/yargs 17.0.35
 * @types/yargs-parser 21.0.0
-* @types/yauzl 2.10.0
-* @typescript-eslint/eslint-plugin 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript-eslint/parser 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript-eslint/project-service 8.35.0, Copyright (c) 2025 typescript-eslint and other contributors
-* @typescript-eslint/rule-tester 8.35.0, Copyright (c) 2023 typescript-eslint and other contributors
-* @typescript-eslint/scope-manager 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript-eslint/tsconfig-utils 8.35.0, Copyright (c) 2025 typescript-eslint and other contributors
-* @typescript-eslint/type-utils 8.35.0, Copyright (c) 2021 typescript-eslint and other contributors
-* @typescript-eslint/types 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript-eslint/typescript-estree 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript-eslint/utils 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript-eslint/visitor-keys 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
-* @typescript/vfs 1.6.0
-* @typespec/ts-http-runtime 0.2.2, Copyright (c) Microsoft Corporation.
-* @unrs/resolver-binding-android-arm-eabi 1.11.1
-* @unrs/resolver-binding-android-arm64 1.11.1
-* @unrs/resolver-binding-darwin-arm64 1.11.1
-* @unrs/resolver-binding-darwin-x64 1.11.1
-* @unrs/resolver-binding-freebsd-x64 1.11.1
-* @unrs/resolver-binding-linux-arm-gnueabihf 1.11.1
-* @unrs/resolver-binding-linux-arm-musleabihf 1.11.1
-* @unrs/resolver-binding-linux-arm64-gnu 1.11.1
-* @unrs/resolver-binding-linux-arm64-musl 1.11.1
-* @unrs/resolver-binding-linux-ppc64-gnu 1.11.1
-* @unrs/resolver-binding-linux-riscv64-gnu 1.11.1
-* @unrs/resolver-binding-linux-riscv64-musl 1.11.1
-* @unrs/resolver-binding-linux-s390x-gnu 1.11.1
-* @unrs/resolver-binding-linux-x64-gnu 1.9.2
-* @unrs/resolver-binding-linux-x64-musl 1.9.2
-* @unrs/resolver-binding-wasm32-wasi 1.11.1
-* @unrs/resolver-binding-win32-arm64-msvc 1.11.1
-* @unrs/resolver-binding-win32-ia32-msvc 1.11.1
-* @unrs/resolver-binding-win32-x64-msvc 1.11.1
-* @vitejs/plugin-legacy 6.0.2, Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
+* @typescript-eslint/eslint-plugin 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript-eslint/parser 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript-eslint/project-service 8.46.4, Copyright (c) 2025 typescript-eslint and other contributors
+* @typescript-eslint/rule-tester 8.46.4, Copyright (c) 2023 typescript-eslint and other contributors
+* @typescript-eslint/scope-manager 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript-eslint/tsconfig-utils 8.46.4, Copyright (c) 2025 typescript-eslint and other contributors
+* @typescript-eslint/type-utils 8.46.4, Copyright (c) 2021 typescript-eslint and other contributors
+* @typescript-eslint/types 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript-eslint/typescript-estree 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript-eslint/utils 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript-eslint/visitor-keys 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
+* @typescript/vfs 1.6.2
+* @typespec/ts-http-runtime 0.3.2, Copyright (c) Microsoft Corporation.
+* @unrs/resolver-binding-linux-x64-gnu 1.11.1
+* @vitejs/plugin-legacy 6.1.1, Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
 * @vitejs/plugin-vue 5.2.4, Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
 * @vitest/coverage-v8 3.2.4, Copyright (c) 2021-Present Vitest Team
-* @vitest/expect 2.0.5, Copyright (c) 2021-Present Vitest Team
-* @vitest/mocker 3.1.3, Copyright (c) 2021-Present Vitest Team
+* @vitest/expect 3.2.4, Copyright (c) 2021-Present Vitest Team
+* @vitest/mocker 3.2.4, Copyright (c) 2021-Present Vitest Team
 * @vitest/pretty-format 3.2.4, Copyright (c) 2021-Present Vitest Team
-* @vitest/runner 3.1.3, Copyright (c) 2021-Present Vitest Team
-* @vitest/snapshot 3.1.3, Copyright (c) 2021-Present Vitest Team
-* @vitest/spy 2.0.5, Copyright (c) 2021-Present Vitest Team
-* @vitest/utils 3.1.3, Copyright (c) 2021-Present Vitest Team
-* @volar/language-core 2.4.12, Copyright (c) 2021-present Johnson Chu
-* @volar/source-map 2.4.12, Copyright (c) 2021-present Johnson Chu
-* @volar/typescript 2.4.12, Copyright (c) 2021-present Johnson Chu
+* @vitest/runner 3.2.4, Copyright (c) 2021-Present Vitest Team
+* @vitest/snapshot 3.2.4, Copyright (c) 2021-Present Vitest Team
+* @vitest/spy 3.2.4, Copyright (c) 2021-Present Vitest Team
+* @vitest/utils 3.2.4, Copyright (c) 2021-Present Vitest Team
+* @volar/language-core 2.4.15, Copyright (c) 2021-present Johnson Chu
+* @volar/source-map 2.4.15, Copyright (c) 2021-present Johnson Chu
+* @volar/typescript 2.4.23, Copyright (c) 2021-present Johnson Chu
 * @vue-flow/background 1.3.2, Copyright (c) 2019-2024 webkid GmbH. Copyright (c) 2021-2024 Burak Cakmakoglu
-* @vue-flow/controls 1.1.2, Copyright (c) 2019-2024 webkid GmbH. Copyright (c) 2021-2024 Burak Cakmakoglu
+* @vue-flow/controls 1.1.3, Copyright (c) 2019-2025 webkid GmbH. Copyright (c) 2021-2025 Burak Cakmakoglu
 * @vue-flow/core 1.45.0, Copyright (c) 2019-2025 webkid GmbH. Copyright (c) 2021-2025 Burak Cakmakoglu
-* @vue-flow/minimap 1.5.2, Copyright (c) 2019-2025 webkid GmbH. Copyright (c) 2021-2025 Burak Cakmakoglu
-* @vue-flow/node-resizer 1.4.0, Copyright (c) 2019-2024 webkid GmbH. Copyright (c) 2021-2024 Burak Cakmakoglu
-* @vue/compiler-core 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/compiler-dom 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/compiler-sfc 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/compiler-ssr 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue-flow/minimap 1.5.0, Copyright (c) 2019-2024 webkid GmbH. Copyright (c) 2021-2024 Burak Cakmakoglu
+* @vue-flow/node-resizer 1.5.0, Copyright (c) 2019-2025 webkid GmbH. Copyright (c) 2021-2025 Burak Cakmakoglu
+* @vue/compiler-core 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/compiler-dom 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/compiler-sfc 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/compiler-ssr 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
 * @vue/compiler-vue2 2.7.16
 * @vue/devtools-api 6.6.4
-* @vue/eslint-config-typescript 13.0.0, Copyright (c) 2018-present Evan You
 * @vue/language-core 2.2.0, Copyright (c) 2021-present Johnson Chu
-* @vue/reactivity 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/runtime-core 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/runtime-dom 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/server-renderer 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
-* @vue/shared 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/reactivity 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/runtime-core 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/runtime-dom 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/server-renderer 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
+* @vue/shared 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
 * @vue/test-utils 2.4.6, Copyright (c) 2021-present vuejs
 * @vue/tsconfig 0.7.0, Copyright (c) 2022-present vuejs
-* @vueuse/components 10.11.0, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
-* @vueuse/core 10.11.0, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
-* @vueuse/metadata 10.11.0, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
-* @vueuse/shared 10.11.0, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
-* @vvo/tzdb 6.141.0, Copyright (c) CodeAgain SASU https://codeagain.com/
+* @vueuse/components 10.11.1, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
+* @vueuse/core 10.11.1, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
+* @vueuse/metadata 10.11.1, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
+* @vueuse/shared 10.11.1, Copyright (c) 2019-PRESENT Anthony Fu<https://github.com/antfu>
+* @vvo/tzdb 6.195.0, Copyright (c) CodeAgain SASU https://codeagain.com/
 * @xmldom/is-dom-node 1.0.1, Copyright (c) 2023 Chris Barth
-* @xmldom/xmldom 0.8.10, Copyright 2019 - present Christopher J. Brody and other contributors, as listed in: https://github.com/xmldom/xmldom/graphs/contributors. Copyright 2012 - 2017 @jindw <jindw@xidea.org> and other contributors, as listed in: https://github.com/jindw/xmldom/graphs/contributors
+* @xmldom/xmldom 0.8.11, Copyright 2019 - present Christopher J. Brody and other contributors, as listed in: https://github.com/xmldom/xmldom/graphs/contributors. Copyright 2012 - 2017 @jindw <jindw@xidea.org> and other contributors, as listed in: https://github.com/jindw/xmldom/graphs/contributors
 * abort-controller 3.0.0, Copyright (c) 2017 Toru Nagashima
 * abort-controller-x 0.4.3, Copyright (c) 2020 Deeplay
 * accepts 2.0.0, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
@@ -1309,14 +1188,14 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * acorn-import-attributes 1.9.5, Copyright (c) 2023 Sven Sauleau
 * acorn-jsx 5.3.2, Copyright (C) 2012-2017 by Ingvar Stepanyan
 * acorn-walk 8.3.4, Copyright (C) 2012-2020 by various contributors (see AUTHORS)
-* adm-zip 0.5.10, Copyright (c) 2012 Another-D-Mention Software and other contributors
-* ag-charts-types 12.1.1, Copyright (c) 2015-2025 AG GRID LTD
-* ag-grid-community 34.1.1, Copyright (c) 2015-2025 AG GRID LTD
-* ag-grid-vue3 34.1.1, Copyright (c) 2015-2025 AG GRID LTD
-* agent-base 7.1.3, Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
+* adm-zip 0.5.16, Copyright (c) 2012 Another-D-Mention Software and other contributors
+* ag-charts-types 12.3.1, Copyright (c) 2015-2025 AG GRID LTD
+* ag-grid-community 34.3.1, Copyright (c) 2015-2025 AG GRID LTD
+* ag-grid-vue3 34.3.1, Copyright (c) 2015-2025 AG GRID LTD
+* agent-base 7.1.4, Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
 * agentkeepalive 4.6.0, Copyright(c) node-modules and other contributors.. Copyright(c) 2012 - 2015 fengmk2 <fengmk2@gmail.com>
 * aggregate-error 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* ajv 7.2.4, Copyright (c) 2015-2021 Evgeny Poberezkin
+* ajv 8.17.1, Copyright (c) 2015-2021 Evgeny Poberezkin
 * ajv-draft-04 1.0.0, Copyright (c) 2021 Evgeny Poberezkin
 * ajv-formats 3.0.1, Copyright (c) 2020 Evgeny Poberezkin
 * alasql 4.4.0, Copyright (c) 2014 - present  Andrey Gershun
@@ -1329,15 +1208,15 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * any-promise 1.3.0, Copyright (C) 2014-2016 Kevin Beaty
 * app-root-path 3.1.0, Copyright (c) 2014 Chris Morrell
 * append-field 1.0.0, Copyright (c) 2015 Linus Unnebäck
-* arch 2.2.0, Copyright (c) Feross Aboukhadijeh
+* append-transform 2.0.0, Copyright (c) James Talmage <james@talmage.io> (github.com/jamestalmage)
 * archiver 7.0.1, Copyright (c) 2012-2014 Chris Talkington, contributors.
 * archiver-utils 5.0.2, Copyright (c) 2015 Chris Talkington.
+* archy 1.0.0
 * arg 5.0.2, Copyright (c) 2021 Vercel, Inc.
 * argparse 1.0.10, Copyright (C) 2012 by Vitaly Puzrin
 * aria-hidden 1.2.6, Copyright (c) 2017 Anton Korzunov
-* array-buffer-byte-length 1.0.1, Copyright (c) 2023 Inspect JS
+* array-buffer-byte-length 1.0.2, Copyright (c) 2023 Inspect JS
 * array-find-index 1.0.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* array-flatten 1.1.1, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * array-includes 3.1.9, Copyright (C) 2015 Jordan Harband
 * array-parallel 0.1.3, Copyright (c) 2013 Jonathan Ong me@jongleberry.com
 * array-series 0.1.5, Copyright (c) 2013 Jonathan Ong me@jongleberry.com
@@ -1346,7 +1225,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * array.prototype.flat 1.3.3, Copyright (c) 2017 ECMAScript Shims
 * array.prototype.flatmap 1.3.3, Copyright (c) 2017 ECMAScript Shims
 * array.prototype.tosorted 1.1.4, Copyright (c) 2021 ECMAScript Shims
-* arraybuffer.prototype.slice 1.0.3, Copyright (c) 2023 ECMAScript Shims
+* arraybuffer.prototype.slice 1.0.4, Copyright (c) 2023 ECMAScript Shims
 * arrify 2.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * asap 2.0.6
 * asn1 0.2.6, Copyright (c) 2011 Mark Cavage, All rights reserved.
@@ -1354,15 +1233,16 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * asn1.js-rfc2560 5.0.1
 * asn1.js-rfc5280 3.0.0
 * assert 2.1.0, Copyright Joyent, Inc. and other Node contributors. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
-* assert-never 1.2.1
+* assert-never 1.4.0, Copyright (C) 2017-2024 Daniel Lytkin
 * assert-options 0.8.1
 * assert-plus 1.0.0
 * assertion-error 2.0.1, Copyright (c) 2013 Jake Luer jake@qualiancy.com (http://qualiancy.com)
+* ast-kit 2.2.0, Copyright © 2023-PRESENT Kevin Deng (https://github.com/sxzz)
 * ast-module-types 6.0.1, Copyright (c) 2022 Dependents
 * ast-types 0.15.2, Copyright (c) 2013 Ben Newman <bn@cs.stanford.edu>
-* ast-v8-to-istanbul 0.3.3
+* ast-v8-to-istanbul 0.3.8
 * astral-regex 2.0.0, Copyright (c) Kevin Mårtensson <kevinmartensson@gmail.com> (github.com/kevva)
-* async 3.2.4, Copyright (c) 2010-2018 Caolan McMahon
+* async 3.2.6, Copyright (c) 2010-2018 Caolan McMahon
 * async-function 1.0.0, Copyright (c) 2016 EduardoRFS
 * async-lock 1.4.1, Copyright (c) 2016 Rogier Schouten <github@workingcode.ninja>
 * async-mutex 0.5.0, Copyright (c) 2016 Christian Speckner <cnspeckn@googlemail.com>
@@ -1370,33 +1250,33 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * async-validator 4.2.5, Copyright (c) 2014-present yiminghe
 * asynckit 0.4.0, Copyright (c) 2016 Alex Indigo
 * atomic-sleep 1.0.0
-* autoprefixer 10.4.19, Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
+* autoprefixer 10.4.22, Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
 * available-typed-arrays 1.0.7, Copyright (c) 2020 Inspect JS
-* avsc 5.7.6, Copyright (c) 2015-2017, Matthieu Monsch.
-* aws-ssl-profiles 1.1.1, Copyright (c) 2024 Andrey Sidorov, Douglas Wilson, Weslley Araújo and contributors.
+* avsc 5.7.9, Copyright (c) 2015-2017, Matthieu Monsch.
+* aws-ssl-profiles 1.1.2, Copyright (c) 2024 Andrey Sidorov, Douglas Wilson, Weslley Araújo and contributors.
 * aws4 1.11.0, Copyright 2013 Michael Hart (michael.hart.au@gmail.com)
-* axios 1.8.3
-* babel-jest 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* babel-plugin-jest-hoist 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
-* babel-plugin-polyfill-corejs2 0.4.12, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
-* babel-plugin-polyfill-corejs3 0.11.1, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
-* babel-plugin-polyfill-regenerator 0.6.3, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
-* babel-preset-current-node-syntax 1.0.1, Copyright (c) 2020 Nicolò Ribaudo and other contributors
-* babel-preset-jest 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* axios 1.12.0
+* babel-jest 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* babel-plugin-jest-hoist 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
+* babel-plugin-polyfill-corejs2 0.4.14, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
+* babel-plugin-polyfill-corejs3 0.13.0, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
+* babel-plugin-polyfill-regenerator 0.6.5, Copyright (c) 2014-present Nicolò Ribaudo and other contributors
+* babel-preset-current-node-syntax 1.2.0, Copyright (c) 2020 Nicolò Ribaudo and other contributors
+* babel-preset-jest 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
 * babel-walk 3.0.0-canary-5, Copyright (c) 2016 Tiancheng "Timothy" Gu
 * balanced-match 2.0.0, Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
-* base-64 1.0.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * base64-js 1.5.1, Copyright (c) 2014 Jameson Little
 * basic-auth 2.0.1, Copyright (c) 2013 TJ Holowaychuk. Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2015-2016 Douglas Christopher Wilson <doug@somethingdoug.com>
 * bcryptjs 2.4.3
 * better-opn 3.0.2, Copyright 2018 Michael Lin <linzichunzf@hotmail.com>
-* bignumber.js 9.1.2, Copyright © `<2023>` `Michael Mclaughlin`
-* binary-extensions 2.2.0, Copyright (c) 2019 Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com), Paul Miller (https://paulmillr.com)
+* bignumber.js 9.3.1, Copyright © `<2025>` `Michael Mclaughlin`
+* binary-extensions 2.3.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com). Copyright (c) Paul Miller (https://paulmillr.com)
 * bindings 1.5.0, Copyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
 * bintrees 1.0.2, Copyright (C) 2011 by Vadim Graboys
-* bl 6.0.12, Copyright (c) 2013-2019 bl contributors. ----------------------------------
+* birpc 2.8.0, Copyright (c) 2021 Anthony Fu <https://github.com/antfu>
+* bl 6.1.4, Copyright (c) 2013-2019 bl contributors. ----------------------------------
 * bluebird 3.7.2, Copyright (c) 2013-2018 Petka Antonov
-* bn.js 5.2.2, Copyright Fedor Indutny, 2015.
+* bn.js 4.12.2, Copyright Fedor Indutny, 2015.
 * body-parser 2.2.0, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * bowser 2.11.0, Copyright 2015, Dustin Diaz (the "Original Author"). All rights reserved.
 * brace-expansion 1.1.12, Copyright (c) 2013 Julian Gruber <julian@juliangruber.com>
@@ -1410,10 +1290,10 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * browserify-des 1.0.2, Copyright (c) 2014-2017 Calvin Metcalf, Fedor Indutny & contributors
 * browserify-rsa 4.1.1, Copyright (c) 2014-2016 Calvin Metcalf & contributors
 * browserify-zlib 0.2.0, Copyright (c) 2014-2015 Devon Govett <devongovett@gmail.com>
-* browserslist 4.24.4, Copyright 2014 Andrey Sitnik <andrey@sitnik.ru> and other contributors
+* browserslist 4.28.0, Copyright 2014 Andrey Sitnik <andrey@sitnik.ru> and other contributors
 * browserslist-to-esbuild 2.1.1, Copyright (c) Marco Fugaro <marco.fugaro@gmail.com> (https://marcofuga.ro)
 * bs-logger 0.2.6, Copyright (c) 2018 Huafu Gandon
-* buffer 6.0.3, Copyright (c) Feross Aboukhadijeh, and other contributors.
+* buffer 5.7.1, Copyright (c) Feross Aboukhadijeh, and other contributors.
 * buffer-crc32 1.0.0, Copyright (c) 2013-2024 Brian J. Brennan
 * buffer-from 1.1.2, Copyright (c) 2016, 2018 Linus Unnebäck
 * buffer-more-ints 1.0.0, Copyright (c) 2012 David Wragg. All rights reserved.
@@ -1430,37 +1310,37 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * busboy 1.6.0, Copyright Brian White. All rights reserved.
 * byline 5.0.0
 * bytes 3.1.2, Copyright (c) 2012-2014 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2015 Jed Watson <jed.watson@me.com>
-* c12 1.11.2, Copyright (c) Pooya Parsa <pooya@pi0.io>
+* c12 2.0.4, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * cac 6.7.14, Copyright (c) EGOIST <0x142857@gmail.com> (https://github.com/egoist)
 * cache-manager 5.2.3, Copyrights for code authored by MOG Inc. is licensed under the following terms:*
-* cacheable 1.10.3
-* cachedir 2.3.0, Copyright (c) 2013-2014, 2016, 2018 Linus Unnebäck
-* call-bind 1.0.7, Copyright (c) 2020 Jordan Harband
+* cacheable 2.1.1
+* caching-transform 4.0.0, Copyright (c) James Talmage <james@talmage.io> (github.com/jamestalmage)
+* call-bind 1.0.8, Copyright (c) 2020 Jordan Harband
 * call-bind-apply-helpers 1.0.2, Copyright (c) 2024 Jordan Harband
 * call-bound 1.0.4, Copyright (c) 2024 Jordan Harband
-* call-me-maybe 1.0.1, Copyright (c) 2015 Eric McCarthy
+* call-me-maybe 1.0.2, Copyright (c) 2015 Eric McCarthy
 * callsites 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * camel-case 4.1.2, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * camelcase 6.3.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * camelcase-css 2.0.1, Copyright (c) Steven Vachon <contact@svachon.com> (svachon.com)
 * camelize 1.0.1
 * capital-case 1.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
-* chai 5.2.0, Copyright (c) 2017 Chai.js Assertion Library
+* chai 5.3.3, Copyright (c) 2017 Chai.js Assertion Library
 * chalk 4.1.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * change-case 5.4.4
 * char-regex 1.0.2, Copyright (c) 2019 Richie Bendall
 * character-parser 2.2.0, Copyright (c) 2013 Forbes Lindesay
 * chardet 2.0.0, Copyright (C) 2023 Dmitry Shirokov
-* chart.js 4.4.0, Copyright (c) 2014-2022 Chart.js Contributors
+* chart.js 4.5.1, Copyright (c) 2014-2024 Chart.js Contributors
 * check-error 2.1.1, Copyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)
 * check-more-types 2.24.0, Copyright (c) 2014 Kensho
 * cheerio 1.0.0, Copyright (c) 2022 The Cheerio contributors
 * chokidar 4.0.3, Copyright (c) 2012 Paul Miller (https://paulmillr.com), Elan Shanker
-* chromatic 11.27.0, Copyright (c) Chroma Software Inc.
-* ci-info 4.2.0, Copyright (c) 2016 Thomas Watson Steen
-* cipher-base 1.0.6, Copyright (c) 2017 crypto-browserify contributors
+* chromatic 11.29.0, Copyright (c) Chroma Software Inc.
+* ci-info 4.3.1, Copyright (c) 2016 Thomas Watson Steen
+* cipher-base 1.0.7, Copyright (c) 2017 crypto-browserify contributors
 * citty 0.1.6, Copyright (c) Pooya Parsa <pooya@pi0.io>*
-* cjs-module-lexer 1.2.2, Copyright (C) 2018-2020 Guy Bedford
+* cjs-module-lexer 1.4.3, Copyright (C) 2018-2020 Guy Bedford
 * class-transformer 0.5.1, Copyright (c) 2015-2020 TypeStack
 * class-validator 0.14.0, Copyright (c) 2015-2020 TypeStack
 * classnames 2.5.1, Copyright (c) 2018 Jed Watson
@@ -1471,41 +1351,37 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * cli-progress 3.12.0, Copyright (c) 2015-2022 Andi Dittrich
 * cli-spinners 2.9.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * cli-table3 0.6.5, Copyright (c) 2014 James Talmage <james.talmage@jrtechnical.com>
-* cli-truncate 2.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * clone 1.0.4, Copyright © 2011-2015 Paul Vorbach <paul@vorba.ch>
 * clsx 2.1.1, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * co 4.6.0, Copyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
 * code-block-writer 13.0.3, Copyright (c) 2015-2024 David Sherret
-* collect-v8-coverage 1.0.1, Copyright (c) 2019 Simen Bekkhus
-* color 3.2.1, Copyright (c) 2012 Heather Arthur
+* collect-v8-coverage 1.0.3, Copyright (c) 2019 Simen Bekkhus
+* color 5.0.3, Copyright (c) 2012 Heather Arthur
 * color-convert 1.9.3, Copyright (c) 2011-2016 Heather Arthur <fayearthur@gmail.com>
-* color-name 1.1.4
-* color-string 1.9.1, Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>
+* color-name 1.1.3
+* color-string 2.1.4, Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>
 * colord 2.9.3, Copyright (c) 2020 Vlad Shilov omgovich@ya.ru
 * colorette 1.4.0, Copyright © Jorge Bucaran <<https://jorgebucaran.com>>
 * colors 1.4.0
-* colorspace 1.1.4, Copyright (c) 2015 Arnout Kazemier, Martijn Swaagman, the Contributors.
 * combined-stream 1.0.8, Copyright (c) 2011 Debuggable Limited <felix@debuggable.com>
 * commander 12.1.0, Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
 * comment-parser 1.4.1, Copyright (c) 2014 Sergii Iavorskyi
 * commist 3.2.0, Copyright (c) 2014-2022 Matteo Collina
-* common-tags 1.8.2, Copyright © Declan de Wet
 * commondir 1.0.1, Copyright (c) 2013 James Halliday (mail@substack.net)
 * compare-versions 6.1.1, Copyright (c) 2015-2021 Ole Michelsen
-* component-emitter 1.3.0, Copyright (c) 2014 Component contributors <dev@component.io>
+* component-emitter 1.3.1, Copyright (c) 2014 Component contributors <dev@component.io>
 * component-type 2.0.0, Copyright (c) TJ Holowaychuk <tj@tjholowaychuk.com>. Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * compress-commons 6.0.2, Copyright (c) 2014 Chris Talkington, contributors.
 * compressible 2.0.18, Copyright (c) 2013 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014 Jeremiah Senkpiel <fishrock123@rocketmail.com>. Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * compression 1.8.1, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * concat-map 0.0.1
 * concat-stream 2.0.0, Copyright (c) 2013 Max Ogden
-* concurrently 8.2.0, Copyright (c) 2015 Kimmo Brunfeldt
+* concurrently 8.2.2, Copyright (c) 2015 Kimmo Brunfeldt
 * confbox 0.1.8, Copyright (c) Pooya Parsa <pooya@pi0.io>*
 * config-chain 1.1.13, Copyright (c) 2011 Dominic Tarr
-* confusing-browser-globals 1.0.11, Copyright (c) 2013-present, Facebook, Inc.
 * consola 3.4.2, Copyright (c) Pooya Parsa <pooya@pi0.io>*
 * console-browserify 1.2.0, Copyright (c) 2012 Raynos.
-* console-table-printer 2.14.1, Copyright (c) 2019 Nahiyan Kamal
+* console-table-printer 2.15.0, Copyright (c) 2019 Nahiyan Kamal
 * constant-case 3.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * constantinople 4.0.1, Copyright (c) 2013 Forbes Lindesay
 * constants-browserify 1.0.0, Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
@@ -1516,8 +1392,8 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * cookie-parser 1.4.7, Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * cookie-signature 1.0.6, Copyright (c) 2012 LearnBoost &lt;tj@learnboost.com&gt;
 * cookiejar 2.1.4
-* core-js 3.40.0, Copyright (c) 2014-2025 Denis Pushkarev
-* core-js-compat 3.43.0, Copyright (c) 2014-2025 Denis Pushkarev
+* core-js 3.46.0, Copyright (c) 2014-2025 Denis Pushkarev, 2025 CoreJS Company
+* core-js-compat 3.46.0, Copyright (c) 2014-2025 Denis Pushkarev, 2025 CoreJS Company
 * core-util-is 1.0.3, Copyright Node.js contributors. All rights reserved.
 * cors 2.8.5, Copyright (c) 2013 Troy Goode <troygoode@gmail.com>
 * cosmiconfig 8.3.6, Copyright (c) 2015 David Clark
@@ -1528,11 +1404,11 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * create-hmac 1.1.7, Copyright (c) 2017 crypto-browserify contributors
 * create-jest 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
 * create-require 1.1.1, Copyright (c) 2020
-* crelt 1.0.5, Copyright (C) 2020 by Marijn Haverbeke <marijnh@gmail.com>
+* crelt 1.0.6, Copyright (C) 2020 by Marijn Haverbeke <marijn@haverbeke.berlin>
 * cron 3.1.7
 * cron-parser 4.9.0, Copyright (c) 2014-2016 Harri Siirak
 * cross-env 7.0.3
-* cross-fetch 4.0.0, Copyright (c) 2017 Leonardo Quixadá
+* cross-fetch 4.1.0, Copyright (c) 2017 Leonardo Quixadá
 * cross-spawn 7.0.6, Copyright (c) 2018 Made With MOXY Lda <hello@moxy.studio>
 * crypto-browserify 3.12.1, Copyright (c) 2013 Dominic Tarr
 * crypto-js 4.2.0, Copyright (c) 2009-2013 Jeff Mott  . Copyright (c) 2013-2016 Evan Vosberg
@@ -1546,50 +1422,46 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * csso 5.0.5, Copyright (C) 2015-2021 by Roman Dvornov. Copyright (C) 2011-2015 by Sergey Kryzhanovsky
 * cssom 0.5.0, Copyright (c) Nikita Vasilyev
 * cssstyle 3.0.0, Copyright (c) Chad Walker
-* csstype 3.1.3, Copyright (c) 2017-2018 Fredrik Nicol
+* csstype 3.2.1, Copyright (c) 2017-2018 Fredrik Nicol
 * csv-parse 5.5.0, Copyright (c) 2010 Adaltas
 * curlconverter 4.12.0, Copyright (c) 2014-2016 Nick Carneiro
 * currency-codes 2.1.0, Copyright (c) 2018-present Tobias Baunbæk Christensen
-* cypress 14.4.0
-* cypress-otp 1.0.3
-* cypress-real-events 1.14.0
 * dashdash 1.14.1, Copyright (c) 2013 Trent Mick. All rights reserved.. Copyright (c) 2013 Joyent Inc. All rights reserved.
 * data-uri-to-buffer 4.0.1, Copyright (c) 2014 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
 * data-urls 5.0.0, Copyright © Domenic Denicola <d@domenic.me>
-* data-view-buffer 1.0.1, Copyright (c) 2023 Jordan Harband
-* data-view-byte-length 1.0.1, Copyright (c) 2024 Jordan Harband
-* data-view-byte-offset 1.0.0, Copyright (c) 2024 Jordan Harband
+* data-view-buffer 1.0.2, Copyright (c) 2023 Jordan Harband
+* data-view-byte-length 1.0.2, Copyright (c) 2024 Jordan Harband
+* data-view-byte-offset 1.0.1, Copyright (c) 2024 Jordan Harband
 * date-fns 2.30.0, Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 * date-fns-tz 2.0.0, Copyright © 2018 Marnus Weststrate
 * dateformat 3.0.3
-* dayjs 1.11.10, Copyright (c) 2018-present, iamkun
+* dayjs 1.11.19, Copyright (c) 2018-present, iamkun
 * de-indent 1.0.2
-* debug 4.4.1, Copyright (c) 2014-2017 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2018-2021 Josh Junon
+* debug 4.4.3, Copyright (c) 2014-2017 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2018-2021 Josh Junon
 * debuglog 1.0.1, Copyright Joyent, Inc. and other Node contributors. All rights reserved.
 * decamelize 1.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* decimal.js 10.4.3, Copyright (c) 2022 Michael Mclaughlin
+* decimal.js 10.6.0, Copyright (c) 2025 Michael Mclaughlin
 * decompress-response 6.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* dedent 1.3.0, Copyright (c) 2015 Desmond Brand (dmnd@desmondbrand.com)
+* dedent 1.7.0
 * deep-eql 4.0.0, Copyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)
-* deep-equal 2.2.0, Copyright (c) 2012, 2013, 2014 James Halliday <mail@substack.net>, 2009 Thomas Robinson <280north.com>
+* deep-equal 2.2.3, Copyright (c) 2012, 2013, 2014 James Halliday <mail@substack.net>, 2009 Thomas Robinson <280north.com>
 * deep-extend 0.6.0, Copyright (c) 2013-2018, Viacheslav Lotsmanov
 * deep-is 0.1.4, Copyright (c) 2012, 2013 Thorsten Lorenz <thlorenz@gmx.de>. Copyright (c) 2012 James Halliday <mail@substack.net>. Copyright (c) 2009 Thomas Robinson <280north.com>
 * deepmerge 4.3.1, Copyright (c) 2012 James Halliday, Josh Duff, and other contributors
-* default-browser 5.2.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* default-browser-id 5.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* default-browser 5.4.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* default-browser-id 5.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* default-require-extensions 3.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com). Copyright (c) James Talmage <james@talmage.io> (https://github.com/jamestalmage). Copyright (c) Node.js contributors
 * defaults 1.0.4, Copyright (c) 2022 Sindre Sorhus. Copyright (c) 2015 Elijah Insua
 * define-data-property 1.1.4, Copyright (c) 2023 Jordan Harband
-* define-lazy-prop 2.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+* define-lazy-prop 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * define-properties 1.2.1, Copyright (C) 2015 Jordan Harband
 * defu 6.1.4, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * delayed-stream 1.0.0, Copyright (c) 2011 Debuggable Limited <felix@debuggable.com>
 * delegates 1.0.0, Copyright (c) 2015 TJ Holowaychuk <tj@vision-media.ca>
 * depd 2.0.0, Copyright (c) 2014-2018 Douglas Christopher Wilson
 * dependency-tree 11.2.0, Copyright (c) 2017 Dependents
-* dequal 2.0.3, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * des.js 1.1.0, Copyright Fedor Indutny, 2015.
 * destr 2.0.5, Copyright (c) Pooya Parsa <pooya@pi0.io>
-* destroy 1.2.0, Copyright (c) 2014 Jonathan Ong me@jongleberry.com. Copyright (c) 2015-2022 Douglas Christopher Wilson doug@somethingdoug.com
 * detect-newline 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * detect-node 2.1.0, Copyright (c) 2017 Ilya Kantor
 * detective-amd 6.0.1, Copyright (c) 2022 Dependents
@@ -1605,38 +1477,39 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * diffie-hellman 5.0.3, Copyright (c) 2017 Calvin Metcalf
 * dir-glob 3.0.1, Copyright (c) Kevin Mårtensson <kevinmartensson@gmail.com> (github.com/kevva)
 * dlv 1.1.3
-* docker-compose 1.2.0, Copyright (c) 2017 - 2021 PDMLab
+* docker-compose 1.3.0, Copyright (c) 2017 - 2021 PDMLab
 * doctypes 1.1.0, Copyright (c) 2015 Forbes Lindesay
-* dom-accessibility-api 0.6.3, Copyright (c) 2020 Sebastian Silbermann
+* dom-accessibility-api 0.5.16, Copyright (c) 2020 Sebastian Silbermann
 * dom-serializer 2.0.0, Copyright (c) 2014 The cheeriojs contributors
 * domain-browser 4.22.0
 * domexception 4.0.0, Copyright © Domenic Denicola
-* dommatrix 1.0.3, Copyright (c) 2020 thednp
 * dot-case 3.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+* dot-prop 9.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* dts-resolver 2.1.3, Copyright © 2025-PRESENT Kevin Deng (https://github.com/sxzz)
 * dunder-proto 1.0.1, Copyright (c) 2024 ECMAScript Shims
 * duplexer 0.1.1, Copyright (c) 2012 Raynos.
 * duplexify 4.1.3, Copyright (c) 2014 Mathias Buus
 * eastasianwidth 0.2.0
 * ecc-jsbn 0.1.2, Copyright (c) 2014 Jeremie Miller
-* editorconfig 1.0.4, Copyright © 2012 EditorConfig Team
+* editorconfig 3.0.1, Copyright © 2012 EditorConfig Team
 * ee-first 1.1.1, Copyright (c) 2014 Jonathan Ong me@jongleberry.com
 * element-plus 2.4.3
 * elliptic 6.6.1, Copyright Fedor Indutny, 2014.
 * emittery 0.13.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * emoji-regex 8.0.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
+* empathic 2.0.0, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * enabled 2.0.0, Copyright (c) 2015 Arnout Kazemier, Martijn Swaagman, the Contributors.
 * encodeurl 2.0.0, Copyright (c) 2016 Douglas Christopher Wilson
 * encoding 0.1.13, Copyright (c) 2012-2014 Andris Reinman
 * encoding-japanese 2.0.0, Copyright (c) 2012 polygonplanet
-* encoding-sniffer 0.2.0, Copyright (c) 2022 Felix Boehm <me@feedic.com>
-* end-of-stream 1.4.4, Copyright (c) 2014 Mathias Buus
-* enhanced-resolve 5.18.2, Copyright JS Foundation and other contributors
-* enquirer 2.3.6, Copyright (c) 2016-present, Jon Schlinkert.
+* encoding-sniffer 0.2.1, Copyright (c) 2022 Felix Boehm <me@feedic.com>
+* end-of-stream 1.4.5, Copyright (c) 2014 Mathias Buus
+* enhanced-resolve 5.18.3, Copyright JS Foundation and other contributors
 * env-paths 2.2.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * err-code 2.0.3
-* error-ex 1.3.2, Copyright (c) 2015 JD Ballard
-* es-abstract 1.23.3, Copyright (C) 2015 Jordan Harband
-* es-aggregate-error 1.0.12, Copyright (c) 2019 Jordan Harband
+* error-ex 1.3.4, Copyright (c) 2015 JD Ballard
+* es-abstract 1.24.0, Copyright (C) 2015 Jordan Harband
+* es-aggregate-error 1.0.14, Copyright (c) 2019 Jordan Harband
 * es-define-property 1.0.1, Copyright (c) 2024 Jordan Harband
 * es-errors 1.3.0, Copyright (c) 2024 Jordan Harband
 * es-get-iterator 1.1.3, Copyright (c) 2019 Jordan Harband
@@ -1644,72 +1517,66 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * es-object-atoms 1.1.1, Copyright (c) 2024 Jordan Harband
 * es-set-tostringtag 2.1.0, Copyright (c) 2022 ECMAScript Shims
 * es-shim-unscopables 1.1.0, Copyright (c) 2022 Jordan Harband
-* es-to-primitive 1.2.1, Copyright (c) 2015 Jordan Harband
+* es-to-primitive 1.3.0, Copyright (c) 2015 Jordan Harband
+* es6-error 4.1.1, Copyright (c) 2015 Ben Youngblood
 * es6-iterator 2.0.3, Copyright (C) 2013-2017 Mariusz Nowak (www.medikoo.com)
 * es6-promise 3.3.1, Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors
-* esbuild 0.25.9, Copyright (c) 2020 Evan Wallace
-* esbuild-register 3.5.0, Copyright (c) EGOIST <0x142857@gmail.com> (https://egoist.sh)
-* escalade 3.1.1, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+* esbuild 0.25.12, Copyright (c) 2020 Evan Wallace
+* esbuild-register 3.6.0, Copyright (c) EGOIST <0x142857@gmail.com> (https://egoist.sh)
+* escalade 3.2.0, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * escape-goat 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * escape-html 1.0.3, Copyright (c) 2012-2013 TJ Holowaychuk. Copyright (c) 2015 Andreas Lubbe. Copyright (c) 2015 Tiancheng "Timothy" Gu
 * escape-string-regexp 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * eslint 9.29.0, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>
-* eslint-config-airbnb-base 15.0.0, Copyright (c) 2012 Airbnb
-* eslint-config-airbnb-typescript 18.0.0, Copyright © Matt Turnbull <matt@iamturns.com>
-* eslint-config-prettier 10.1.5, Copyright (c) 2017, 2018, 2019, 2020, 2021, 2022, 2023 Simon Lydell and contributors
+* eslint 9.39.1, Copyright OpenJS Foundation and other contributors, <www.openjsf.org>
+* eslint-config-prettier 10.1.8, Copyright (c) 2017, 2018, 2019, 2020, 2021, 2022, 2023 Simon Lydell and contributors
 * eslint-config-riot 1.0.0, Copyright (c) 2017 Riot
-* eslint-import-context 0.1.8, Copyright (c) 2021-present UnTS
+* eslint-import-context 0.1.9, Copyright (c) 2021-present UnTS
 * eslint-import-resolver-node 0.3.9, Copyright (c) 2015 Ben Mosher
 * eslint-module-utils 2.12.1, Copyright (c) 2015 Ben Mosher
-* eslint-plugin-cypress 4.3.0, Copyright (c) 2019 Cypress.io
+* eslint-plugin-eslint-plugin 7.2.0, Copyright © 2016 Teddy Katz
 * eslint-plugin-import 2.32.0, Copyright (c) 2015 Ben Mosher
-* eslint-plugin-import-x 4.15.2, Copyright (c) 2015 Ben Mosher
+* eslint-plugin-import-x 4.16.1, Copyright (c) 2015 Ben Mosher
 * eslint-plugin-local 1.0.0, Copyright (c) 2017 Taskworld
 * eslint-plugin-lodash 8.0.0, Copyright (c) 2017 Ido
 * eslint-plugin-playwright 2.2.2, Copyright (c) 2024 Max Schmitt
+* eslint-plugin-storybook 9.1.7, Copyright (c) 2022 Storybook contributors
 * eslint-plugin-unicorn 59.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* eslint-plugin-unused-imports 4.1.4, Copyright (c) 2022 Mikkel Holmer Pedersen
-* eslint-plugin-vue 10.2.0, Copyright (c) 2017 Toru Nagashima
-* eslint-rule-composer 0.3.0, Copyright © 2017 Teddy Katz
+* eslint-plugin-unused-imports 4.3.0, Copyright (c) 2022 Mikkel Holmer Pedersen
+* eslint-plugin-vue 10.5.1, Copyright (c) 2017 Toru Nagashima
 * estree-walker 2.0.2, Copyright (c) 2015-20 [these people](https://github.com/Rich-Harris/estree-walker/graphs/contributors)
 * etag 1.8.1, Copyright (c) 2014-2016 Douglas Christopher Wilson
 * event-emitter 0.3.5, Copyright (C) 2012-2015 Mariusz Nowak (www.medikoo.com)
 * event-stream 3.3.4, Copyright (c) 2011 Dominic Tarr
 * event-target-shim 5.0.1, Copyright (c) 2015 Toru Nagashima
-* eventemitter2 6.4.7, Copyright (c) 2016 Paolo Fragomeni <http://www.github.com/0x00a> and Contributors
 * eventemitter3 4.0.7, Copyright (c) 2014 Arnout Kazemier
 * events 3.3.0, Copyright Joyent, Inc. and other Node contributors.
 * eventsource 2.0.2, Copyright (c) EventSource GitHub organisation
-* eventsource-parser 3.0.1, Copyright (c) 2025 Espen Hovlandsdal <espen@hovlandsdal.com>
+* eventsource-parser 3.0.6, Copyright (c) 2025 Espen Hovlandsdal <espen@hovlandsdal.com>
 * evp_bytestokey 1.0.3, Copyright (c) 2017 crypto-browserify contributors
 * execa 9.6.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* executable 4.1.1, Copyright (c) Kevin Mårtensson <kevinmartensson@gmail.com>
 * exit 0.1.2, Copyright (c) 2013 "Cowboy" Ben Alman
 * expand-tilde 2.0.2, Copyright (c) 2015-2016, Jon Schlinkert.
-* expect 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* expect 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
 * expr-eval 2.0.2, Copyright (c) 2015 Matthew Crumley
 * express 5.1.0, Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>. Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * express-openapi-validator 5.5.3, Copyright (c) 2019-2024 Carmine M. DiMascio
 * express-prom-bundle 8.0.0, Copyright (c) 2016 Jochen Schweizer Technology Solutions GmbH
 * express-rate-limit 7.5.0, Copyright 2023 Nathan Friedly, Vedant K
-* exsolve 1.0.4, Copyright (c) Pooya Parsa <pooya@pi0.io>*
+* exsolve 1.0.8, Copyright (c) Pooya Parsa <pooya@pi0.io>*
 * extend 3.0.2, Copyright (c) 2014 Stefan Thomas
 * external-editor 3.1.0, Copyright (c) 2016 Kevin Gravier
-* extsprintf 1.3.0, Copyright (c) 2012, Joyent, Inc. All rights reserved.
 * fake-xml-http-request 2.1.2, Copyright (c) 2014 Trek Glowacki and contributors
 * fast-deep-equal 3.1.3, Copyright (c) 2017 Evgeny Poberezkin
 * fast-fifo 1.3.2, Copyright (c) 2019 Mathias Buus
 * fast-glob 3.2.12, Copyright (c) Denis Malinochkin
 * fast-json-stable-stringify 2.1.0, Copyright (c) 2017 Evgeny Poberezkin. Copyright (c) 2013 James Halliday
 * fast-levenshtein 2.0.6, Copyright (c) 2013 [Ramesh Nair](http://www.hiddentao.com/)
-* fast-redact 3.5.0, Copyright (c) 2019-2020 David Mark Clements
 * fast-safe-stringify 2.1.1, Copyright (c) 2016 David Mark Clements. Copyright (c) 2017 David Mark Clements & Matteo Collina. Copyright (c) 2018 David Mark Clements, Matteo Collina & Ruben Bridgewater
 * fast-unique-numbers 8.0.13, Copyright (c) 2023 Christoph Guttandin
-* fast-uri 3.0.1, Copyright (c) 2021 The Fastify Team. Copyright (c) 2011-2021, Gary Court until https://github.com/garycourt/uri-js/commit/a1acf730b4bba3f1097c9f52e7d9d3aba8cdcaae. All rights reserved.
-* fast-xml-parser 4.4.1, Copyright (c) 2017 Amit Kumar Gupta
+* fast-xml-parser 5.3.2, Copyright (c) 2017 Amit Kumar Gupta
 * fastest-levenshtein 1.0.16, Copyright (c) 2020 Kasper Unn Weihe
-* fd-slicer 1.1.0, Copyright (c) 2014 Andrew Kelley
-* fdir 6.4.6, Copyright 2023 Abdullah Atta
+* fdir 6.5.0, Copyright 2023 Abdullah Atta
 * fecha 4.2.3, Copyright (c) 2015 Taylor Hakes
 * fengari 0.1.4, Copyright © 2017-2018 Benoit Giannangeli. Copyright © 2017-2018 Daurnimator. Copyright © 1994–2017 Lua.org, PUC-Rio.
 * fengari-interop 0.1.3, Copyright (c) 2017-2021 Daurnimator
@@ -1723,89 +1590,90 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * filing-cabinet 5.0.3, Copyright (c) 2023 Dependents
 * fill-range 7.1.1, Copyright (c) 2014-present, Jon Schlinkert.
 * finalhandler 2.1.0, Copyright (c) 2014-2022 Douglas Christopher Wilson <doug@somethingdoug.com>
+* find-cache-dir 3.3.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * find-package-json 1.2.0
-* find-test-names 1.29.7, Copyright (c) 2021 Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt;
 * find-up 5.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * find-up-simple 1.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * first-match 0.0.1
 * fix-dts-default-cjs-exports 1.0.1, Copyright (c) 2025-PRESENT Joaquín Sánchez <https://github.com/userquin>
-* flat-cache 6.1.12
+* flat-cache 6.1.18
 * fn.name 1.1.0, Copyright (c) 2015 Arnout Kazemier, Martijn Swaagman, the Contributors.
 * follow-redirects 1.15.11, Copyright 2014–present Olivier Lalonde <olalonde@gmail.com>, James Talmage <james@talmage.io>, Ruben Verborgh
 * for-each 0.3.5, Copyright (c) 2012 Raynos.
 * foreach 2.0.6, Copyright (c) 2013 Manuel Stofer
 * form-data 4.0.4, Copyright (c) 2012 Felix Geisendörfer (felix@debuggable.com) and contributors
-* form-data-encoder 4.0.2, Copyright (c) 2021-present Nick K.
-* formdata-node 6.0.3, Copyright (c) 2017-present Nick K.
+* form-data-encoder 1.7.2, Copyright (c) 2021-present Nick K.
+* formdata-node 4.4.1, Copyright (c) 2017-present Nick K.
 * formdata-polyfill 4.0.10, Copyright (c) 2016 Jimmy Karl Roland Wärting
 * formidable 3.5.4, Copyright (c) 2011-present Felix Geisendörfer, and contributors.
 * forwarded 0.2.0, Copyright (c) 2014-2017 Douglas Christopher Wilson
 * forwarded-parse 2.1.2, Copyright (c) 2015 Luigi Pinca
-* fraction.js 4.3.7, Copyright (c) 2023 Robert Eisele
+* fraction.js 5.3.4, Copyright (c) 2025 Robert Eisele
 * fresh 2.0.0, Copyright (c) 2012 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2016-2017 Douglas Christopher Wilson <doug@somethingdoug.com>
 * from 0.1.7, Copyright (c) 2011 Dominic Tarr
+* fromentries 1.3.2, Copyright (c) Feross Aboukhadijeh
 * fs-constants 1.0.0, Copyright (c) 2018 Mathias Buus
-* fs-extra 9.1.0, Copyright (c) 2011-2017 JP Richardson
-* fsevents 2.3.3, Copyright (C) 2010-2020 by Philipp Dunkel, Ben Noordhuis, Elan Shankar, Paul Miller
+* fs-extra 11.3.2, Copyright (c) 2011-2024 JP Richardson
 * function-bind 1.1.2, Copyright (c) 2013 Raynos.
-* function.prototype.name 1.1.6, Copyright (c) 2016 Jordan Harband
+* function.prototype.name 1.1.8, Copyright (c) 2016 Jordan Harband
 * functions-have-names 1.2.3, Copyright (c) 2019 Jordan Harband
 * generate-function 2.3.1, Copyright (c) 2014 Mathias Buus
 * generate-schema 2.6.0, Copyright (c) 2015 Nijiko Yonskai
+* generator-function 2.0.1, Copyright (c) 2015 Tiancheng “Timothy” Gu
 * generic-pool 3.9.0, Copyright (c) 2010-2016 James Cooper &lt;james@bitmechanic.com&gt;
 * gensync 1.0.0-beta.2, Copyright 2018 Logan Smyth <loganfsmyth@gmail.com>
 * get-amd-module-type 6.0.1, Copyright (c) 2022 Dependents
 * get-intrinsic 1.3.0, Copyright (c) 2020 Jordan Harband
 * get-package-type 0.1.0, Copyright (c) 2020 CFWare, LLC
 * get-port 7.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* get-port-please 3.1.2, Copyright (c) Pooya Parsa <pooya@pi0.io>
+* get-port-please 3.2.0, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * get-proto 1.0.1, Copyright (c) 2025 Jordan Harband
-* get-stream 5.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* get-symbol-description 1.0.2, Copyright (c) 2021 Inspect JS
+* get-stream 9.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* get-symbol-description 1.1.0, Copyright (c) 2021 Inspect JS
 * get-system-fonts 2.0.2, Copyright (c) 2018 Jeffrey Principe
-* get-tsconfig 4.10.1, Copyright (c) Hiroki Osame <hiroki.osame@gmail.com>
+* get-tsconfig 4.13.0, Copyright (c) Hiroki Osame <hiroki.osame@gmail.com>
 * getos 3.2.1, Copyright (c) 2016 William Blankenship
 * getpass 0.1.7, Copyright Joyent, Inc. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
 * giget 1.2.5, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * github-from-package 0.0.0
-* global-dirs 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * global-modules 2.0.0, Copyright (c) 2015-present, Jon Schlinkert.
 * global-prefix 3.0.0, Copyright (c) 2015-present, Jon Schlinkert.
-* globals 16.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* globals 16.5.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * globalthis 1.0.4, Copyright (c) 2016 Jordan Harband
 * globby 11.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * globjoin 0.1.4, Copyright (c) 2016 amobiz
 * gm 1.25.1, Copyright (c) 2010 [Aaron Heckmann](aaron.heckmann+github@gmail.com)
 * gonzales-pe 4.3.0
-* google-p12-pem 4.0.1, Copyright (c) 2014 Ryan Seys
 * gopd 1.2.0, Copyright (c) 2022 Jordan Harband
 * graphemer 1.4.0, Copyright 2020 Filament (Anomalous Technologies Limited)
-* graphql 16.11.0, Copyright (c) GraphQL Contributors
+* graphql 16.12.0, Copyright (c) GraphQL Contributors
 * graphql-request 6.1.0, Copyright (c) 2022 Jason Kuhrt
 * gtoken 8.0.0, Copyright (c) 2014 Ryan Seys
 * gzip-size 6.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * handlebars 4.7.8, Copyright (C) 2011-2019 by Yehuda Katz
-* has-bigints 1.0.2, Copyright (c) 2019 Jordan Harband
+* has-bigints 1.1.0, Copyright (c) 2019 Jordan Harband
 * has-flag 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * has-property-descriptors 1.0.2, Copyright (c) 2022 Inspect JS
-* has-proto 1.0.3, Copyright (c) 2022 Inspect JS
+* has-proto 1.2.0, Copyright (c) 2022 Inspect JS
 * has-symbols 1.1.0, Copyright (c) 2016 Jordan Harband
 * has-tostringtag 1.0.2, Copyright (c) 2021 Inspect JS
 * hash-base 3.0.5, Copyright (c) 2016 Kirill Fomichev
 * hash-sum 2.0.0, Copyright © 2014 Nicolas Bevacqua
 * hash.js 1.1.7, Copyright Fedor Indutny, 2014.
+* hasha 5.2.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* hashery 1.2.0, Copyright (c) 2025 Jared Wray
 * hasown 2.0.2, Copyright (c) Jordan Harband and contributors
 * he 1.2.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * header-case 2.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * heap 0.2.7
 * helmet 8.1.0, Copyright (c) 2012-2025 Evan Hahn, Adam Baldwin
 * help-me 5.0.0, Copyright (c) 2014-2022 Matteo Collina
-* hexoid 1.0.0, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * hmac-drbg 1.0.1, Copyright Fedor Indutny, 2017.
 * homedir-polyfill 1.0.3, Copyright (c) 2016 Brian Woodward
-* hookified 1.11.0
+* hookable 5.5.3, Copyright (c) Pooya Parsa <pooya@pi0.io>
+* hookified 1.13.0
 * html-encoding-sniffer 4.0.0, Copyright © Domenic Denicola <d@domenic.me>
-* html-entities 2.5.2, Copyright (c) 2021 Dulin Marat
+* html-entities 2.6.0, Copyright (c) 2021 Dulin Marat
 * html-escaper 2.0.2, Copyright (C) 2017-present by Andrea Giammarchi - @WebReflection
 * html-minifier 4.0.0, Copyright (c) 2010-2018 Juriy "kangax" Zaytsev
 * html-tags 3.3.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
@@ -1815,43 +1683,42 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * http-proxy 1.18.1
 * http-proxy-agent 7.0.2, Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
 * http-proxy-middleware 3.0.5, Copyright (c) 2015 Steven Chim
-* http-signature 1.4.0, Copyright Joyent, Inc. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
 * http2-client 1.3.5, Copyright (c) 2019 Eyal.D <hisco@googlegroups.com‬>
 * https-browserify 1.0.0, Copyright (c) James Halliday
 * https-proxy-agent 7.0.6, Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
 * humanize-ms 1.2.1
 * iconv-lite 0.6.3, Copyright (c) 2011 Alexander Shtuchkin
-* ignore 5.2.4, Copyright (c) 2013 Kael Zhang <i@kael.me>, contributors. http://kael.me/
+* ignore 5.3.2, Copyright (c) 2013 Kael Zhang <i@kael.me>, contributors. http://kael.me/
 * imap 0.8.19, Copyright Brian White. All rights reserved.
 * immediate 3.0.6, Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, Domenic Denicola, Brian Cavalier
-* immutable 5.1.3, Copyright (c) 2014-present, Lee Byron and other contributors.
-* import-fresh 3.3.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* immutable 5.1.4, Copyright (c) 2014-present, Lee Byron and other contributors.
+* import-fresh 3.3.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * import-lazy 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* import-local 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+* import-local 3.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * imurmurhash 0.1.4
-* indefinite 2.5.1, Copyright (c) 2015 Andrew Nichols
+* indefinite 2.5.2, Copyright (c) 2015 Andrew Nichols
 * indent-string 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * inflected 2.1.0, Copyright (c) 2014-2017 Martin Andert. Copyright (c) 2005-2017 David Heinemeier Hansson. Copyright (c) 2008 The Ruby I18n team
 * inquirer 7.3.3, Copyright (c) 2012 Simon Boudrias
-* internal-slot 1.0.7, Copyright (c) 2019 Jordan Harband
+* internal-slot 1.1.0, Copyright (c) 2019 Jordan Harband
 * interpret 1.4.0, Copyright (c) 2014-2018 Tyler Kellen <tyler@sleekcode.net>, Blaine Bublitz <blaine.bublitz@gmail.com>, and Eric Schoffstall <yo@contra.io>
 * ioredis 5.3.2, Copyright (c) 2015-2022 Zihua Li
-* ioredis-mock 8.8.1, Copyright (c) 2023 Cody Olsen
-* ip-address 9.0.5, Copyright (C) 2011 by Beau Gunderson
+* ioredis-mock 8.13.1, Copyright (c) 2023 Cody Olsen
+* ip-address 10.1.0, Copyright (C) 2011 by Beau Gunderson
 * ipaddr.js 1.9.1, Copyright (C) 2011-2017 whitequark <whitequark@whitequark.org>
-* is-arguments 1.1.1, Copyright (c) 2014 Jordan Harband
-* is-array-buffer 3.0.4, Copyright (c) 2015 Chen Gengyuan, Inspect JS
+* is-arguments 1.2.0, Copyright (c) 2014 Jordan Harband
+* is-array-buffer 3.0.5, Copyright (c) 2015 Chen Gengyuan, Inspect JS
 * is-arrayish 0.2.1, Copyright (c) 2015 JD Ballard
 * is-async-function 2.1.1, Copyright (c) 2021 Jordan Harband
-* is-bigint 1.0.4, Copyright (c) 2018 Jordan Harband
-* is-boolean-object 1.1.2, Copyright (c) 2015 Jordan Harband
+* is-bigint 1.1.0, Copyright (c) 2018 Jordan Harband
+* is-boolean-object 1.2.2, Copyright (c) 2015 Jordan Harband
 * is-buffer 1.1.6, Copyright (c) Feross Aboukhadijeh
 * is-builtin-module 5.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-bun-module 2.0.0, Copyright (c) 2024 SunsetTechuila
 * is-callable 1.2.7, Copyright (c) 2015 Jordan Harband
 * is-core-module 2.16.1, Copyright (c) 2014 Dave Justice
-* is-data-view 1.0.1, Copyright (c) 2024 Inspect JS
-* is-date-object 1.0.5, Copyright (c) 2015 Jordan Harband
+* is-data-view 1.0.2, Copyright (c) 2024 Inspect JS
+* is-date-object 1.1.0, Copyright (c) 2015 Jordan Harband
 * is-docker 2.2.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-emoji-supported 0.0.5
 * is-expression 4.0.0, Copyright (c) 2015 Tiancheng “Timothy” Gu
@@ -1859,10 +1726,9 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * is-finalizationregistry 1.1.1, Copyright (c) 2020 Inspect JS
 * is-fullwidth-code-point 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * is-generator-fn 2.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* is-generator-function 1.1.0, Copyright (c) 2014 Jordan Harband
+* is-generator-function 1.1.2, Copyright (c) 2014 Jordan Harband
 * is-glob 4.0.3, Copyright (c) 2014-2017, Jon Schlinkert.
 * is-inside-container 1.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* is-installed-globally 0.4.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-interactive 1.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * is-lambda 1.0.1, Copyright (c) 2016-2017 Thomas Watson Steen
 * is-map 2.0.3, Copyright (c) 2019 Inspect JS
@@ -1870,83 +1736,82 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * is-negative-zero 2.0.3, Copyright (c) 2014 Jordan Harband
 * is-node-process 1.2.0
 * is-number 7.0.0, Copyright (c) 2014-present, Jon Schlinkert.
-* is-number-object 1.0.7, Copyright (c) 2015 Jordan Harband
+* is-number-object 1.1.1, Copyright (c) 2015 Jordan Harband
 * is-obj 1.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* is-path-inside 3.0.3, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * is-plain-obj 4.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-plain-object 5.0.0, Copyright (c) 2014-2017, Jon Schlinkert.
 * is-potential-custom-element-name 1.0.1, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * is-promise 4.0.0, Copyright (c) 2014 Forbes Lindesay
 * is-property 1.0.2, Copyright (c) 2013 Mikola Lysenko
-* is-regex 1.1.4, Copyright (c) 2014 Jordan Harband
+* is-regex 1.2.1, Copyright (c) 2014 Jordan Harband
 * is-regexp 1.0.0
 * is-retry-allowed 2.2.0, Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop). Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-set 2.0.3, Copyright (c) 2019 Inspect JS
-* is-shared-array-buffer 1.0.3, Copyright (c) 2021 Inspect JS
+* is-shared-array-buffer 1.0.4, Copyright (c) 2021 Inspect JS
 * is-stream 2.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-string 1.1.1, Copyright (c) 2015 Jordan Harband
-* is-symbol 1.0.4, Copyright (c) 2015 Jordan Harband
-* is-typed-array 1.1.13, Copyright (c) 2015 Jordan Harband
+* is-symbol 1.1.1, Copyright (c) 2015 Jordan Harband
+* is-typed-array 1.1.15, Copyright (c) 2015 Jordan Harband
 * is-typedarray 1.0.0
 * is-unicode-supported 0.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-url 1.2.4
 * is-url-superb 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * is-weakmap 2.0.2, Copyright (c) 2019 Inspect JS
-* is-weakref 1.0.2, Copyright (c) 2020 Inspect JS
+* is-weakref 1.1.1, Copyright (c) 2020 Inspect JS
 * is-weakset 2.0.4, Copyright (c) 2019 Inspect JS
+* is-windows 1.0.2, Copyright (c) 2015-2018, Jon Schlinkert.
 * is-wsl 2.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * isarray 0.0.1, Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
 * iso-639-1 2.1.15, Copyright(c) by Mei Qingguang
 * isomorphic-timers-promises 1.0.1, Copyright (c) Ivan Nikolić <http://ivannikolic.com>
 * isstream 0.1.2, Copyright (c) 2015 Rod Vagg. ---------------------------
-* jest 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-changed-files 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-circus 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-cli 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-config 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-diff 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-docblock 29.4.3, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-each 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-environment-jsdom 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-environment-node 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-changed-files 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-circus 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-cli 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-config 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-diff 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-docblock 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-each 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-environment-jsdom 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-environment-node 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
 * jest-expect-message 1.1.3, Copyright (c) 2018-present Matt Phillips <matt@mattphillips.io> mattphillips.io
-* jest-get-type 29.4.3, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-haste-map 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-leak-detector 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-matcher-utils 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-message-util 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-mock 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-mock-extended 3.0.4, Copyright (c) 2019 Marc McIntyre
-* jest-pnp-resolver 1.2.2
-* jest-regex-util 29.4.3, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-resolve 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-resolve-dependencies 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-runner 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-runtime 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-snapshot 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-util 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-validate 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-watcher 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jest-worker 29.6.2, Copyright (c) Meta Platforms, Inc. and affiliates.
-* jiti 1.21.7, Copyright (c) Pooya Parsa <pooya@pi0.io>
+* jest-get-type 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-haste-map 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-leak-detector 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-matcher-utils 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-message-util 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-mock 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-mock-extended 3.0.7, Copyright (c) 2019 Marc McIntyre
+* jest-pnp-resolver 1.2.3
+* jest-regex-util 29.6.3, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-resolve 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-resolve-dependencies 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-runner 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-runtime 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-snapshot 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-util 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-validate 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-watcher 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jest-worker 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* jiti 2.6.1, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * jju 1.4.0, Copyright (c) 2013 Alex Kocharin
 * join-component 1.1.0
-* jose 6.0.11, Copyright (c) 2018 Filip Skokan
+* jose 6.1.2, Copyright (c) 2018 Filip Skokan
 * joycon 3.1.1, Copyright (c) egoist <0x142857@gmail.com> (https://github.com/egoist)
-* js-beautify 1.14.9, Copyright (c) 2007-2018 Einar Lielmanis, Liam Newman, and contributors.
+* js-beautify 1.15.4, Copyright (c) 2007-2018 Einar Lielmanis, Liam Newman, and contributors.
 * js-cookie 3.0.5, Copyright (c) 2018 Copyright 2018 Klaus Hartl, Fagner Brack, GitHub Contributors
 * js-levenshtein 1.1.6, Copyright (c) 2017 Gustaf Andersson
 * js-md4 0.3.2, Copyright 2015-2017 Yi-Cyuan Chen
 * js-sdsl 4.3.0, Copyright (c) 2021 Zilong Yao
 * js-stringify 1.0.2, Copyright (c) 2014 Forbes Lindesay
-* js-tiktoken 1.0.12
+* js-tiktoken 1.0.21
 * js-tokens 9.0.1, Copyright (c) 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Simon Lydell
-* js-yaml 4.1.0, Copyright (C) 2011-2015 by Vitaly Puzrin
+* js-yaml 4.1.1, Copyright (C) 2011-2015 by Vitaly Puzrin
 * jsbn 0.1.1
-* jsdoc-type-pratt-parser 4.1.0, Copyright (c) 2021 Simon Seyock
 * jsdom 23.0.1, Copyright (c) 2010 Elijah Insua
 * jsep 1.4.0, Copyright (c) 2013 Stephen Oney, https://ericsmekens.github.io/jsep/
-* jsesc 3.0.2, Copyright Mathias Bynens <https://mathiasbynens.be/>
+* jsesc 3.1.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * json-bigint 1.0.0, Copyright (c) 2013 Andrey Sidorov
 * json-buffer 3.0.1, Copyright (c) 2013 Dominic Tarr
 * json-diff 1.0.6, Copyright (c) 2015 Andrey Tarantsov
@@ -1955,55 +1820,44 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * json-schema-traverse 1.0.0, Copyright (c) 2017 Evgeny Poberezkin
 * json-stable-stringify-without-jsonify 1.0.1
 * json5 2.2.3, Copyright (c) 2012-2018 Aseem Kishore, and [others].
-* jsonfile 6.1.0, Copyright (c) 2012-2015, JP Richardson <jprichardson@gmail.com>
+* jsonfile 6.2.0, Copyright (c) 2012-2015, JP Richardson <jprichardson@gmail.com>
 * jsonpath 1.1.1, Copyright (c) 2014-2016 David Chester <david@fmail.co.uk>
 * jsonpath-plus 10.3.0, Copyright (c) 2011-2019 Stefan Goessner, Subbu Allamaraju, Mike Brevoort,. Robert Krahn, Brett Zamir, Richard Schneider
 * jsonpointer 5.0.1, Copyright (c) 2011-2015 Jan Lehnardt <jan@apache.org> & Marc Bachmann <https://github.com/marcbachmann>
 * jsonschema 1.4.1, Copyright (C) 2012-2015 Tom de Grunt <tom@degrunt.nl>
 * jsonwebtoken 9.0.2
-* jsprim 2.0.2, Copyright (c) 2012, Joyent, Inc. All rights reserved.
 * jstransformer 1.0.0, Copyright (c) 2015 Forbes Lindesay
 * juice 10.0.1, Copyright (c) 2021 Automattic
-* jwa 1.4.1, Copyright (c) 2013 Brian J. Brennan
+* jwa 1.4.2, Copyright (c) 2013 Brian J. Brennan
 * jws 4.0.0, Copyright (c) 2013 Brian J. Brennan
 * kafkajs 2.2.4, Copyright (c) 2018 Túlio Ornelas (ornelas.tulio@gmail.com)
-* keyv 4.5.4
+* keyv 5.5.4, Copyright (c) 2017-2021 Luke Childs. Copyright (c) 2021-2022 Jared Wray
 * kind-of 6.0.3, Copyright (c) 2014-2017, Jon Schlinkert.
 * kleur 3.0.3, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * known-css-properties 0.36.0, Copyright (c) 2017 Mavrix Technologies
 * kolorist 1.8.0, Copyright (c) 2020-present Marvin Hagemeister
 * kuler 2.0.0, Copyright 2014 Arnout Kazemier
-* langchain 0.3.30, Copyright (c) Harrison Chase
-* langsmith 0.3.55
+* langchain 0.3.33, Copyright (c) Harrison Chase
+* langsmith 0.3.79
 * lazy-ass 1.6.0, Copyright (c) 2014 Gleb Bahmutov
 * lazystream 1.0.1, Copyright (c) 2013 J. Pommerening, contributors.
 * ldapts 4.2.6
 * leac 0.6.0, Copyright (c) 2021-2022 KillyMXI <killy@mxii.eu.org>
-* lefthook 1.7.15
-* lefthook-darwin-arm64 1.12.3
-* lefthook-darwin-x64 1.12.3
-* lefthook-freebsd-arm64 1.12.3
-* lefthook-freebsd-x64 1.12.3
-* lefthook-linux-arm64 1.12.3
-* lefthook-linux-x64 1.7.15
-* lefthook-openbsd-arm64 1.12.3
-* lefthook-openbsd-x64 1.12.3
-* lefthook-windows-arm64 1.12.3
-* lefthook-windows-x64 1.12.3
+* lefthook 1.13.6
+* lefthook-linux-x64 1.13.6
 * leven 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * levn 0.4.1, Copyright (c) George Zahariev
 * libbase64 1.2.1, Copyright (c) 2014-2017 Andris Reinman
 * libmime 5.2.1, Copyright (c) 2014-2016 Andris Reinman
-* libphonenumber-js 1.10.14, Copyright (c) 2016 @catamphetamine <purecatamphetamine@gmail.com>
+* libphonenumber-js 1.12.26, Copyright (c) 2016 @catamphetamine <purecatamphetamine@gmail.com>
 * libqp 2.0.1, Copyright (c) 2014-2022 Andris Reinman
 * lie 3.3.0
 * lilconfig 3.1.3, Copyright (c) 2022 Anton Kastritskiy
 * lines-and-columns 1.2.4, Copyright (c) 2015 Brian Donovan
 * linkify-it 5.0.0, Copyright (c) 2015 Vitaly Puzrin.
-* listr2 3.14.0, Copyright (c) Cenk Kilic <cenk@kilic.dev> (https://srcs.kilic.dev), Sam Verschueren <sam.verschueren@gmail.com> (github.com/SamVerschueren)
 * load-tsconfig 0.2.5, Copyright © 2021 EGOIST (https://github.com/sponsors/egoist)
-* local-pkg 0.5.0, Copyright (c) 2021 Anthony Fu <https://github.com/antfu>
-* locate-path 6.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* local-pkg 0.5.1, Copyright (c) 2021 Anthony Fu <https://github.com/antfu>
+* locate-path 5.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * lodash 4.17.21, Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
 * lodash-es 4.17.21, Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
 * lodash-unified 1.0.3
@@ -2011,6 +1865,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * lodash.clonedeep 4.5.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.debounce 4.0.8, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.defaults 4.2.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
+* lodash.flattendeep 4.4.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.get 4.4.2, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.includes 4.3.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.isarguments 3.1.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
@@ -2023,31 +1878,31 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * lodash.merge 4.6.2, Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
 * lodash.once 4.1.1, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.orderby 4.6.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
-* lodash.sortby 4.7.0, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.throttle 4.1.1, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * lodash.truncate 4.4.2, Copyright jQuery Foundation and other contributors <https://jquery.org/>
 * log-symbols 4.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* log-update 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* logform 2.6.1, Copyright (c) 2017 Charlie Robbins & the Contributors.
+* logform 2.7.0, Copyright (c) 2017 Charlie Robbins & the Contributors.
 * loglevel 1.9.2, Copyright (c) 2013 Tim Perry
 * loose-envify 1.4.0, Copyright (c) 2015 Andres Suarez <zertosh@gmail.com>
 * lossless-json 1.0.5, Copyright (c) 2016-2021 Jos de Jong
-* loupe 3.1.4, Copyright (c) 2011-2013 Jake Luer jake@alogicalparadox.com
+* loupe 3.2.1, Copyright (c) 2011-2013 Jake Luer jake@alogicalparadox.com
 * lower-case 2.0.2, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+* lru.min 1.1.3, Copyright (c) 2024-current Weslley Araújo (@wellwelwel)
 * lunr 2.3.9, Copyright (C) 2013 by Oliver Nightingale
 * luxon 3.4.4, Copyright 2019 JS Foundation and other contributors
 * lz-string 1.5.0, Copyright (c) 2013 pieroxy
 * madge 8.0.0, Copyright (c) 2017 Patrik Henningsson
-* magic-string 0.30.17, Copyright 2018 Rich Harris
+* magic-string 0.30.21, Copyright 2018 Rich Harris
 * magicast 0.3.5, Copyright (c) Pooya Parsa <pooya@pi0.io> and Anthony Fu <https://github.com/antfu>
 * mailparser 3.6.7, Copyright (c) 2020 - 2021 Andris Reinman
 * make-dir 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * map-or-similar 1.5.0, Copyright (c) 2016 Baz
-* mappersmith 2.45.0, Copyright (c) 2017 Túlio Ornelas (ornelas.tulio@gmail.com)
+* mappersmith 2.46.1, Copyright (c) 2017 Túlio Ornelas (ornelas.tulio@gmail.com)
 * mark.js 8.11.1, Copyright (c) 2014–2018 Julian Kühnel
 * markdown-it 13.0.2, Copyright (c) 2014 Vitaly Puzrin, Alex Kocharin.
 * markdown-it-emoji 2.0.2, Copyright (c) 2014 Vitaly Puzrin.
 * markdown-it-link-attributes 4.0.1, Copyright (c) 2016 Blade Barringer
+* markdown-table 3.0.4, Copyright (c) Titus Wormer <tituswormer@gmail.com>
 * marked 4.3.0, Copyright (c) 2018+, MarkedJS (https://github.com/markedjs/). Copyright (c) 2011-2018, Christopher Jeffrey (https://github.com/chjj/)*
 * math-intrinsics 1.1.0, Copyright (c) 2024 ECMAScript Shims
 * mathml-tag-names 2.1.3, Copyright (c) 2016 Titus Wormer <tituswormer@gmail.com>
@@ -2078,125 +1933,123 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * minizlib 2.1.2
 * miragejs 0.1.48, Copyright (c) 2016
 * mitt 2.1.0
-* mjml 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-accordion 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-body 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-button 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-carousel 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-cli 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-column 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-core 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-divider 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-group 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-attributes 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-breakpoint 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-font 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-html-attributes 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-preview 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-style 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-head-title 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-hero 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-image 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-migrate 4.15.3, Copyright (c) 2017 Nicolas Garnier
-* mjml-navbar 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-parser-xml 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-preset-core 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-raw 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-section 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-social 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-spacer 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-table 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-text 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-validator 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mjml-wrapper 4.15.3, Copyright (c) 2016 Mailjet SAS, https://mjml.io
-* mkdirp 2.1.3, Copyright (c) 2011-2023 James Halliday (mail@substack.net) and Isaac Z. Schlueter (i@izs.me)
+* mjml 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-accordion 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-body 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-button 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-carousel 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-cli 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-column 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-core 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-divider 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-group 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-attributes 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-breakpoint 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-font 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-html-attributes 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-preview 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-style 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-head-title 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-hero 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-image 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-migrate 4.17.0, Copyright (c) 2017 Nicolas Garnier
+* mjml-navbar 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-parser-xml 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-preset-core 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-raw 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-section 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-social 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-spacer 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-table 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-text 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-validator 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mjml-wrapper 4.17.0, Copyright (c) 2016 Mailjet SAS, https://mjml.io
+* mkdirp 2.1.6, Copyright (c) 2011-2023 James Halliday (mail@substack.net) and Isaac Z. Schlueter (i@izs.me)
 * mkdirp-classic 0.5.3, Copyright (c) 2020 James Halliday (mail@substack.net) and Mathias Buus
-* mlly 1.7.4, Copyright (c) Pooya Parsa <pooya@pi0.io>
-* mobx 6.12.0, Copyright (c) 2015 Michel Weststrate
-* mobx-react 9.1.1, Copyright (c) 2015 Michel Weststrate
-* mobx-react-lite 4.0.7, Copyright (c) 2015 Michel Weststrate
-* mocha 11.7.1, Copyright (c) 2011-2024 OpenJS Foundation and contributors, https://openjsf.org
-* mocha-junit-reporter 2.2.1
+* mlly 1.8.0, Copyright (c) Pooya Parsa <pooya@pi0.io>
+* mobx 6.15.0, Copyright (c) 2015 Michel Weststrate
+* mobx-react 9.2.1, Copyright (c) 2015 Michel Weststrate
+* mobx-react-lite 4.1.1, Copyright (c) 2015 Michel Weststrate
 * module-definition 6.0.1, Copyright (c) 2022 Dependents
-* module-details-from-path 1.0.3, Copyright (c) 2016 Thomas Watson Steen
+* module-details-from-path 1.0.4, Copyright (c) 2016-2025 Thomas Watson Steen
 * module-lookup-amd 9.0.5, Copyright (c) 2023 Dependents
 * moment 2.30.1, Copyright (c) JS Foundation and other contributors
 * moment-timezone 0.5.48, Copyright (c) JS Foundation and other contributors
 * mqtt 5.7.2, Copyright (c) 2015-2016 MQTT.js contributors. ---------------------------------------*
-* mqtt-packet 9.0.0, Copyright (c) 2014-2017 mqtt-packet contributors. ---------------------------------------
+* mqtt-packet 9.0.2, Copyright (c) 2014-2017 mqtt-packet contributors. ---------------------------------------
 * ms 2.1.3, Copyright (c) 2020 Vercel, Inc.
-* msgpackr 1.11.2, Copyright (c) 2020 Kris Zyp
-* msgpackr-extract 3.0.2, Copyright (c) 2020 Kris Zyp
+* msgpackr 1.11.5, Copyright (c) 2020 Kris Zyp
+* msgpackr-extract 3.0.3, Copyright (c) 2020 Kris Zyp
 * mssql 10.0.2, Copyright (c) 2013-2018 Patrik Simek and contributors
 * muggle-string 0.4.1, Copyright (c) 2022-present Johnson Chu
 * multer 2.0.2, Copyright (c) 2014 Hage Yaapa <[http://www.hacksparrow.com](http://www.hacksparrow.com)>
 * mustache 4.2.0, Copyright (c) 2009 Chris Wanstrath (Ruby). Copyright (c) 2010-2014 Jan Lehnardt (JavaScript). Copyright (c) 2010-2015 The mustache.js community
-* mylas 2.1.13, Copyright (c) 2020 Raoul de Heer
-* mysql2 3.11.0, Copyright (c) 2016 Andrey Sidorov (sidorares@yandex.ru) and contributors
+* mylas 2.1.14, Copyright (c) 2020 Raoul de Heer
+* mysql2 3.15.0, Copyright (c) 2016 Andrey Sidorov (sidorares@yandex.ru) and contributors
 * mz 2.7.0, Copyright (c) 2014-2016 Jonathan Ong me@jongleberry.com and Contributors
 * named-placeholders 1.1.3, Copyright (c) 2014 Andrey Sidorov
-* nan 2.20.0, Copyright (c) 2018 [NAN contributors](<https://github.com/nodejs/nan#wg-members--collaborators>)
+* nan 2.23.1, Copyright (c) 2018 [NAN contributors](<https://github.com/nodejs/nan#wg-members--collaborators>)
 * nanoclone 0.2.1, Copyright (c) 2017 Anton Kosykh
 * nanoid 3.3.8, Copyright 2017 Andrey Sitnik <andrey@sitnik.ru>
 * napi-build-utils 2.0.0, Copyright (c) 2018 inspiredware
-* napi-postinstall 0.2.4, Copyright (c) 2021-present UnTS
+* napi-postinstall 0.3.4, Copyright (c) 2021-present UnTS
 * native-duplexpair 1.0.0, Copyright (c) 2017 Anna Henningsen
 * natural-compare 1.4.0, Copyright (c) 2012-2015 Lauri Rooden &lt;lauri@rooden.ee&gt;  . [The MIT License](http://lauri.rooden.ee/mit-license.txt)
 * negotiator 0.6.4, Copyright (c) 2012-2014 Federico Romero. Copyright (c) 2012-2014 Isaac Z. Schlueter. Copyright (c) 2014-2015 Douglas Christopher Wilson
 * neo-async 2.6.2, Copyright (c) 2014-2018 Suguru Motegi. Based on Async.js, Copyright Caolan McMahon
-* nice-grpc 2.1.12, Copyright (c) 2021 Deeplay
-* nice-grpc-client-middleware-retry 3.1.11, Copyright (c) 2021 Deeplay
+* nice-grpc 2.1.14, Copyright (c) 2021 Deeplay
+* nice-grpc-client-middleware-retry 3.1.13, Copyright (c) 2021 Deeplay
 * nice-grpc-common 2.0.2, Copyright (c) 2021 Deeplay
 * nice-try 1.0.5, Copyright (c) 2018 Tobias Reich
 * no-case 3.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
-* nock 14.0.1, Copyright (c) 2011-2019 Pedro Teixeira and other contributors
-* node-abi 3.75.0, Copyright (c) 2016 Lukas Geiger
+* nock 14.0.10, Copyright (c) 2011-2019 Pedro Teixeira and other contributors
+* node-abi 3.85.0, Copyright (c) 2016 Lukas Geiger
 * node-abort-controller 3.1.1, Copyright (c) 2019 Steve Faulkner
-* node-addon-api 7.1.0, Copyright (c) 2017 [Node.js API collaborators](https://github.com/nodejs/node-addon-api#collaborators)
+* node-addon-api 7.1.1, Copyright (c) 2017 [Node.js API collaborators](https://github.com/nodejs/node-addon-api#collaborators)
 * node-cleanup 2.1.2, Copyright (c) 2016 Joseph T. Lapp
 * node-domexception 1.0.0, Copyright (c) 2021 Jimmy Wärting
 * node-ensure 0.0.0
 * node-fetch 2.7.0, Copyright (c) 2016 David Frank
 * node-fetch-h2 2.3.0, Copyright (c) 2016 David Frank
-* node-fetch-native 1.6.6, Copyright (c) Pooya Parsa <pooya@pi0.io>*
+* node-fetch-native 1.6.7, Copyright (c) Pooya Parsa <pooya@pi0.io>*
 * node-gyp 8.4.1, Copyright (c) 2012 Nathan Rajlich <nathan@tootallnate.net>
 * node-gyp-build 4.8.4, Copyright (c) 2017 Mathias Buus
-* node-gyp-build-optional-packages 5.0.7, Copyright (c) 2017 Mathias Buus
+* node-gyp-build-optional-packages 5.2.2, Copyright (c) 2017 Mathias Buus
 * node-html-markdown 1.2.0
 * node-html-parser 5.4.2, Copyright 2019 Tao Qiufeng
 * node-int64 0.4.0, Copyright (c) 2014 Robert Kieffer
 * node-machine-id 1.1.12, Copyright (c) 2016 Aleksandr Komlev
+* node-preload 0.2.1, Copyright (c) 2019 CFWare, LLC
 * node-readfiles 0.2.0, Copyright (c) 2016 Alejandro Gonzalez <guatedude2@hotmial.com>
-* node-releases 2.0.19, Copyright (c) 2017 Sergey Rubanov (https://github.com/chicoxyzzy)
+* node-releases 2.0.27, Copyright (c) 2017 Sergey Rubanov (https://github.com/chicoxyzzy)
 * node-rsa 1.1.1, Copyright (c) 2014  rzcoder<br/>*
 * node-source-walk 7.0.1, Copyright (c) 2022 Dependents
 * node-ssh 13.2.0, Copyright (c) 2014-2021 Steel Brain
 * node-stdlib-browser 1.3.1, Copyright (c) Ivan Nikolić <http://ivannikolic.com> Copyright (c) Tobias Koppers
-* nodemon 3.0.1, Copyright (c) 2010 - present, Remy Sharp, https://remysharp.com <remy@remysharp.com>
+* nodemon 3.1.11, Copyright (c) 2010 - present, Remy Sharp, https://remysharp.com <remy@remysharp.com>
 * normalize-path 3.0.0, Copyright (c) 2014-2018, Jon Schlinkert.
 * normalize-range 0.1.2, Copyright (c) James Talmage <james@talmage.io> (github.com/jamestalmage)
 * npm-run-all2 7.0.2, Copyright (c) 2015 Toru Nagashima
-* npm-run-path 4.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+* npm-run-path 6.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * number-allocator 1.0.14, Copyright (c) 2021 Takatoshi Kondo
-* nwsapi 2.2.7, Copyright (c) 2007-2019 Diego Perini (http://www.iport.it/)
+* nwsapi 2.2.22, Copyright (c) 2007-2025 Diego Perini (http://www.iport.it/)
 * nypm 0.5.4, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * oauth-1.0a 2.2.6, Copyright (c) 2014 Ddo
-* oauth4webapi 3.5.1, Copyright (c) 2022 Filip Skokan
+* oauth4webapi 3.8.2, Copyright (c) 2022 Filip Skokan
 * object-assign 4.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * object-hash 3.0.0, Copyright (c) 2014 object-hash contributors
 * object-inspect 1.13.4, Copyright (c) 2013 James Halliday
 * object-is 1.1.6, Copyright (c) 2014 Jordan Harband
 * object-keys 1.1.1, Copyright (C) 2013 Jordan Harband
 * object-sizeof 2.6.5, Copyright © 2014, Andrei Karpushonak aka @miktam
-* object.assign 4.1.5, Copyright (c) 2014 Jordan Harband
-* object.entries 1.1.9, Copyright (c) 2015 Jordan Harband
+* object.assign 4.1.7, Copyright (c) 2014 Jordan Harband
 * object.fromentries 2.0.8, Copyright (c) 2018 Jordan Harband
 * object.groupby 1.0.3, Copyright (c) 2023 ECMAScript Shims
 * object.values 1.2.1, Copyright (c) 2015 Jordan Harband
-* obuf 1.1.2, Copyright Fedor Indutny, 2015.
+* obug 1.0.0, Copyright © 2025-PRESENT Kevin Deng (https://github.com/sxzz)
 * ohash 2.0.11, Copyright (c) Pooya Parsa <pooya@pi0.io>
-* ollama 0.5.16, Copyright (c) 2023 Saul
+* ollama 0.5.18, Copyright (c) 2023 Saul
 * on-exit-leak-free 2.1.2, Copyright (c) 2021 Matteo Collina
 * on-finished 2.4.1, Copyright (c) 2013 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014 Douglas Christopher Wilson <doug@somethingdoug.com>
 * on-headers 1.1.0, Copyright (c) 2014 Douglas Christopher Wilson
@@ -2204,15 +2057,14 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * onetime 5.1.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * ono 7.1.3, Copyright (c) 2015 James Messinger
 * open 7.4.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* openapi-sampler 1.5.1, Copyright (c) 2017 Roman Hotsiy <gotsijroman@gmail.com>
+* openapi-sampler 1.6.2, Copyright (c) 2017 Roman Hotsiy <gotsijroman@gmail.com>
 * openapi-types 12.1.3, Copyright (c) 2018 Kogo Softare LLC
 * openid-client 6.5.0, Copyright (c) 2016 Filip Skokan
-* optionator 0.9.3, Copyright (c) George Zahariev
+* optionator 0.9.4, Copyright (c) George Zahariev
 * ora 5.4.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * os-browserify 0.3.0, Copyright (c) 2017 CoderPuppy
 * os-homedir 1.0.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * os-tmpdir 1.0.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* ospath 1.2.2
 * otpauth 9.1.1, Copyright © Héctor Molinero Fernández
 * otplib 12.0.1, Copyright (c) 2014 Gerald Yeo <contact@fusedthought.com>
 * outdent 0.8.0, Copyright (c) 2016 Andrew Bradley
@@ -2223,7 +2075,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * p-finally 1.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * p-lazy 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * p-limit 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* p-locate 5.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* p-locate 4.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * p-map 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * p-queue 6.6.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * p-retry 4.6.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
@@ -2237,8 +2089,8 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * parse-ms 2.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * parse-passwd 1.0.0, Copyright (c) 2016 Brian Woodward
 * parse-srcset 1.0.2, Copyright (c) 2014 Alex Bell
-* parse5 7.1.2, Copyright (c) 2013-2019 Ivan Nikulin (ifaaan@gmail.com, https://github.com/inikulin)
-* parse5-htmlparser2-tree-adapter 7.0.0, Copyright (c) 2013-2019 Ivan Nikulin (ifaaan@gmail.com, https://github.com/inikulin)
+* parse5 7.3.0, Copyright (c) 2013-2019 Ivan Nikulin (ifaaan@gmail.com, https://github.com/inikulin)
+* parse5-htmlparser2-tree-adapter 7.1.0, Copyright (c) 2013-2019 Ivan Nikulin (ifaaan@gmail.com, https://github.com/inikulin)
 * parse5-parser-stream 7.1.2, Copyright (c) 2013-2019 Ivan Nikulin (ifaaan@gmail.com, https://github.com/inikulin)
 * parseley 0.12.1, Copyright (c) 2021-2022 KillyMXI <killy@mxii.eu.org>
 * parseurl 1.3.3, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014-2017 Douglas Christopher Wilson <doug@somethingdoug.com>
@@ -2249,60 +2101,57 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * path-is-absolute 1.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * path-key 3.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * path-parse 1.0.7, Copyright (c) 2015 Javier Blanco
-* path-to-regexp 8.2.0, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+* path-to-regexp 8.3.0, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * path-type 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* pathe 1.1.2, Copyright (c) Pooya Parsa <pooya@pi0.io> - Daniel Roe <daniel@roe.dev>*
-* pathval 2.0.0, Copyright (c) 2011-2013 Jake Luer jake@alogicalparadox.com
-* pbkdf2 3.1.3, Copyright (c) 2014 Daniel Cousens
+* pathe 2.0.3, Copyright (c) Pooya Parsa <pooya@pi0.io> - Daniel Roe <daniel@roe.dev>*
+* pathval 2.0.1, Copyright (c) 2011-2013 Jake Luer jake@alogicalparadox.com
+* pbkdf2 3.1.5, Copyright (c) 2014 Daniel Cousens
 * pdf-parse 1.1.1, Copyright (c) 2017 Mehmet Kozan
 * peberminta 0.9.0, Copyright (c) 2021-2022 KillyMXI <killy@mxii.eu.org>
 * peek-readable 4.1.0, Copyright (c) 2010-2017 Borewit
-* pend 1.2.0, Copyright (c) 2014 Andrew Kelley
 * perfect-debounce 1.0.0, Copyright (c) Pooya Parsa <pooya@pi0.io>
-* perfect-scrollbar 1.5.5, Copyright (c) 2012-2019 Hyunje Jun, MDBootstrap.com and other contributors
-* performance-now 2.1.0, Copyright (c) 2013 Braveg1rl
+* perfect-scrollbar 1.5.6, Copyright (c) 2012-2019 Hyunje Jun, MDBootstrap.com and other contributors
 * pg 8.12.0, Copyright (c) 2010 - 2021 Brian Carlson
-* pg-cloudflare 1.1.1, Copyright (c) 2010 - 2021 Brian Carlson
-* pg-connection-string 2.6.4, Copyright (c) 2014 Iced Development
+* pg-cloudflare 1.2.7, Copyright (c) 2010 - 2021 Brian Carlson
+* pg-connection-string 2.9.1, Copyright (c) 2014 Iced Development
 * pg-minify 1.6.5, Copyright © 2020 [Vitaly Tomilov](https://github.com/vitaly-t);. Released under the MIT license.
-* pg-pool 3.6.2, Copyright (c) 2017 Brian M. Carlson
+* pg-pool 3.10.1, Copyright (c) 2017 Brian M. Carlson
 * pg-promise 11.9.1, Copyright (c) 2015-2018 Vitaly Tomilov
-* pg-protocol 1.6.1, Copyright (c) 2010 - 2021 Brian Carlson
-* pg-types 4.0.2, Copyright (c) 2014 Brian M. Carlson
+* pg-protocol 1.10.3, Copyright (c) 2010 - 2021 Brian Carlson
+* pg-types 2.2.0, Copyright (c) 2014 Brian M. Carlson
 * pgpass 1.0.5, Copyright (c) 2013-2016 Hannes Hörl
-* picomatch 4.0.2, Copyright (c) 2017-present, Jon Schlinkert.
+* picomatch 4.0.3, Copyright (c) 2017-present, Jon Schlinkert.
 * pidtree 0.6.0, Copyright (c) 2018 Simone Primarosa
 * pify 2.3.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* pinia 2.2.4, Copyright (c) 2019-present Eduardo San Martin Morote
-* pino 9.7.0, Copyright (c) 2016-2024 Matteo Collina, David Mark Clements and the Pino contributors listed at https://github.com/pinojs/pino#the-team and in the README file.
+* pinia 2.3.1, Copyright (c) 2019-present Eduardo San Martin Morote
+* pino 9.14.0, Copyright (c) 2016-2025 Matteo Collina, David Mark Clements and the Pino contributors listed at <https://github.com/pinojs/pino#the-team> and in the README file.
 * pino-abstract-transport 2.0.0, Copyright (c) 2021 pino
 * pino-std-serializers 7.0.0, Copyright Mateo Collina, David Mark Clements, James Sumners
 * pirates 4.0.7, Copyright (c) 2016-2018 Ari Porad
 * pkce-challenge 5.0.0, Copyright (c) 2019
 * pkg-dir 4.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * pkg-types 1.3.1, Copyright (c) Pooya Parsa <pooya@pi0.io> - Daniel Roe <daniel@roe.dev>*
-* plimit-lit 1.4.1, Copyright (c) 2021 Joel Voss
+* plimit-lit 1.6.1, Copyright (c) 2021 Joel Voss
 * pluralize 8.0.0, Copyright (c) 2013 Blake Embrey (hello@blakeembrey.com)
-* polished 4.2.2, Copyright (c) 2016 - 2021 Brian Hough and Maximilian Stoiber
+* polished 4.3.1, Copyright (c) 2016-Present Brian Hough and Maximilian Stoiber
 * pop-iterate 1.0.1
-* possible-typed-array-names 1.0.0, Copyright (c) 2024 Jordan Harband
-* postcss 8.4.49, Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
+* possible-typed-array-names 1.1.0, Copyright (c) 2024 Jordan Harband
+* postcss 8.5.6, Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
 * postcss-html 1.8.0, Copyright (c) 2018 刘祺
 * postcss-import 15.1.0, Copyright (c) 2014 Maxime Thirouin, Jason Campbell & Kevin Mårtensson
-* postcss-js 4.0.1, Copyright 2015 Andrey Sitnik <andrey@sitnik.ru>
-* postcss-load-config 4.0.2, Copyright Michael Ciniawsky <michael.ciniawsky@gmail.com>
+* postcss-js 4.1.0, Copyright 2015 Andrey Sitnik <andrey@sitnik.ru>
+* postcss-load-config 6.0.1, Copyright Michael Ciniawsky <michael.ciniawsky@gmail.com>
 * postcss-media-query-parser 0.2.3
-* postcss-nested 6.0.1, Copyright 2014 Andrey Sitnik <andrey@sitnik.ru>
+* postcss-nested 6.2.0, Copyright 2014 Andrey Sitnik <andrey@sitnik.ru>
 * postcss-resolve-nested-selector 0.1.6, Copyright (c) 2016 David Clark. Copyright © CSSTools Contributors
 * postcss-safe-parser 6.0.0, Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
 * postcss-scss 4.0.9, Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
-* postcss-selector-parser 6.1.2, Copyright (c) Ben Briggs <beneb.info@gmail.com> (http://beneb.info)
+* postcss-selector-parser 7.1.0, Copyright (c) Ben Briggs <beneb.info@gmail.com> (http://beneb.info)
 * postcss-value-parser 4.2.0, Copyright (c) Bogdan Chadkin <trysound@yandex.ru>
 * postgres-array 2.0.0, Copyright (c) Ben Drucker <bvdrucker@gmail.com> (bendrucker.me)
 * postgres-bytea 1.0.0, Copyright (c) Ben Drucker <bvdrucker@gmail.com> (bendrucker.me)
 * postgres-date 1.0.7, Copyright (c) Ben Drucker <bvdrucker@gmail.com> (bendrucker.me)
 * postgres-interval 1.2.0, Copyright (c) Ben Drucker <bvdrucker@gmail.com> (bendrucker.me)
-* postgres-range 1.1.4, Copyright (c) 2021 Abbas Mashayekh
 * posthog-node 3.2.1
 * prebuild-install 7.1.3, Copyright (c) 2015 Mathias Buus
 * precinct 12.2.0, Copyright (c) 2022 Dependents
@@ -2310,12 +2159,14 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * pretender 3.4.7, Copyright (c) 2015 Trek Glowacki
 * prettier 3.6.2, Copyright © James Long and contributors
 * pretty-bytes 5.6.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* pretty-format 29.5.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* pretty-format 27.5.1, Copyright (c) Facebook, Inc. and its affiliates.
 * pretty-ms 7.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* prismjs 1.29.0, Copyright (c) 2012 Lea Verou
+* prismjs 1.30.0, Copyright (c) 2012 Lea Verou
 * process 0.11.10, Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
 * process-nextick-args 2.0.1
+* process-on-spawn 1.1.0, Copyright (c) 2019 CFWare, LLC
 * process-warning 5.0.0, Copyright (c) Fastify
+* progress 2.0.3, Copyright (c) 2017 TJ Holowaychuk <tj@vision-media.ca>
 * promise 7.3.1, Copyright (c) 2014 Forbes Lindesay
 * promise-ftp 1.3.5, Copyright (c) 2015
 * promise-ftp-common 1.1.5, Copyright (c) 2015
@@ -2325,7 +2176,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * propagate 2.0.1, Copyright (c) 2015-2019 Pedro Teixeira and other contributors
 * proper-lockfile 4.1.2, Copyright (c) 2018 Made With MOXY Lda <hello@moxy.studio>
 * properties-reader 2.3.0, Copyright (c) 2013 Steve King
-* property-expr 2.0.5, Copyright (c) 2014 Jason Quense
+* property-expr 2.0.6, Copyright (c) 2014 Jason Quense
 * proxy-addr 2.0.7, Copyright (c) 2014-2016 Douglas Christopher Wilson
 * proxy-from-env 1.1.0, Copyright (C) 2016-2018 Rob Wu <rob@robwu.nl>
 * ps-tree 1.2.0, Copyright (c) 2014 Domenic Tarr, Charlie Robbins & the Contributors
@@ -2344,17 +2195,18 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * pug-runtime 3.0.1, Copyright (c) 2014 Forbes Lindesay
 * pug-strip-comments 2.0.0, Copyright (c) 2015 Tiancheng “Timothy” Gu
 * pug-walk 2.0.0, Copyright (c) 2015 Forbes Lindesay
-* pump 3.0.0, Copyright (c) 2014 Mathias Buus
+* pump 3.0.3, Copyright (c) 2014 Mathias Buus
 * punycode 1.4.1, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * punycode.js 2.3.1, Copyright Mathias Bynens <https://mathiasbynens.be/>
-* pure-rand 6.0.1, Copyright (c) 2018 Nicolas DUBIEN
+* pure-rand 6.1.0, Copyright (c) 2018 Nicolas DUBIEN
 * python-struct 1.1.3, Copyright (c) 2016 Daniel Cohen Gindi
 * q 2.0.3, Copyright 2009–2014 Kristopher Michael Kowal. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
-* qrcode.vue 3.3.4, Copyright (c) 2017 scope.wu
-* quansync 0.2.8, Copyright (c) 2025-PRESENT Anthony Fu <https://github.com/antfu> and Kevin Deng <https://github.com/sxzz>
+* qified 0.5.2
+* qrcode.vue 3.6.0, Copyright (c) 2017 scope.wu
+* quansync 0.2.11, Copyright (c) 2025-PRESENT Anthony Fu <https://github.com/antfu> and Kevin Deng <https://github.com/sxzz>
 * querystring-es3 0.2.1
 * querystringify 2.2.0, Copyright (c) 2015 Unshift.io, Arnout Kazemier,  the Contributors.
-* queue-lit 1.5.0, Copyright (c) 2021 Joel Voss
+* queue-lit 1.5.2, Copyright (c) 2021 Joel Voss
 * queue-microtask 1.2.3, Copyright (c) Feross Aboukhadijeh
 * quick-format-unescaped 4.0.4, Copyright (c) 2016-2019 David Mark Clements
 * quote-unquote 1.0.0, Copyright (c) 2015 Dominic Tarr
@@ -2366,90 +2218,90 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * range-parser 1.2.1, Copyright (c) 2012-2014 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2015-2016 Douglas Christopher Wilson <doug@somethingdoug.com
 * raw-body 3.0.0, Copyright (c) 2013-2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014-2022 Douglas Christopher Wilson <doug@somethingdoug.com>
 * rc9 2.1.2, Copyright (c) Pooya Parsa <pooya@pi0.io>*
-* react 18.2.0, Copyright (c) Facebook, Inc. and its affiliates.
-* react-confetti 6.1.0, Copyright (c) 2016 Aaron Lampros
-* react-dom 18.2.0, Copyright (c) Facebook, Inc. and its affiliates.
-* react-is 18.2.0, Copyright (c) Facebook, Inc. and its affiliates.
-* react-tabs 6.0.2, Copyright (c) Matt Zabriskie and Daniel Tschinder
+* react 19.2.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* react-confetti 6.4.0, Copyright (c) 2016 Aaron Lampros
+* react-dom 19.2.0, Copyright (c) Meta Platforms, Inc. and affiliates.
+* react-is 17.0.2, Copyright (c) Facebook, Inc. and its affiliates.
+* react-tabs 6.1.0, Copyright (c) Matt Zabriskie and Daniel Tschinder
 * read-cache 1.0.0, Copyright 2016 Bogdan Chadkin <trysound@yandex.ru>
-* read-pkg 5.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* read-pkg-up 7.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* readable-stream 4.5.2
-* readable-web-to-node-stream 3.0.2, Copyright (c) 2019 Borewit
+* readable-stream 4.7.0
+* readable-web-to-node-stream 3.0.4, Copyright (c) 2019 Borewit
 * readdirp 4.1.2, Copyright (c) 2012-2019 Thorsten Lorenz, Paul Miller (https://paulmillr.com)
 * readline-sync 1.4.10, Copyright (c) 2019 anseki
 * real-require 0.2.0, Copyright (c) 2021 Paolo Insogna and the real-require contributors
 * recast 0.22.0, Copyright (c) 2012 Ben Newman <bn@cs.stanford.edu>
 * rechoir 0.6.2, Copyright (c) 2015 Tyler Kellen
 * redent 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* redis 4.6.12, Copyright (c) 2022-2023, Redis, inc.
+* redis 4.6.14, Copyright (c) 2022-2023, Redis, inc.
 * redis-errors 1.2.0, Copyright (c) 2017 Ruben Bridgewater
 * redis-parser 3.0.0, Copyright (c) 2015 NodeRedis
-* redoc 2.4.0, Copyright (c) 2015-present, Rebilly, Inc.
+* redoc 2.5.0, Copyright (c) 2015-present, Rebilly, Inc.
 * reflect.getprototypeof 1.0.10, Copyright (c) 2021 ECMAScript Shims
 * regenerate 1.4.2, Copyright Mathias Bynens <https://mathiasbynens.be/>
-* regenerate-unicode-properties 10.2.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
+* regenerate-unicode-properties 10.2.2, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * regenerator-runtime 0.14.1, Copyright (c) 2014-present, Facebook, Inc.
-* regenerator-transform 0.15.2, Copyright (c) 2014-present, Facebook, Inc.
 * regexp-tree 0.1.27, Copyright (c) 2017 Dmitry Soshnikov
 * regexp.escape 2.0.1, Copyright (c) 2015 Jordan Harband
-* regexp.prototype.flags 1.5.3, Copyright (C) 2014 Jordan Harband
-* regexpu-core 6.2.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
+* regexp.prototype.flags 1.5.4, Copyright (C) 2014 Jordan Harband
+* regexpu-core 6.4.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * regjsgen 0.8.0, Copyright 2014-2020 Benjamin Tan <https://ofcr.se/>
 * reinterval 1.1.0, Copyright (c) 2015 Agor Maxime
-* reka-ui 2.2.1, Copyright (c) 2023 UnoVue <https://github.com/unovue>
+* reka-ui 2.6.0, Copyright (c) 2023 UnoVue <https://github.com/unovue>
 * relateurl 0.2.7, Copyright (c) Steven Vachon <contact@svachon.com> (svachon.com)
 * remove-trailing-slash 0.1.1
 * replace-in-file 6.3.5, Copyright 2015-2020, Adam Reis, Co-founder at [Hello Club](https://helloclub.com/?source=npm).
-* request-progress 3.0.0, Copyright (c) 2012 IndigoUnited
 * require-directory 2.1.1, Copyright (c) 2011 Troy Goode <troygoode@gmail.com>
 * require-from-string 2.0.2, Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
-* require-in-the-middle 7.4.0, Copyright (c) 2016-2019, Thomas Watson Steen. Copyright (c) 2019-2023, Elasticsearch B.V.
+* require-in-the-middle 7.5.2, Copyright (c) 2016-2019, Thomas Watson Steen. Copyright (c) 2019-2025, Elasticsearch B.V.. Copyright (c) 2025+, require-in-the-middle contributors
 * requirejs 2.3.7
 * requirejs-config-file 4.0.0, Copyright (c) 2013 webforge-labs
 * requires-port 1.0.0, Copyright (c) 2015 Unshift.io, Arnout Kazemier,  the Contributors.
-* resolve 1.22.10, Copyright (c) 2012 James Halliday
+* resolve 1.22.11, Copyright (c) 2012 James Halliday
 * resolve-cwd 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * resolve-dependency-path 4.0.1, Copyright (c) 2023 Dependents
 * resolve-from 5.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * resolve-pkg-maps 1.0.0, Copyright (c) Hiroki Osame <hiroki.osame@gmail.com>
-* resolve.exports 2.0.0, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+* resolve.exports 2.0.3, Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
 * restore-cursor 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+* ret 0.5.0, Copyright (C) 2011 by fent
 * retry 0.13.1, Copyright (c) 2011:. Tim Koschützki (tim@debuggable.com). Felix Geisendörfer (felix@debuggable.com)
 * retry-request 7.0.2, Copyright (c) 2015 Stephen Sawchuk
-* reusify 1.0.4, Copyright (c) 2015 Matteo Collina
-* rfdc 1.3.0, Copyright 2019 "David Mark Clements <david.mark.clements@gmail.com>"
-* ripemd160 2.0.2, Copyright (c) 2016 crypto-browserify
+* reusify 1.1.0, Copyright (c) 2015-2024 Matteo Collina
+* rfdc 1.4.1, Copyright 2019 "David Mark Clements <david.mark.clements@gmail.com>"
+* ripemd160 2.0.3, Copyright (c) 2016 crypto-browserify
 * rndm 1.2.0, Copyright (c) 2014 Jonathan Ong me@jongleberry.com
-* rollup 4.46.2, Copyright (c) 2017 [these people](https://github.com/rollup/rollup/graphs/contributors)
+* rolldown 1.0.0-beta.50, Copyright (c) 2024-present VoidZero Inc. & Contributors
+* rolldown-plugin-dts 0.17.7, Copyright © 2025-PRESENT Kevin Deng (https://github.com/sxzz)
+* rolldown-vite 7.2.5, Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
+* rollup 4.53.2, Copyright (c) 2017 [these people](https://github.com/rollup/rollup/graphs/contributors)
 * route-recognizer 0.3.4, Copyright (c) 2016 Yehuda Katz and contributors
 * router 2.2.0, Copyright (c) 2013 Roman Shtylman. Copyright (c) 2014-2022 Douglas Christopher Wilson
 * rrweb-cssom 0.6.0, Copyright (c) Nikita Vasilyev
 * rss-parser 3.13.0, Copyright (c) 2016 Bobby Brennan
-* run-applescript 7.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* run-applescript 7.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * run-async 2.4.1, Copyright (c) 2014 Simon Boudrias
 * run-parallel 1.2.0, Copyright (c) Feross Aboukhadijeh
 * run-script-os 1.1.6, Copyright (c) 2017 Charlie Guse
 * rusha 0.8.14, Copyright (c) 2013-2014 Sam Rijs
-* safe-array-concat 1.1.2, Copyright (c) 2023 Jordan Harband
+* safe-array-concat 1.1.3, Copyright (c) 2023 Jordan Harband
 * safe-buffer 5.1.2, Copyright (c) Feross Aboukhadijeh
 * safe-push-apply 1.0.0, Copyright (c) 2024 Jordan Harband
-* safe-regex-test 1.0.3, Copyright (c) 2022 Jordan Harband
-* safe-stable-stringify 2.4.0, Copyright (c) Ruben Bridgewater
+* safe-regex-test 1.1.0, Copyright (c) 2022 Jordan Harband
+* safe-regex2 5.0.0
+* safe-stable-stringify 2.5.0, Copyright (c) Ruben Bridgewater
 * safer-buffer 2.1.2, Copyright (c) 2018 Nikita Skovoroda <chalkerx@gmail.com>
 * samlify 2.10.0, Copyright (c) 2016-present Tony Ngan
 * sanitize-html 2.12.1, Copyright (c) 2013, 2014, 2015 P'unk Avenue LLC
-* sass 1.89.2, Copyright (c) 2016, Google Inc.*
+* sass 1.94.0, Copyright (c) 2016, Google Inc.*
 * sass-lookup 6.1.0, Copyright (c) 2023 Dependents
-* sb-promise-queue 2.1.0, Copyright (c) 2018-2020 Steel Brain
-* sb-scandir 3.1.0, Copyright (c) 2016-2020 Steel Brain
-* scheduler 0.23.0, Copyright (c) Facebook, Inc. and its affiliates.
-* seedrandom 3.0.5, Copyright 2019 David Bau.
+* sb-promise-queue 2.1.1, Copyright (c) 2018-2020 Steel Brain
+* sb-scandir 3.1.1, Copyright (c) 2020 steelbrain
+* scheduler 0.27.0, Copyright (c) Meta Platforms, Inc. and affiliates.
 * selderee 0.11.0, Copyright (c) 2021-2022 KillyMXI <killy@mxii.eu.org>
 * send 1.2.0, Copyright (c) 2012 TJ Holowaychuk. Copyright (c) 2014-2022 Douglas Christopher Wilson
 * sentence-case 3.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * serve-static 2.2.0, Copyright (c) 2010 Sencha Inc.. Copyright (c) 2011 LearnBoost. Copyright (c) 2011 TJ Holowaychuk. Copyright (c) 2014-2016 Douglas Christopher Wilson
-* set-cookie-parser 2.7.1, Copyright (c) 2015 Nathan Friedly <nathan@nfriedly.com> (http://nfriedly.com/)
+* set-cookie-parser 2.7.2, Copyright (c) 2015 Nathan Friedly <nathan@nfriedly.com> (http://nfriedly.com/)
 * set-function-length 1.2.2, Copyright (c) Jordan Harband and contributors
 * set-function-name 2.0.2, Copyright (c) Jordan Harband and contributors
 * set-proto 1.0.0, Copyright (c) 2024 Jordan Harband
@@ -2458,7 +2310,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * shebang-command 2.0.0, Copyright (c) Kevin Mårtensson <kevinmartensson@gmail.com> (github.com/kevva)
 * shebang-regex 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * shell-escape 0.2.0
-* shell-quote 1.8.1, Copyright (c) 2013 James Halliday (mail@substack.net)
+* shell-quote 1.8.3, Copyright (c) 2013 James Halliday (mail@substack.net)
 * should 13.2.3, Copyright(c) 2010-2013 TJ Holowaychuk <tj@vision-media.ca>. Copyright(c) 2013-2017 Denis Bardadym <bardadymchik@gmail.com>
 * should-equal 2.0.0, Copyright (c) 2014
 * should-format 3.0.3, Copyright (c) 2014
@@ -2466,18 +2318,16 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * should-type-adaptors 1.1.0, Copyright (c) 2016 Should.js assertion library
 * should-util 1.0.1, Copyright (c) 2016 Should.js assertion library
 * showdown 2.1.0, Copyright (c) 2018,2021 ShowdownJS
-* side-channel 1.0.4, Copyright (c) 2019 Jordan Harband
+* side-channel 1.1.0, Copyright (c) 2019 Jordan Harband
 * side-channel-list 1.0.0, Copyright (c) 2024 Jordan Harband
 * side-channel-map 1.0.1, Copyright (c) 2024 Jordan Harband
 * side-channel-weakmap 1.0.2, Copyright (c) 2019 Jordan Harband
-* simple-bin-help 1.8.0, Copyright (c) 2015 Gleb Bahmutov
 * simple-concat 1.0.1, Copyright (c) Feross Aboukhadijeh
 * simple-get 4.0.1, Copyright (c) Feross Aboukhadijeh
-* simple-git 3.17.0
+* simple-git 3.28.0
 * simple-lru-cache 0.0.2, Copyright (c) 2013 Mercadolibre.com
-* simple-swizzle 0.2.2, Copyright (c) 2015 Josh Junon
 * simple-update-notifier 2.0.0, Copyright (c) 2022 Alex Brazier
-* simple-wcswidth 1.0.1, Copyright (c) 2020 Nahiyan Kamal
+* simple-wcswidth 1.1.2, Copyright (c) 2020 Nahiyan Kamal
 * simple-websocket 9.1.0, Copyright (c) Feross Aboukhadijeh
 * sisteransi 1.0.5, Copyright (c) 2018 Terkel Gjervig Nielsen
 * slash 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
@@ -2485,7 +2335,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * slugify 1.4.7, Copyright (c) Simeon Velichkov <simeonvelichkov@gmail.com>
 * smart-buffer 4.2.0, Copyright (c) 2013-2017 Josh Glazebrook
 * snake-case 3.0.4, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
-* socks 2.8.3, Copyright (c) 2013 Josh Glazebrook
+* socks 2.8.7, Copyright (c) 2013 Josh Glazebrook
 * socks-proxy-agent 6.2.1, Copyright (c) 2013 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
 * sonic-boom 4.2.0, Copyright (c) 2017 Matteo Collina
 * sortablejs 1.14.0, Copyright (c) 2019 All contributors to Sortable
@@ -2500,19 +2350,17 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * ssh-remote-port-forward 1.0.4, Copyright (c) 2019-2020 Cristian Greco
 * ssh2 1.15.0, Copyright Brian White. All rights reserved.
 * sshpk 1.18.0, Copyright Joyent, Inc. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
-* stable-hash 0.0.5
-* stable-hash-x 0.1.1, Copyright (c) 2025-present UnTS
+* stable-hash-x 0.2.0, Copyright (c) 2025-present UnTS
 * stack-trace 0.0.10, Copyright (c) 2011 Felix Geisendörfer (felix@debuggable.com)
 * stack-utils 2.0.6, Copyright (c) 2016-2022 Isaac Z. Schlueter <i@izs.me>, James Talmage <james@talmage.io> (github.com/jamestalmage), and Contributors
 * stackback 0.0.2
 * standard-as-callback 2.1.0, Copyright (c) 2018 Zihua Li. Copyright (c) 2013-2017 Petka Antonov
-* start-server-and-test 2.0.10, Copyright (c) 2022 bahmutov
 * static-eval 2.0.2
-* statuses 2.0.1, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2016 Douglas Christopher Wilson <doug@somethingdoug.com>
-* std-env 3.9.0, Copyright (c) Pooya Parsa <pooya@pi0.io>
+* statuses 2.0.2, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2016 Douglas Christopher Wilson <doug@somethingdoug.com>
+* std-env 3.10.0, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * stop-iteration-iterator 1.1.0, Copyright (c) 2023 Jordan Harband
-* stoppable 1.1.0, Copyright (c) 2017 Hunter Loftis <hunter@hunterloftis.com>
-* storybook 8.6.4
+* storybook 9.1.7
+* storybook-dark-mode 4.0.2, Copyright (c) 2019 Andrew Lisowski <lisowski54@gmail.com>
 * stream-browserify 3.0.0, Copyright (c) James Halliday
 * stream-combiner 0.0.4, Copyright (c) 2012 'Dominic Tarr'
 * stream-events 1.0.5
@@ -2520,39 +2368,39 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * stream-shift 1.0.3, Copyright (c) 2016 Mathias Buus
 * stream-to-array 2.3.0, Copyright (c) 2014 Jonathan Ong me@jongleberry.com
 * streamsearch 1.1.0, Copyright Brian White. All rights reserved.
-* streamx 2.22.1, Copyright (c) 2019 Mathias Buus
+* streamx 2.23.0, Copyright (c) 2019 Mathias Buus
 * strict-event-emitter 0.5.1
 * string_decoder 1.3.0
-* string-argv 0.3.1, Copyright 2014 Anthony McCormick
+* string-argv 0.3.2, Copyright 2014 Anthony McCormick
 * string-length 4.0.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * string-width 4.2.3, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* string.prototype.trim 1.2.9, Copyright (c) 2015 Jordan Harband
+* string.prototype.trim 1.2.10, Copyright (c) 2015 Jordan Harband
 * string.prototype.trimend 1.0.9, Copyright (c) 2017 Khaled Al-Ansari
 * string.prototype.trimstart 1.0.8, Copyright (c) 2017 Khaled Al-Ansari
 * strip-ansi 6.0.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* strip-ansi 7.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* strip-ansi 7.1.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * strip-bom 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * strip-eof 1.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* strip-final-newline 2.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* strip-indent 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* strip-final-newline 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* strip-indent 4.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * strip-json-comments 3.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* strip-literal 3.0.0, Copyright (c) 2022 Anthony Fu <https://github.com/antfu>
-* strnum 1.0.5, Copyright (c) 2021 Natural Intelligence
+* strip-literal 3.1.0, Copyright (c) 2022 Anthony Fu <https://github.com/antfu>
+* strnum 2.1.1, Copyright (c) 2021 Natural Intelligence
 * strtok3 6.3.0, Copyright (c) 2017, Borewit. All rights reserved.
 * stubs 3.0.0
-* style-mod 4.1.0, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
-* styled-components 6.1.8, Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber
-* stylelint 16.23.0, Copyright (c) 2015 - present Maxime Thirouin, David Clark & Richard Hallows
+* style-mod 4.1.3, Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+* styled-components 6.1.19, Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber
+* stylelint 16.25.0, Copyright (c) 2015 - present Maxime Thirouin, David Clark & Richard Hallows
 * stylelint-config-recommended 16.0.0, Copyright (c) 2018 - present stylelint
 * stylelint-config-recommended-scss 15.0.1, Copyright (c) 2016 Krister Kari
 * stylelint-config-standard 38.0.0, Copyright (c) 2015 - present stylelint authors
 * stylelint-config-standard-scss 15.0.1, Copyright (c) 2021 Present stylelint-scss authors
 * stylelint-scss 6.12.1, Copyright (c) 2016 Krister Kari
-* stylis 4.3.1, Copyright (c) 2016-present Sultan Tarimo
+* stylis 4.3.2, Copyright (c) 2016-present Sultan Tarimo
 * stylus-lookup 6.1.0, Copyright (c) 2023 Dependents
 * sucrase 3.35.0, Copyright (c) 2012-2018 various contributors (see AUTHORS)
-* superagent 10.2.1, Copyright (c) 2014-2016 TJ Holowaychuk <tj@vision-media.ca>
-* supertest 7.1.1, Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>
+* superagent 10.2.3, Copyright (c) 2014-2016 TJ Holowaychuk <tj@vision-media.ca>
+* supertest 7.1.4, Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>
 * supports-color 8.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * supports-hyperlinks 3.2.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com). Copyright (c) James Talmage <james@talmage.io> (https://github.com/jamestalmage)
 * supports-preserve-symlinks-flag 1.0.0, Copyright (c) 2022 Inspect JS
@@ -2562,193 +2410,179 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * symbol-tree 3.2.4, Copyright (c) 2015 Joris van der Wel
 * syslog-client 1.1.1, Copyright (c) 2017 Paul Grove
 * systemjs 6.15.1, Copyright (C) 2013-2022 Guy Bedford
-* tailwindcss 3.4.3, Copyright (c) Tailwind Labs, Inc.
-* tapable 2.2.2, Copyright JS Foundation and other contributors
-* tar-fs 2.1.3, Copyright (c) 2014 Mathias Buus
+* tailwindcss 3.4.18, Copyright (c) Tailwind Labs, Inc.
+* tapable 2.3.0, Copyright JS Foundation and other contributors
+* tar-fs 2.1.4, Copyright (c) 2014 Mathias Buus
 * tar-stream 3.1.7, Copyright (c) 2014 Mathias Buus
 * tarn 3.0.2, Copyright (c) 2015 Vincit Oy
 * tdigest 0.1.2, Copyright (c) 2015 Will Welch
-* tedious 16.7.1, Copyright (c) 2010-2018 Mike D Pilsbury
+* tedious 18.6.1, Copyright (c) 2010-2018 Mike D Pilsbury
 * temp 0.9.4, Copyright (c) 2010-2014 Bruce Williams
-* testcontainers 11.0.3, Copyright (c) 2018 - 2025 Cristian Greco
+* testcontainers 11.8.1, Copyright (c) 2018 - 2025 Cristian Greco
 * text-hex 1.0.0, Copyright (c) 2014-2015 Arnout Kazemier <opensource@3rd-Eden.com>
-* text-table 0.2.0
 * thenify 3.3.1, Copyright (c) 2014-2016 Jonathan Ong me@jongleberry.com and contributors
 * thenify-all 1.6.0, Copyright (c) 2014 Jonathan Ong me@jongleberry.com
 * thread-stream 3.1.0, Copyright (c) 2021 Matteo Collina
-* throttleit 1.0.0
 * through 2.3.8, Copyright (c) 2011 Dominic Tarr
 * timeago.js 4.0.2, Copyright (c) 2016 Hust.cc
 * timers-browserify 2.0.12
 * tiny-invariant 1.3.3, Copyright (c) 2019 Alexander Reardon
 * tinybench 2.9.0, Copyright (c) 2022 Tinylibs
-* tinyexec 0.3.2, Copyright (c) 2024 Tinylibs
-* tinyglobby 0.2.14, Copyright (c) 2024 Madeline Gurriarán
+* tinyexec 1.0.2, Copyright (c) 2024 Tinylibs
+* tinyglobby 0.2.15, Copyright (c) 2024 Madeline Gurriarán
 * tinypool 1.1.1, Copyright (c) 2020 James M Snell and the Piscina contributors
 * tinyrainbow 2.0.0, Copyright (c) 2022 Tinylibs
-* tinyspy 3.0.2, Copyright (c) 2022 Tinylibs
+* tinyspy 4.0.4, Copyright (c) 2022 Tinylibs
 * title-case 3.0.3, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * tlds 1.248.0, Copyright (c) 2013 Stephen Mathieson and 2020 Richie Bendall
-* tldts 6.1.86, Copyright (c) 2017 Thomas Parisot, 2018 Rémi Berson
-* tldts-core 6.1.86, Copyright (c) 2017 Thomas Parisot, 2018 Rémi Berson
 * tmp 0.2.4, Copyright (c) 2014 KARASZI István
 * tmp-promise 3.0.3
-* to-buffer 1.2.1, Copyright (c) 2016 Mathias Buus
+* to-buffer 1.2.2, Copyright (c) 2016 Mathias Buus
 * to-regex-range 5.0.1, Copyright (c) 2015-present, Jon Schlinkert.
 * toidentifier 1.0.1, Copyright (c) 2016 Douglas Christopher Wilson <doug@somethingdoug.com>
 * token-stream 1.0.0, Copyright (c) 2014 Forbes Lindesay
 * token-types 4.2.1, Copyright 2017 Borewit
 * toml 3.0.0, Copyright (c) 2012 Michelle Tilley
 * toposort 2.0.2
-* tr46 5.0.0, Copyright (c) Sebastian Mayr
+* tr46 5.1.1, Copyright (c) Sebastian Mayr
 * transliteration 2.3.5, Copyright http://github.com/dzcpy/transliteration
 * tree-kill 1.2.2, Copyright (c) 2018 Peter Krumins
 * tree-sitter 0.21.1, Copyright (c) 2014 maxbrunsfeld
 * tree-sitter-bash 0.23.3, Copyright (c) 2017 Max Brunsfeld
 * treeify 1.1.0, Copyright (c) 2012-2018 Luke Plaster <notatestuser@gmail.com>
-* triple-beam 1.3.0, Copyright (c) 2017 winstonjs
+* triple-beam 1.4.1, Copyright (c) 2017 winstonjs
 * ts-api-utils 2.1.0
 * ts-dedent 2.2.0, Copyright (c) 2018 Tamino Martinius
 * ts-error 1.0.6, Copyright (c) 2018 Frédérique Mittelstaedt
 * ts-essentials 7.0.3, Copyright (c) 2018-2019 Chris Kaczor (github.com/krzkaczor)
 * ts-graphviz 2.1.6, Copyright (c) 2019-2025 Yuki Yamazaki
 * ts-ics 1.2.2, Copyright (c) 2023 Neuvernetzung Medienagentur UG
-* ts-jest 29.1.1, Copyright (c) 2016-2018
+* ts-jest 29.4.5, Copyright (c) 2016-2025
 * ts-map 1.0.3, Copyright (c) 2017 lavyun (http://lavyun.cn) and other contributors
 * ts-morph 26.0.0, Copyright (c) 2017 David Sherret
-* ts-node 10.9.2, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
-* ts-pattern 5.8.0, Copyright (c) 2021 Gabriel Vergnaud
-* tsc-alias 1.8.10, Copyright (c) 2018 Justkey
-* tsc-watch 6.2.0, Copyright (c) Gil Amran
+* ts-pattern 5.9.0, Copyright (c) 2021 Gabriel Vergnaud
+* tsc-alias 1.8.16, Copyright (c) 2018 Justkey
+* tsc-watch 6.3.1, Copyright (c) Gil Amran
 * tsconfig-paths 4.2.0, Copyright (c) 2016 Jonas Kello
+* tsdown 0.15.12, Copyright (c) 2025-present VoidZero Inc. & Contributors. Copyright (c) 2024 Kevin Deng (https://github.com/sxzz)
 * tsscmp 1.0.6, Copyright (c) 2016
-* tsup 8.5.0, Copyright (c) 2021 EGOIST
-* tsx 4.19.3, Copyright (c) Hiroki Osame <hiroki.osame@gmail.com>
+* tsup 8.5.1, Copyright (c) 2021 EGOIST
+* tsx 4.20.6, Copyright (c) Hiroki Osame <hiroki.osame@gmail.com>
 * tty-browserify 0.0.1
-* tunnel 0.0.6, Copyright (c) 2012 Koichi Kobayashi
 * turbo 2.5.4, Copyright (c) 2025 Vercel, Inc
-* turbo-darwin-64 2.3.3, Copyright (c) 2024 Vercel, Inc
-* turbo-darwin-arm64 2.3.3, Copyright (c) 2024 Vercel, Inc
 * turbo-linux-64 2.5.4, Copyright (c) 2025 Vercel, Inc
-* turbo-linux-arm64 2.3.3, Copyright (c) 2024 Vercel, Inc
-* turbo-windows-64 2.3.3, Copyright (c) 2024 Vercel, Inc
-* turbo-windows-arm64 2.3.3, Copyright (c) 2024 Vercel, Inc
 * type-check 0.4.0, Copyright (c) George Zahariev
-* type-detect 4.0.8, Copyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)
+* type-detect 4.1.0, Copyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)
 * type-is 2.0.1, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * type-of-is 3.5.1
-* typed-array-buffer 1.0.2, Copyright (c) 2023 Jordan Harband
-* typed-array-byte-length 1.0.1, Copyright (c) 2020 Inspect JS
-* typed-array-byte-offset 1.0.2, Copyright (c) 2020 Inspect JS
-* typed-array-length 1.0.6, Copyright (c) 2020 Inspect JS
+* typed-array-buffer 1.0.3, Copyright (c) 2023 Jordan Harband
+* typed-array-byte-length 1.0.3, Copyright (c) 2020 Inspect JS
+* typed-array-byte-offset 1.0.4, Copyright (c) 2020 Inspect JS
+* typed-array-length 1.0.7, Copyright (c) 2020 Inspect JS
 * typedarray 0.0.6
 * typedarray-dts 1.0.0, Copyright (c) 2018 George Thomas
 * typedarray-to-buffer 3.1.5, Copyright (c) Feross Aboukhadijeh
-* typescript-eslint 8.35.0, Copyright (c) 2019 typescript-eslint and other contributors
+* typescript-eslint 8.46.4, Copyright (c) 2019 typescript-eslint and other contributors
 * uc.micro 1.0.6, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * ufo 1.6.1, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * uid-safe 2.1.5, Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>. Copyright (c) 2015-2017 Douglas Christopher Wilson <doug@somethingdoug.com>
-* unbox-primitive 1.0.2, Copyright (c) 2019 Jordan Harband
+* unbox-primitive 1.1.0, Copyright (c) 2019 Jordan Harband
+* unconfig 7.4.1, Copyright (c) 2021-PRESENT Anthony Fu <https://github.com/antfu>
+* unconfig-core 7.4.1, Copyright (c) 2021-PRESENT Anthony Fu <https://github.com/antfu>
 * undefsafe 2.0.5, Copyright © 2016 Remy Sharp, http://remysharp.com <remy@remysharp.com>
 * underscore 1.12.1, Copyright (c) 2009-2020 Jeremy Ashkenas, DocumentCloud and Investigative. Reporters & Editors
-* undici 6.21.3, Copyright (c) Matteo Collina and Undici contributors
-* undici-types 6.19.8, Copyright (c) Matteo Collina and Undici contributors
+* undici 6.22.0, Copyright (c) Matteo Collina and Undici contributors
+* undici-types 6.21.0, Copyright (c) Matteo Collina and Undici contributors
 * unicode-canonical-property-names-ecmascript 2.0.1, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * unicode-match-property-ecmascript 2.0.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
-* unicode-match-property-value-ecmascript 2.2.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
-* unicode-property-aliases-ecmascript 2.1.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
+* unicode-match-property-value-ecmascript 2.2.1, Copyright Mathias Bynens <https://mathiasbynens.be/>
+* unicode-property-aliases-ecmascript 2.2.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * unicorn-magic 0.3.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* universalify 2.0.0, Copyright (c) 2017, Ryan Zimmerman <opensrc@ryanzim.com>
+* universalify 2.0.1, Copyright (c) 2017, Ryan Zimmerman <opensrc@ryanzim.com>
 * unpipe 1.0.0, Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
-* unplugin 1.11.0, Copyright (c) 2021-PRESENT Nuxt Contrib
-* unplugin-icons 0.19.0, Copyright (c) 2020-PRESENT Anthony Fu<https://github.com/antfu>
-* unplugin-vue-components 0.27.3, Copyright (c) 2020-PRESENT Anthony Fu<https://github.com/antfu>
-* unrs-resolver 1.9.2
-* untildify 4.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-* update-browserslist-db 1.1.1, Copyright 2022 Andrey Sitnik <andrey@sitnik.ru> and other contributors
+* unplugin 1.0.1, Copyright (c) 2021-PRESENT Nuxt Contrib
+* unplugin-icons 0.19.3, Copyright (c) 2020-PRESENT Anthony Fu<https://github.com/antfu>
+* unrs-resolver 1.11.1
+* update-browserslist-db 1.1.4, Copyright 2022 Andrey Sitnik <andrey@sitnik.ru> and other contributors
 * upper-case 2.0.2
 * upper-case-first 2.0.2, Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
 * uri-js-replace 1.0.1
 * url 0.11.4, Copyright 2014 Joyent, Inc. and other Node contributors.
 * url-join 4.0.1, Copyright (c) 2015 José F. Romaniello
 * url-parse 1.5.10, Copyright (c) 2015 Unshift.io, Arnout Kazemier,  the Contributors.
-* use-sync-external-store 1.2.2, Copyright (c) Facebook, Inc. and its affiliates.
+* use-sync-external-store 1.6.0, Copyright (c) Meta Platforms, Inc. and affiliates.
 * utf-8-validate 5.0.10
 * utf8 3.0.0, Copyright Mathias Bynens <https://mathiasbynens.be/>
 * util 0.12.5, Copyright Joyent, Inc. and other Node contributors. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
 * util-deprecate 1.0.2, Copyright (c) 2014 Nathan Rajlich <nathan@tootallnate.net>
 * util-extend 1.0.3, Copyright Joyent, Inc. and other Node contributors. All rights reserved.. Permission is hereby granted, free of charge, to any person obtaining a copy. of this software and associated documentation files (the "Software"), to. deal in the Software without restriction, including without limitation the. rights to use, copy, modify, merge, publish, distribute, sublicense, and/or. sell copies of the Software, and to permit persons to whom the Software is. furnished to do so, subject to the following conditions:
-* utils-merge 1.0.1, Copyright (c) 2013-2017 Jared Hanson
 * uuid 10.0.0, Copyright (c) 2010-2020 Robert Kieffer and other contributors
 * v-code-diff 1.13.1, Copyright (c) 2022 Shimada666
-* v3-infinite-loading 1.2.2
-* v8-compile-cache-lib 3.0.1, Copyright (c) 2019 Andres Suarez
+* v3-infinite-loading 1.3.2
 * valid-data-url 3.0.1, Copyright (c) Alexey Kucherenko
-* validator 13.7.0, Copyright (c) 2018 Chris O'Hara <cohara87@gmail.com>
+* validator 13.15.20, Copyright (c) 2018 Chris O'Hara <cohara87@gmail.com>
 * vary 1.1.2, Copyright (c) 2014-2017 Douglas Christopher Wilson
-* verror 1.10.0, Copyright (c) 2016, Joyent, Inc. All rights reserved.
-* vite 6.3.5, Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
-* vite-node 3.1.3, Copyright (c) 2021-Present Vitest Team
-* vite-plugin-dts 4.5.3, Copyright (c) 2021-present qmhc
+* vite-node 3.2.4, Copyright (c) 2021-Present Vitest Team
+* vite-plugin-dts 4.5.4, Copyright (c) 2021-present qmhc
+* vite-plugin-istanbul 7.2.1, Copyright (c) 2020 Christian Norrman
 * vite-plugin-node-polyfills 0.24.0, Copyright (c) 2022 David R. Myers
 * vite-plugin-static-copy 2.2.0, Copyright (c) 2021 sapphi-red
 * vite-svg-loader 5.1.0, Copyright (c) 2021 Jan-Paul Kleemans
-* vitest 3.1.3, Copyright (c) 2021-Present Vitest Team
+* vitest 3.2.4, Copyright (c) 2021-Present Vitest Team
 * vitest-mock-extended 3.1.0, Copyright (c) 2019 Marc McIntyre
 * vm-browserify 1.1.2
 * void-elements 3.1.0, Copyright (c) 2014 hemanth
-* vscode-uri 3.0.8, Copyright (c) Microsoft
-* vue 3.5.13, Copyright (c) 2018-present, Yuxi (Evan) You
+* vscode-uri 3.1.0, Copyright (c) Microsoft
+* vue 3.5.24, Copyright (c) 2018-present, Yuxi (Evan) You
 * vue-agile 2.0.0, Copyright (c) 2017 Łukasz Florczak
-* vue-boring-avatars 1.3.0
-* vue-chartjs 5.2.0, Copyright (c) 2016 Jakub Juszczak
-* vue-component-meta 2.1.10, Copyright (c) 2021-present Johnson Chu
-* vue-component-type-helpers 2.2.10, Copyright (c) 2023-present Johnson Chu
+* vue-boring-avatars 1.4.0
+* vue-chartjs 5.3.3, Copyright (c) 2016 Jakub Juszczak
+* vue-component-meta 2.2.12, Copyright (c) 2021-present Johnson Chu
+* vue-component-type-helpers 2.2.12, Copyright (c) 2023-present Johnson Chu
 * vue-demi 0.14.10, Copyright (c) 2020-present, Anthony Fu
-* vue-docgen-api 4.76.0, Copyright (c) 2021 Vue Styleguidist
-* vue-eslint-parser 10.1.3, Copyright (c) 2016 Toru Nagashima
-* vue-i18n 11.1.10, Copyright (c) 2020 kazuya kawaguchi
+* vue-docgen-api 4.79.2, Copyright (c) 2021 Vue Styleguidist
+* vue-eslint-parser 10.2.0, Copyright (c) 2016 Toru Nagashima
+* vue-i18n 11.1.12, Copyright (c) 2020 kazuya kawaguchi
 * vue-inbrowser-compiler-independent-utils 4.71.1, Copyright (c) 2021 Vue Styleguidist
 * vue-json-pretty 2.2.4, Copyright (c) 2017
-* vue-markdown-render 2.2.1, Copyright (c) 2023 cloudacy OG
+* vue-markdown-render 2.3.0, Copyright (c) 2023 cloudacy OG
 * vue-observe-visibility 2.0.0-alpha.1
 * vue-resize 2.0.0-alpha.1
-* vue-router 4.5.0, Copyright (c) 2019-present Eduardo San Martin Morote
-* vue-tsc 2.2.8, Copyright (c) 2021-present Johnson Chu
+* vue-router 4.6.3, Copyright (c) 2019-present Eduardo San Martin Morote
+* vue-tsc 2.2.12, Copyright (c) 2021-present Johnson Chu
 * vue-virtual-scroller 2.0.0-beta.8, Copyright (c) 2020 guillaume.b.chau@gmail.com
-* vue3-touch-events 4.1.3, Copyright (c) 2017 Jerry Bendy
+* vue3-touch-events 4.2.0, Copyright (c) 2017 Jerry Bendy
 * vuedraggable 4.1.0, Copyright (c) 2016-2019 David Desmaisons
-* w3c-keyname 2.2.6, Copyright (C) 2016 by Marijn Haverbeke <marijnh@gmail.com> and others
+* w3c-keyname 2.2.8, Copyright (C) 2016 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
 * w3c-xmlserializer 5.0.0, Copyright © Sebastian Mayr
-* wait-on 8.0.2, Copyright (c) 2015 Jeff Barczewski
 * walkdir 0.4.1, Copyright (c) 2012 Ryan Day
 * wcwidth 1.0.1, Copyright (C) 2012 by Jun Woong.
 * web-resource-inliner 6.0.1
 * web-streams-polyfill 4.0.0-beta.3, Copyright (c) 2021 Mattias Buelens. Copyright (c) 2016 Diwank Singh Tomer
 * web-tree-sitter 0.24.3, Copyright (c) 2018-2024 Max Brunsfeld
-* webpack-sources 3.2.3, Copyright (c) 2017 JS Foundation and other contributors
-* webpack-virtual-modules 0.6.1, Copyright (c) 2017 SysGears
+* webpack-sources 3.3.3, Copyright (c) 2017 JS Foundation and other contributors
+* webpack-virtual-modules 0.5.0, Copyright (c) 2017 SysGears
 * whatwg-encoding 3.1.1, Copyright © Domenic Denicola <d@domenic.me>
 * whatwg-fetch 3.6.20, Copyright (c) 2014-2023 GitHub, Inc.
 * whatwg-mimetype 4.0.0, Copyright © Domenic Denicola <d@domenic.me>
-* whatwg-url 14.0.0, Copyright (c) Sebastian Mayr
-* which-boxed-primitive 1.0.2, Copyright (c) 2019 Jordan Harband
+* whatwg-url 14.2.0, Copyright (c) Sebastian Mayr
+* which-boxed-primitive 1.1.1, Copyright (c) 2019 Jordan Harband
 * which-builtin-type 1.2.1, Copyright (c) 2020 ECMAScript Shims
 * which-collection 1.0.2, Copyright (c) 2019 Inspect JS
-* which-typed-array 1.1.15, Copyright (c) 2015 Jordan Harband
+* which-typed-array 1.1.19, Copyright (c) 2015 Jordan Harband
 * why-is-node-running 2.3.0, Copyright (c) 2016 Mathias Buus
 * widest-line 3.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * winston 3.14.2, Copyright (c) 2010 Charlie Robbins
-* winston-transport 4.8.0, Copyright (c) 2015 Charlie Robbins & the contributors.
+* winston-transport 4.9.0, Copyright (c) 2015 Charlie Robbins & the contributors.
 * wiremock-rest-client 1.11.0, Copyright (c) 2019 Kwo Ding
 * with 7.0.2, Copyright (c) 2013 Forbes Lindesay
-* word-wrap 1.2.3, Copyright (c) 2014-2017, Jon Schlinkert
+* word-wrap 1.2.5, Copyright (c) 2014-2016, Jon Schlinkert
 * wordwrap 1.0.0
 * worker-timers 7.1.8, Copyright (c) 2024 Christoph Guttandin
 * worker-timers-broker 6.1.8, Copyright (c) 2024 Christoph Guttandin
 * worker-timers-worker 7.0.71, Copyright (c) 2024 Christoph Guttandin
 * wrap-ansi 7.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* ws 8.17.1, Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>. Copyright (c) 2013 Arnout Kazemier and contributors. Copyright (c) 2016 Luigi Pinca and contributors
+* ws 8.18.3, Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>. Copyright (c) 2013 Arnout Kazemier and contributors. Copyright (c) 2016 Luigi Pinca and contributors
 * wsl-utils 0.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * xml 1.0.1, Copyright (c) 2011-2016 Dylan Greene <dylang@gmail.com>
 * xml-crypto 6.1.2, Copyright (c) Yaron Naveh <yaronn01@gmail.com>
@@ -2763,12 +2597,9 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * xtend 4.0.2
 * yaeti 0.0.6, Copyright (c) 2015 Iñaki Baz Castillo, <ibc@aliax.net>
 * yamljs 0.3.0, Copyright (c) 2010 Jeremy Faivre
-* yargs 17.7.2, Copyright 2010 James Halliday (mail@substack.net); Modified work Copyright 2014 Contributors (ben@npmjs.com)
-* yargs-unparser 2.0.0, Copyright (c) 2017 Made With MOXY Lda <hello@moxy.studio>
-* yauzl 2.10.0, Copyright (c) 2014 Josh Wolfe
-* yn 3.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+* yargs 17.0.1, Copyright 2010 James Halliday (mail@substack.net); Modified work Copyright 2014 Contributors (ben@npmjs.com)
 * yocto-queue 0.1.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* yoctocolors 2.1.1, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+* yoctocolors 2.1.2, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 * yup 0.32.11, Copyright (c) 2014 Jason Quense
 * z-vue-scan 0.0.35
 * zip-stream 6.0.1, Copyright (c) 2014 Chris Talkington, contributors.
@@ -2776,22 +2607,14 @@ The n8n software includes open source packages, libraries, and modules, each of 
 
 ## MIT OR Apache-2.0
 
-* @biomejs/biome 1.9.0, Copyright (c) 2023 Biome Developers and Contributors.
-* @biomejs/cli-darwin-arm64 1.9.4
-* @biomejs/cli-darwin-x64 1.9.4
-* @biomejs/cli-linux-arm64 1.9.4
-* @biomejs/cli-linux-arm64-musl 1.9.4
-* @biomejs/cli-linux-x64 1.9.0
-* @biomejs/cli-linux-x64-musl 1.9.0
-* @biomejs/cli-win32-arm64 1.9.4
-* @biomejs/cli-win32-x64 1.9.4
+* @biomejs/biome 1.9.4, Copyright (c) 2023 Biome Developers and Contributors.
+* @biomejs/cli-linux-x64 1.9.4
 
 ## MIT*
 
 * @kafkajs/confluent-schema-registry 3.8.0, Copyright (c) 2019 Erik Engervall (erik.engervall@gmail.com)
 * @rudderstack/rudder-sdk-node 2.1.4, Copyright © 2017 Segment Inc. <friends@segment.com>*
 * binascii 0.0.2, Copyright (c) 2014 Michał Budzyński (@michalbe)
-* browser-assert 1.2.1, Copyright (c) 2015 Social Ally
 * cohere-ai 7.14.0, Copyright (c) 2021 Cohere
 * decko 1.2.0, Copyright (c) 2017 Jason Miller
 * js-nacl 1.4.0
@@ -2810,12 +2633,14 @@ The n8n software includes open source packages, libraries, and modules, each of 
 ## MIT-0
 
 * @csstools/selector-specificity 5.0.0, Copyright © CSSTools Contributors
-* nodemailer 6.9.9, Copyright (c) 2011-2023 Andris Reinman
+* nodemailer 7.0.10, Copyright (c) 2011-2023 Andris Reinman
 * url-value-parser 2.2.0, Copyright (c) 2022 Konstantin Pogorelov
 
 ## MPL-2.0
 
-* axe-core 4.7.2
+* axe-core 4.11.0
+* lightningcss 1.30.2
+* lightningcss-linux-x64-gnu 1.30.2
 * postcss-values-parser 6.0.2
 * pyodide 0.28.0
 
@@ -2830,7 +2655,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 ## Unlicense
 
 * big-integer 1.6.52
-* humanize-duration 3.27.3
+* humanize-duration 3.33.1
 * isbot 3.6.13
 * tweetnacl 1.0.3
 * tweetnacl-util 0.15.1
@@ -3035,6 +2860,240 @@ This license is Copyright (C) 2003-2004 Lawrence E. Rosen. All rights reserved.
 Permission is hereby granted to copy and distribute this license without
 modification. This license may not be modified without the express written
 permission of its copyright owner.
+```
+
+## (Apache-2.0 OR UPL-1.0) License Text
+
+```
+Copyright (c) 2015, 2025 Oracle and/or its affiliates.
+
+This software is dual-licensed to you under the Universal Permissive License
+(UPL) 1.0 as shown at https://oss.oracle.com/licenses/upl and Apache License
+2.0 as shown at http://www.apache.org/licenses/LICENSE-2.0. You may choose
+either license.
+
+If you elect to accept the software under the Apache License, Version 2.0,
+the following applies:
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+The Universal Permissive License (UPL), Version 1.0
+===================================================
+
+Subject to the condition set forth below, permission is hereby granted to any
+person obtaining a copy of this software, associated documentation and/or data
+(collectively the "Software"), free of charge and under any and all copyright
+rights in the Software, and any and all patent rights owned or freely
+licensable by each licensor hereunder covering either (i) the unmodified
+Software as contributed to or provided by such licensor, or (ii) the Larger
+Works (as defined below), to deal in both
+
+(a) the Software, and
+
+(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if
+    one is included with the Software (each a "Larger Work" to which the
+    Software is contributed by such licensors),
+
+without restriction, including without limitation the rights to copy, create
+derivative works of, display, perform, and distribute the Software and make,
+use, sell, offer for sale, import, export, have made, and have sold the
+Software and the Larger Work(s), and to sublicense the foregoing rights on
+either these or other terms.
+
+This license is subject to the following condition:
+
+The above copyright notice and either this complete permission notice or at a
+minimum a reference to the UPL must be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Apache License
+==============
+
+Version 2.0, January 2004
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1.  **Definitions**.
+
+    "License" shall mean the terms and conditions for use, reproduction, and
+    distribution as defined by Sections 1 through 9 of this document.
+
+    "Licensor" shall mean the copyright owner or entity authorized by the
+    copyright owner that is granting the License.
+
+    "Legal Entity" shall mean the union of the acting entity and all other
+    entities that control, are controlled by, or are under common control with
+    that entity.  For the purposes of this definition, "control" means (i) the
+    power, direct or indirect, to cause the direction or management of such
+    entity, whether by contract or otherwise, or (ii) ownership of fifty
+    percent (50%) or more of the outstanding shares, or (iii) beneficial
+    ownership of such entity.
+
+    "You" (or "Your") shall mean an individual or Legal Entity exercising
+    permissions granted by this License.
+
+    "Source" form shall mean the preferred form for making modifications,
+    including but not limited to software source code, documentation source,
+    and configuration files.
+
+    "Object" form shall mean any form resulting from mechanical transformation
+    or translation of a Source form, including but not limited to compiled
+    object code, generated documentation, and conversions to other media types.
+
+    "Work" shall mean the work of authorship, whether in Source or Object form,
+    made available under the License, as indicated by a copyright notice that
+    is included in or attached to the work (an example is provided in the
+    Appendix below).
+
+    "Derivative Works" shall mean any work, whether in Source or Object form,
+    that is based on (or derived from) the Work and for which the editorial
+    revisions, annotations, elaborations, or other modifications represent, as
+    a whole, an original work of authorship. For the purposes of this License,
+    Derivative Works shall not include works that remain separable from, or
+    merely link (or bind by name) to the interfaces of, the Work and Derivative
+    Works thereof.
+
+    "Contribution" shall mean any work of authorship, including the original
+    version of the Work and any modifications or additions to that Work or
+    Derivative Works thereof, that is intentionally submitted to Licensor for
+    inclusion in the Work by the copyright owner or by an individual or Legal
+    Entity authorized to submit on behalf of the copyright owner. For the
+    purposes of this definition, "submitted" means any form of electronic,
+    verbal, or written communication sent to the Licensor or its
+    representatives, including but not limited to communication on electronic
+    mailing lists, source code control systems, and issue tracking systems that
+    are managed by, or on behalf of, the Licensor for the purpose of discussing
+    and improving the Work, but excluding communication that is conspicuously
+    marked or otherwise designated in writing by the copyright owner as "Not a
+    Contribution."
+
+    "Contributor" shall mean Licensor and any individual or Legal Entity on
+    behalf of whom a Contribution has been received by Licensor and
+    subsequently incorporated within the Work.
+
+2.  **Grant of Copyright License.** Subject to the terms and conditions of this
+    License, each Contributor hereby grants to You a perpetual, worldwide,
+    non-exclusive, no-charge, royalty-free, irrevocable copyright license to
+    reproduce, prepare Derivative Works of, publicly display, publicly perform,
+    sublicense, and distribute the Work and such Derivative Works in Source or
+    Object form.
+
+3.  **Grant of Patent License.** Subject to the terms and conditions of this
+    License, each Contributor hereby grants to You a perpetual, worldwide,
+    non-exclusive, no-charge, royalty-free, irrevocable (except as stated in
+    this section) patent license to make, have made, use, offer to sell, sell,
+    import, and otherwise transfer the Work, where such license applies only to
+    those patent claims licensable by such Contributor that are necessarily
+    infringed by their Contribution(s) alone or by combination of their
+    Contribution(s) with the Work to which such Contribution(s) was submitted.
+    If You institute patent litigation against any entity (including a
+    cross-claim or counterclaim in a lawsuit) alleging that the Work or a
+    Contribution incorporated within the Work constitutes direct or
+    contributory patent infringement, then any patent licenses granted to You
+    under this License for that Work shall terminate as of the date such
+    litigation is filed.
+
+4.  **Redistribution.** You may reproduce and distribute copies of the Work or
+    Derivative Works thereof in any medium, with or without modifications, and
+    in Source or Object form, provided that You meet the following conditions:
+
+    1.  You must give any other recipients of the Work or Derivative Works a
+        copy of this License; and
+
+    2.  You must cause any modified files to carry prominent notices stating
+        that You changed the files; and
+
+    3.  You must retain, in the Source form of any Derivative Works that You
+        distribute, all copyright, patent, trademark, and attribution notices
+        from the Source form of the Work, excluding those notices that do not
+        pertain to any part of the Derivative Works; and
+
+    4.  If the Work includes a "NOTICE" text file as part of its distribution,
+        then any Derivative Works that You distribute must include a readable
+        copy of the attribution notices contained within such NOTICE file,
+        excluding those notices that do not pertain to any part of the
+        Derivative Works, in at least one of the following places: within a
+        NOTICE text file distributed as part of the Derivative Works; within
+        the Source form or documentation, if provided along with the Derivative
+        Works; or, within a display generated by the Derivative Works, if and
+        wherever such third-party notices normally appear. The contents of the
+        NOTICE file are for informational purposes only and do not modify the
+        License. You may add Your own attribution notices within Derivative
+        Works that You distribute, alongside or as an addendum to the NOTICE
+        text from the Work, provided that such additional attribution notices
+        cannot be construed as modifying the License.
+
+        You may add Your own copyright statement to Your modifications and may
+        provide additional or different license terms and conditions for use,
+        reproduction, or distribution of Your modifications, or for any such
+        Derivative Works as a whole, provided Your use, reproduction, and
+        distribution of the Work otherwise complies with the conditions stated
+        in this License.
+
+5.  **Submission of Contributions.** Unless You explicitly state otherwise, any
+    Contribution intentionally submitted for inclusion in the Work by You to
+    the Licensor shall be under the terms and conditions of this License,
+    without any additional terms or conditions. Notwithstanding the above,
+    nothing herein shall supersede or modify the terms of any separate license
+    agreement you may have executed with Licensor regarding such Contributions.
+
+6.  **Trademarks.** This License does not grant permission to use the trade
+    names, trademarks, service marks, or product names of the Licensor, except
+    as required for reasonable and customary use in describing the origin of
+    the Work and reproducing the content of the NOTICE file.
+
+7.  **Disclaimer of Warranty.** Unless required by applicable law or agreed to
+    in writing, Licensor provides the Work (and each Contributor provides its
+    Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied, including, without limitation, any
+    warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or
+    FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for
+    determining the appropriateness of using or redistributing the Work and
+    assume any risks associated with Your exercise of permissions under this
+    License.
+
+8.  **Limitation of Liability.** In no event and under no legal theory, whether
+    in tort (including negligence), contract, or otherwise, unless required by
+    applicable law (such as deliberate and grossly negligent acts) or agreed to
+    in writing, shall any Contributor be liable to You for damages, including
+    any direct, indirect, special, incidental, or consequential damages of any
+    character arising as a result of this License or out of the use or
+    inability to use the Work (including but not limited to damages for loss of
+    goodwill, work stoppage, computer failure or malfunction, or any and all
+    other commercial damages or losses), even if such Contributor has been
+    advised of the possibility of such damages.
+
+9.  **Accepting Warranty or Additional Liability.** While redistributing the
+    Work or Derivative Works thereof, You may choose to offer, and charge a fee
+    for, acceptance of support, warranty, indemnity, or other liability
+    obligations and/or rights consistent with this License. However, in
+    accepting such obligations, You may act only on Your own behalf and on Your
+    sole responsibility, not on behalf of any other Contributor, and only if
+    You agree to indemnify, defend, and hold each Contributor harmless for any
+    liability incurred by, or claims asserted against, such Contributor by
+    reason of your accepting any such warranty or additional liability.
+
+END OF TERMS AND CONDITIONS
 ```
 
 ## (BSD-2-Clause OR MIT OR Apache-2.0) License Text
@@ -3390,176 +3449,6 @@ TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
 YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
 PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
-```
-
-## (CC-BY-4.0 AND MIT) License Text
-
-```
-Fonticons, Inc. (https://fontawesome.com)
-
---------------------------------------------------------------------------------
-
-Font Awesome Free License
-
-Font Awesome Free is free, open source, and GPL friendly. You can use it for
-commercial projects, open source projects, or really almost whatever you want.
-Full Font Awesome Free license: https://fontawesome.com/license/free.
-
---------------------------------------------------------------------------------
-
-# Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
-
-The Font Awesome Free download is licensed under a Creative Commons
-Attribution 4.0 International License and applies to all icons packaged
-as SVG and JS file types.
-
---------------------------------------------------------------------------------
-
-# Fonts: SIL OFL 1.1 License
-
-In the Font Awesome Free download, the SIL OFL license applies to all icons
-packaged as web and desktop font files.
-
-Copyright (c) 2022 Fonticons, Inc. (https://fontawesome.com)
-with Reserved Font Name: "Font Awesome".
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
-
-SIL OPEN FONT LICENSE
-Version 1.1 - 26 February 2007
-
-PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.
-
-The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.
-
-DEFINITIONS
-"Font Software" refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.
-
-"Reserved Font Name" refers to any names specified as such after the
-copyright statement(s).
-
-"Original Version" refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).
-
-"Modified Version" refers to any derivative made by adding to, deleting,
-or substituting — in part or in whole — any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.
-
-"Author" refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.
-
-PERMISSION & CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:
-
-1) Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.
-
-2) Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.
-
-3) No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name as
-presented to the users.
-
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.
-
-5) The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.
-
-TERMINATION
-This license becomes null and void if any of the above conditions are
-not met.
-
-DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.
-
---------------------------------------------------------------------------------
-
-# Code: MIT License (https://opensource.org/licenses/MIT)
-
-In the Font Awesome Free download, the MIT license applies to all non-font and
-non-icon files.
-
-Copyright 2022 Fonticons, Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in the
-Software without restriction, including without limitation the rights to use, copy,
-modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
-and to permit persons to whom the Software is furnished to do so, subject to the
-following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
---------------------------------------------------------------------------------
-
-# Attribution
-
-Attribution is required by MIT, SIL OFL, and CC BY licenses. Downloaded Font
-Awesome Free files already contain embedded comments with sufficient
-attribution, so you shouldn't need to do anything additional when using these
-files normally.
-
-We've kept attribution comments terse, so we ask that you do not actively work
-to remove them from files, especially code. They're a great way for folks to
-learn about Font Awesome.
-
---------------------------------------------------------------------------------
-
-# Brand Icons
-
-All brand icons are trademarks of their respective owners. The use of these
-trademarks does not indicate endorsement of the trademark holder by Font
-Awesome, nor vice versa. **Please do not use brand logos for any purpose except
-to represent the company, product, or service to which they refer.**
 ```
 
 ## (MIT AND BSD-3-Clause) License Text
@@ -4371,7 +4260,7 @@ THE SOFTWARE.
 
 ```
 DOMPurify
-Copyright 2024 Dr.-Ing. Mario Heiderich, Cure53
+Copyright 2025 Dr.-Ing. Mario Heiderich, Cure53
 
 DOMPurify is free software; you can redistribute it and/or modify it under the
 terms of either:
@@ -5438,18 +5327,39 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ## BSD-3-Clause License Text
 
 ```
-Copyright (c) 2011-2020, Sideway Inc, and project contributors  
-Copyright (c) 2011-2014, Walmart  
-Copyright (c) 2011, Yahoo Inc.
+BSD License
 
+For js-joda software
+
+Copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper
+ 
 All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-* The names of any contributors may not be used to endorse or promote products derived from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS OFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+ 
+ * Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+ 
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ 
+ * Neither the name of js-joda nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+ 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 ## BlueOak-1.0.0 License Text
@@ -5468,7 +5378,7 @@ from liability.
 ## Acceptance
 
 In order to receive this license, you must agree to its
-rules.  The rules of this license are both obligations
+rules. The rules of this license are both obligations
 under that agreement and conditions to your license.
 You must not do anything with this software that triggers
 a rule that you cannot or will not follow.
@@ -5491,7 +5401,7 @@ changes, also gets the text of this license or a link to
 If anyone notifies you in writing that you have not
 complied with [Notices](#notices), you can keep your
 license by taking all practical steps to comply within 30
-days after the notice.  If you do not do so, your license
+days after the notice. If you do not do so, your license
 ends immediately.
 
 ## Patent
@@ -5506,10 +5416,10 @@ No contributor can revoke this license.
 
 ## No Liability
 
-***As far as the law allows, this software comes as is,
+**_As far as the law allows, this software comes as is,
 without any warranty or condition, and no contributor
 will be liable to anyone for any damages related to this
-software or this license, under any kind of legal claim.***
+software or this license, under any kind of legal claim._**
 ```
 
 ## CC-BY-3.0 License Text
@@ -6105,38 +6015,15 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
 ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ```
 
-## LGPL-3.0-or-later License Text
-
-```
-GNU Lesser General Public License v3.0 or later
-
-Full license text available at: https://www.gnu.org/licenses/lgpl-3.0.html
-```
-
 ## MIT License Text
 
 ```
-The MIT License (MIT)
+bitsyntax-js copyright (c) 2012-2014
+                           Michael Bridgen <mikeb@squaremobius.net>
 
-Copyright (c) 2014-2016, Jon Schlinkert
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+This package, "bitsyntax-js", is licensed under the MIT License. A
+copy may be found in the file LICENSE-MIT in this directory, or
+downloaded from http://opensource.org/licenses/MIT.
 ```
 
 ## MIT OR Apache-2.0 License Text

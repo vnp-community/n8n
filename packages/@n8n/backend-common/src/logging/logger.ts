@@ -156,7 +156,10 @@ export class Logger implements LoggerType {
 		} else if (this.level === 'debug' && inProduction) {
 			return this.debugProdConsoleFormat();
 		} else {
-			return winston.format.printf(({ message }: { message: string }) => message);
+			return winston.format.printf((info: TransformableInfo) => {
+				const message = info.message;
+				return typeof message === 'string' ? message : JSON.stringify(message);
+			});
 		}
 	}
 

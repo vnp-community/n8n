@@ -6,6 +6,7 @@ import * as projectsApi from './projects.api';
 import type { Project, ProjectListItem } from './projects.types';
 import { ProjectTypes } from './projects.types';
 import type { ProjectRole, Scope } from '@n8n/permissions';
+import { useSettingsStore } from '@/app/stores/settings.store';
 
 // Minimal router mock to satisfy useRoute usage in the store
 vi.mock('vue-router', async (importOriginal) => ({
@@ -179,5 +180,24 @@ describe('useProjectsStore.updateProject (partial payloads)', () => {
 		);
 		expect(mockedProjectsApi.getProject).toHaveBeenCalledWith(expect.anything(), 'p1');
 		expect(store.currentProject?.relations.length).toBe(0);
+	});
+});
+
+describe('team project limit normalization', () => {
+	beforeEach(() => {
+		setActivePinia(createPinia());
+	});
+
+	it('treats string "-1" as unlimited quota', () => {
+		const projectsStore = useProjectsStore();
+		const settingsStore = useSettingsStore();
+
+		// Mimic backend sending quota as string through settings endpoint
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		settingsStore.settings.enterprise.projects.team.limit = '-1' as any;
+
+		expect(projectsStore.teamProjectsLimit).toBe(-1);
+		expect(projectsStore.hasUnlimitedProjects).toBe(true);
+		expect(projectsStore.canCreateProjects).toBe(true);
 	});
 });

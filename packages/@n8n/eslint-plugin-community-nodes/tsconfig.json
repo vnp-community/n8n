@@ -4,6 +4,8 @@
 		"baseUrl": ".",
 		"rootDir": "src",
 		"outDir": "dist",
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
 		"types": ["vitest/globals"]
 	},
 	"include": ["src/**/*.ts"]

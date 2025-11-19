@@ -370,7 +370,9 @@ export class RabbitMQ implements INodeType {
 			): Promise<INodeCredentialTestResult> {
 				try {
 					const connection = await rabbitmqConnect(credential.data as RabbitMQCredentials);
-					await connection.close();
+					// Cast to handle type definition mismatch
+					const conn = connection as unknown as { close: () => Promise<void> };
+					await conn.close();
 				} catch (error) {
 					return {
 						status: 'Error',
@@ -463,7 +465,11 @@ export class RabbitMQ implements INodeType {
 				});
 
 				await channel.close();
-				await channel.connection.close();
+				const connection = (channel as unknown as { connection: { close: () => Promise<void> } })
+					.connection;
+				if (connection) {
+					await connection.close();
+				}
 			} else if (mode === 'exchange') {
 				const exchange = this.getNodeParameter('exchange', 0) as string;
 				const routingKey = this.getNodeParameter('routingKey', 0) as string;
@@ -533,7 +539,11 @@ export class RabbitMQ implements INodeType {
 				});
 
 				await channel.close();
-				await channel.connection.close();
+				const connection = (channel as unknown as { connection: { close: () => Promise<void> } })
+					.connection;
+				if (connection) {
+					await connection.close();
+				}
 			} else {
 				throw new NodeOperationError(this.getNode(), `The operation "${mode}" is not known!`);
 			}
@@ -542,7 +552,11 @@ export class RabbitMQ implements INodeType {
 		} catch (error) {
 			if (channel) {
 				await channel.close();
-				await channel.connection.close();
+				const connection = (channel as unknown as { connection: { close: () => Promise<void> } })
+					.connection;
+				if (connection) {
+					await connection.close();
+				}
 			}
 			throw error;
 		}

@@ -19,6 +19,7 @@ import { useUsersStore } from '@/features/settings/users/users.store';
 import { getResourcePermissions } from '@n8n/permissions';
 import type { CreateProjectDto, UpdateProjectDto } from '@n8n/api-types';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
+import { UNLIMITED_LICENSE_QUOTA } from '@n8n/constants';
 
 export type ResourceCounts = {
 	credentials: number;
@@ -63,12 +64,26 @@ export const useProjectsStore = defineStore(STORES.PROJECTS, () => {
 		projects.value.filter((p) => p.type === ProjectTypes.Personal),
 	);
 	const teamProjects = computed(() => projects.value.filter((p) => p.type === ProjectTypes.Team));
-	const teamProjectsLimit = computed(() => settingsStore.settings.enterprise.projects.team.limit);
+	const teamProjectsLimit = computed(() => {
+		const limit = settingsStore.settings.enterprise.projects.team.limit;
+		if (typeof limit === 'number') {
+			return limit;
+		}
+
+		const parsedLimit = Number(limit);
+		return Number.isNaN(parsedLimit) ? 0 : parsedLimit;
+	});
 	const isTeamProjectFeatureEnabled = computed<boolean>(() => teamProjectsLimit.value !== 0);
-	const hasUnlimitedProjects = computed<boolean>(() => teamProjectsLimit.value === -1);
-	const isTeamProjectLimitExceeded = computed<boolean>(
-		() => projectsCount.value.team >= teamProjectsLimit.value,
+	const hasUnlimitedProjects = computed<boolean>(
+		() => teamProjectsLimit.value === UNLIMITED_LICENSE_QUOTA,
 	);
+	const isTeamProjectLimitExceeded = computed<boolean>(() => {
+		if (hasUnlimitedProjects.value) {
+			return false;
+		}
+
+		return projectsCount.value.team >= teamProjectsLimit.value;
+	});
 	const canCreateProjects = computed<boolean>(
 		() =>
 			(hasUnlimitedProjects.value ||

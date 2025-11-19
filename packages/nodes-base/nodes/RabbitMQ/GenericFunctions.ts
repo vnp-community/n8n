@@ -40,7 +40,7 @@ export async function rabbitmqConnect(
 		}
 	}
 
-	return await amqplib.connect(credentialData, optsData);
+	return (await amqplib.connect(credentialData, optsData)) as unknown as amqplib.Connection;
 }
 
 export async function rabbitmqCreateChannel(
@@ -54,7 +54,9 @@ export async function rabbitmqCreateChannel(
 			// TODO: why is this error handler being added here?
 			connection.on('error', reject);
 
-			const channel = await connection.createChannel();
+			// Cast connection to handle type definition mismatch
+			const conn = connection as unknown as { createChannel: () => Promise<amqplib.Channel> };
+			const channel = await conn.createChannel();
 			resolve(channel);
 		} catch (error) {
 			reject(error);
@@ -159,7 +161,12 @@ export class MessageTracker {
 		}
 
 		await channel.close();
-		await channel.connection.close();
+		// Access connection property with type assertion to handle amqplib type definitions
+		const connection = (channel as unknown as { connection: { close: () => Promise<void> } })
+			.connection;
+		if (connection) {
+			await connection.close();
+		}
 	}
 }
 
