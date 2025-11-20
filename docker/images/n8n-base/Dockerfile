@@ -26,7 +26,7 @@ RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.22/main" >> /etc/apk/reposito
         tzdata \
         ca-certificates \
         libc6-compat \
-        jq
+        jq=1.8.1-r0
 
 # Install full-icu
 RUN npm install -g full-icu@1.5.0
