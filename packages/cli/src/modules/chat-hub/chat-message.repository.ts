@@ -6,6 +6,19 @@ import { DataSource, EntityManager, Repository } from '@n8n/typeorm';
 import { ChatHubMessage } from './chat-hub-message.entity';
 import { ChatHubSessionRepository } from './chat-session.repository';
 
+type ChatHubMessageInsertData = Omit<
+	Partial<ChatHubMessage>,
+	| 'session'
+	| 'workflow'
+	| 'execution'
+	| 'previousMessage'
+	| 'responses'
+	| 'retryOfMessage'
+	| 'retries'
+	| 'revisionOfMessage'
+	| 'revisions'
+>;
+
 @Service()
 export class ChatHubMessageRepository extends Repository<ChatHubMessage> {
 	constructor(
@@ -20,7 +33,7 @@ export class ChatHubMessageRepository extends Repository<ChatHubMessage> {
 			this.manager,
 			trx,
 			async (em) => {
-				await em.insert(ChatHubMessage, message);
+				await em.insert(ChatHubMessage, message as ChatHubMessageInsertData);
 				const saved = await em.findOneOrFail(ChatHubMessage, {
 					where: { id: message.id },
 				});

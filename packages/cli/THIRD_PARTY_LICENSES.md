@@ -1141,7 +1141,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * @typescript/vfs 1.6.2
 * @typespec/ts-http-runtime 0.3.2, Copyright (c) Microsoft Corporation.
 * @unrs/resolver-binding-linux-x64-gnu 1.11.1
-* @vitejs/plugin-legacy 6.1.1, Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
+* @vitejs/plugin-legacy 7.2.1, Copyright (c) 2019-present, VoidZero Inc. and Vite contributors
 * @vitejs/plugin-vue 5.2.4, Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
 * @vitest/coverage-v8 3.2.4, Copyright (c) 2021-Present Vitest Team
 * @vitest/expect 3.2.4, Copyright (c) 2021-Present Vitest Team
@@ -1558,7 +1558,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * exit 0.1.2, Copyright (c) 2013 "Cowboy" Ben Alman
 * expand-tilde 2.0.2, Copyright (c) 2015-2016, Jon Schlinkert.
 * expect 29.7.0, Copyright (c) Meta Platforms, Inc. and affiliates.
-* expr-eval 2.0.2, Copyright (c) 2015 Matthew Crumley
+* expr-eval-fork 3.0.0, Copyright (c) 2015 Matthew Crumley
 * express 5.1.0, Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>. Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * express-openapi-validator 5.5.3, Copyright (c) 2019-2024 Carmine M. DiMascio
 * express-prom-bundle 8.0.0, Copyright (c) 2016 Jochen Schweizer Technology Solutions GmbH
@@ -2544,7 +2544,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * vue-eslint-parser 10.2.0, Copyright (c) 2016 Toru Nagashima
 * vue-i18n 11.1.12, Copyright (c) 2020 kazuya kawaguchi
 * vue-inbrowser-compiler-independent-utils 4.71.1, Copyright (c) 2021 Vue Styleguidist
-* vue-json-pretty 2.2.4, Copyright (c) 2017
+* vue-json-pretty 2.6.0, Copyright (c) 2017
 * vue-markdown-render 2.3.0, Copyright (c) 2023 cloudacy OG
 * vue-observe-visibility 2.0.0-alpha.1
 * vue-resize 2.0.0-alpha.1
