@@ -5,6 +5,7 @@ import { DataSource, EntityManager, Repository } from '@n8n/typeorm';
 
 import { ChatHubMessage } from './chat-hub-message.entity';
 import { ChatHubSessionRepository } from './chat-session.repository';
+import type { IBinaryData } from 'n8n-workflow';
 
 type ChatHubMessageInsertData = Omit<
 	Partial<ChatHubMessage>,
@@ -46,7 +47,7 @@ export class ChatHubMessageRepository extends Repository<ChatHubMessage> {
 
 	async updateChatMessage(
 		id: ChatMessageId,
-		fields: { status?: ChatHubMessageStatus; content?: string },
+		fields: { status?: ChatHubMessageStatus; content?: string; attachments?: IBinaryData[] },
 		trx?: EntityManager,
 	) {
 		return await withTransaction(
