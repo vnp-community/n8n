@@ -135,15 +135,196 @@ async function onBeforeTabLeave(_activeName: string | number, oldActiveName: str
 }
 
 async function onAiReplaceCode(code: string) {
-	const formattedCode = await format(code, {
-		parser: 'babel',
-		plugins: [jsParser, estree],
+	// Validate code input FIRST - before any processing
+	if (!code || typeof code !== 'string') {
+		console.error('[CodeNodeEditor] Invalid code input:', code);
+		alert(`Error: Invalid code received. Type: ${typeof code}, Value: ${code}`);
+		return;
+	}
+
+	console.log('[CodeNodeEditor] onAiReplaceCode called with code:', code);
+	console.log('[CodeNodeEditor] Code length:', code?.length);
+	console.log('[CodeNodeEditor] Code type:', typeof code);
+	console.log('[CodeNodeEditor] Code sample:', code.substring(0, 100));
+
+	// CRITICAL: Check for expressions and potentially unsafe syntax FIRST, before ANY async operations
+	// SDK returns raw code without formatting when expressions are present
+	// Prettier will try to parse expressions as JavaScript and fail with SyntaxError
+	const hasExpressions = /\{\{[\s\S]*?\}\}/.test(code);
+
+	// Check for template literals that might cause parsing issues
+	// Template literals like ${var} outside of backticks will cause syntax errors
+	const hasTemplateLiterals = /\$\{[^}]*\}/.test(code);
+
+	// Check for template literal syntax that's not properly wrapped in backticks
+	// This pattern detects ${...} that appears outside of template strings
+	// We check if there are ${} but no matching backticks around them
+	const lines = code.split('\n');
+	const hasUnsafeTemplateLiteral = lines.some((line) => {
+		// Check if line has ${} but is not wrapped in backticks
+		if (/\$\{[^}]*\}/.test(line)) {
+			// Check if the line is part of a template literal (has backticks)
+			const hasBackticks = line.includes('`');
+			// If has ${} but no backticks, it's unsafe
+			return !hasBackticks;
+		}
+		return false;
 	});
 
-	emit('update:modelValue', formattedCode);
+	const hasUnsafeSyntax = hasExpressions || hasTemplateLiterals || hasUnsafeTemplateLiteral;
+	console.log('[CodeNodeEditor] Has expressions:', hasExpressions);
+	console.log('[CodeNodeEditor] Has template literals:', hasTemplateLiterals);
+	console.log('[CodeNodeEditor] Has unsafe template literal syntax:', hasUnsafeTemplateLiteral);
+	console.log('[CodeNodeEditor] Has unsafe syntax (skip formatting):', hasUnsafeSyntax);
 
-	activeTab.value = 'code';
-	hasManualChanges.value = false;
+	// If unsafe syntax is present, skip ALL formatting and return immediately
+	if (hasUnsafeSyntax) {
+		console.log('[CodeNodeEditor] SKIPPING format due to unsafe syntax - using code as-is');
+		console.log('[CodeNodeEditor] Emitting code directly (no formatting)');
+
+		try {
+			emit('update:modelValue', code);
+			activeTab.value = 'code';
+			hasManualChanges.value = false;
+			console.log('[CodeNodeEditor] Code with unsafe syntax emitted successfully');
+		} catch (error) {
+			console.error('[CodeNodeEditor] Error emitting code:', error);
+			alert(`Error emitting code: ${error instanceof Error ? error.message : String(error)}`);
+		}
+		return; // EARLY RETURN - do not proceed to formatting
+	}
+
+	// Code passed syntax check, safe to format
+	// First, try to validate JavaScript syntax by attempting to parse it
+	let isValidJavaScript = true;
+	let parseError: Error | null = null;
+
+	try {
+		// Try to parse the code to validate it's valid JavaScript
+		// Use Function constructor as a simple syntax validator
+		// This will throw if code has syntax errors
+		new Function(code);
+		console.log('[CodeNodeEditor] JavaScript syntax validation passed');
+	} catch (validationError) {
+		isValidJavaScript = false;
+		parseError =
+			validationError instanceof Error ? validationError : new Error(String(validationError));
+		console.error('[CodeNodeEditor] JavaScript syntax validation failed:', parseError);
+	}
+
+	// If code is not valid JavaScript, alert user and use code as-is
+	if (!isValidJavaScript && parseError) {
+		const errorMessage = parseError.message || 'Invalid JavaScript syntax';
+		const codePreview = code.length > 500 ? code.substring(0, 500) + '\n...' : code;
+
+		console.error('[CodeNodeEditor] Invalid JavaScript code detected - alerting user');
+
+		await message.alert(
+			`JavaScript Syntax Error:\n\n${errorMessage}\n\nGenerated code:\n\`\`\`javascript\n${codePreview}\n\`\`\`\n\nCode will be inserted as-is. Please review and fix any syntax errors.`,
+			{
+				title: i18n.baseText('codeNodeEditor.askAi.generationFailed') || 'Code Generation Error',
+				confirmButtonText: 'OK',
+				showClose: true,
+				dangerouslyUseHTMLString: false,
+			},
+		);
+
+		// Still emit the code so user can see it and fix it
+		console.log('[CodeNodeEditor] Emitting invalid code - user can fix it');
+		try {
+			emit('update:modelValue', code);
+			activeTab.value = 'code';
+			hasManualChanges.value = false;
+			console.log('[CodeNodeEditor] Invalid code emitted successfully');
+		} catch (emitError) {
+			console.error('[CodeNodeEditor] Error emitting code:', emitError);
+		}
+		return; // Don't proceed to formatting
+	}
+
+	// Code is valid JavaScript, proceed with formatting
+	// Wrap in try-catch to handle any syntax errors prettier might encounter
+	try {
+		console.log('[CodeNodeEditor] No unsafe syntax detected - attempting to format code...');
+		const formattedCode = await format(code, {
+			parser: 'babel',
+			plugins: [jsParser, estree],
+		});
+		console.log('[CodeNodeEditor] Formatting successful');
+		console.log(
+			'[CodeNodeEditor] Final formattedCode (first 200 chars):',
+			formattedCode.substring(0, 200),
+		);
+
+		emit('update:modelValue', formattedCode);
+		console.log('[CodeNodeEditor] Successfully emitted formatted code');
+
+		activeTab.value = 'code';
+		hasManualChanges.value = false;
+
+		console.log('[CodeNodeEditor] Code replacement completed successfully');
+	} catch (error) {
+		// If formatting fails (SyntaxError, etc.), validate and alert user
+		const isSyntaxError =
+			error instanceof SyntaxError ||
+			(error instanceof Error && error.name === 'SyntaxError') ||
+			(error instanceof Error && error.message.includes('SyntaxError')) ||
+			(error instanceof Error && error.message.includes('Unexpected token'));
+
+		if (isSyntaxError) {
+			console.error('[CodeNodeEditor] JavaScript syntax error detected during formatting:', error);
+
+			// Extract error message
+			const errorMessage = error instanceof Error ? error.message : String(error);
+			const codePreview = code.length > 500 ? code.substring(0, 500) + '\n...' : code;
+
+			// Show alert to user with error message and code preview
+			await message.alert(
+				`JavaScript Syntax Error:\n\n${errorMessage}\n\nGenerated code:\n\`\`\`javascript\n${codePreview}\n\`\`\`\n\nCode will be inserted as-is. Please review and fix any syntax errors.`,
+				{
+					title: i18n.baseText('codeNodeEditor.askAi.generationFailed') || 'Code Generation Error',
+					confirmButtonText: 'OK',
+					showClose: true,
+					dangerouslyUseHTMLString: false,
+				},
+			);
+
+			// Still emit the code so user can see it and fix it
+			console.log('[CodeNodeEditor] Emitting code despite syntax error - user can fix it');
+			try {
+				emit('update:modelValue', code);
+				activeTab.value = 'code';
+				hasManualChanges.value = false;
+			} catch (emitError) {
+				console.error('[CodeNodeEditor] Error emitting code:', emitError);
+			}
+		} else {
+			// Other formatting errors
+			console.warn('[CodeNodeEditor] Formatting failed:', error);
+			const errorMessage = error instanceof Error ? error.message : String(error);
+			const codePreview = code.length > 500 ? code.substring(0, 500) + '\n...' : code;
+
+			await message.alert(
+				`Code Formatting Error:\n\n${errorMessage}\n\nGenerated code:\n\`\`\`javascript\n${codePreview}\n\`\`\`\n\nCode will be inserted as-is.`,
+				{
+					title: i18n.baseText('codeNodeEditor.askAi.generationFailed') || 'Code Formatting Error',
+					confirmButtonText: 'OK',
+					showClose: true,
+					dangerouslyUseHTMLString: false,
+				},
+			);
+
+			// Fallback to original code
+			try {
+				emit('update:modelValue', code);
+				activeTab.value = 'code';
+				hasManualChanges.value = false;
+				console.log('[CodeNodeEditor] Original code emitted successfully');
+			} catch (emitError) {
+				console.error('[CodeNodeEditor] Error emitting fallback code:', emitError);
+			}
+		}
+	}
 }
 
 function onEditorUpdate(viewUpdate: ViewUpdate) {

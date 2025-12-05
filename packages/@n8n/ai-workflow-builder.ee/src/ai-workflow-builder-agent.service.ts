@@ -93,9 +93,32 @@ export class AiWorkflowBuilderService {
 				return { tracingClient, anthropicClaude, authHeaders };
 			}
 
-			// If base URL is not set, use environment variables
+			// Check if we have both baseUrl and apiKey for direct LLM connection (no auth check)
+			const baseUrl = process.env.N8N_AI_ASSISTANT_BASE_URL;
+			const apiKey = process.env.N8N_AI_ANTHROPIC_KEY ?? '';
+
+			if (baseUrl && apiKey) {
+				// Use baseUrl + apiKey directly for OpenAI-compatible API
+				// Support both OpenAI format (Authorization: Bearer) and Anthropic format (x-api-key)
+				const authHeaders: Record<string, string> = {
+					// OpenAI-compatible: Bearer token
+					Authorization: `Bearer ${apiKey}`,
+					// Anthropic-compatible: x-api-key header (will be used by ChatAnthropic)
+					'x-api-key': apiKey,
+				};
+
+				const anthropicClaude = await AiWorkflowBuilderService.getAnthropicClaudeModel({
+					baseUrl,
+					apiKey,
+					authHeaders,
+				});
+
+				return { anthropicClaude };
+			}
+
+			// Fallback: use only API key (default Anthropic API)
 			const anthropicClaude = await AiWorkflowBuilderService.getAnthropicClaudeModel({
-				apiKey: process.env.N8N_AI_ANTHROPIC_KEY ?? '',
+				apiKey,
 			});
 
 			return { anthropicClaude };

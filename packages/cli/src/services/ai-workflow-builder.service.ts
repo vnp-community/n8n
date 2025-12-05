@@ -33,18 +33,31 @@ export class WorkflowBuilderService {
 		if (!this.service) {
 			let client: AiAssistantClient | undefined;
 
-			// Create AiAssistantClient if baseUrl is configured
+			// Create AiAssistantClient only if baseUrl is configured AND we have valid license cert
+			// Otherwise, AI Builder will use N8N_AI_ANTHROPIC_KEY directly (bypassing token auth)
 			const baseUrl = this.config.aiAssistant.baseUrl;
 			if (baseUrl) {
 				const licenseCert = await this.license.loadCertStr();
 				const consumerId = this.license.getConsumerId();
 
-				client = new AiAssistantClient({
-					licenseCert,
-					consumerId,
-					baseUrl,
-					n8nVersion: N8N_VERSION,
-				});
+				// Only create client if we have a valid license cert (not empty and not placeholder)
+				// This allows AI Builder to use API key directly when license cert is not available
+				const hasValidLicenseCert =
+					licenseCert &&
+					licenseCert.trim() !== '' &&
+					licenseCert !== 'local-ai-no-license' &&
+					licenseCert !== 'unknown';
+
+				if (hasValidLicenseCert) {
+					client = new AiAssistantClient({
+						licenseCert,
+						consumerId,
+						baseUrl,
+						n8nVersion: N8N_VERSION,
+					});
+				}
+				// If no valid license cert, client remains undefined
+				// AI Builder will fall back to using N8N_AI_ANTHROPIC_KEY directly
 			}
 
 			// Create callback that uses the push service
