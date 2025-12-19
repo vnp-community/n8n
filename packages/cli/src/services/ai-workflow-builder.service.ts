@@ -4,13 +4,16 @@ import { Logger } from '@n8n/backend-common';
 import { GlobalConfig } from '@n8n/config';
 import { Service } from '@n8n/di';
 import { AiAssistantClient } from '@n8n_io/ai-assistant-sdk';
+import { InstanceSettings } from 'n8n-core';
 import type { IUser } from 'n8n-workflow';
+import { ITelemetryTrackProperties } from 'n8n-workflow';
 
 import { N8N_VERSION } from '@/constants';
 import { License } from '@/license';
 import { LoadNodesAndCredentials } from '@/load-nodes-and-credentials';
 import { Push } from '@/push';
 import { UrlService } from '@/services/url.service';
+import { Telemetry } from '@/telemetry';
 
 /**
  * This service wraps the actual AiWorkflowBuilderService to avoid circular dependencies.
@@ -27,24 +30,39 @@ export class WorkflowBuilderService {
 		private readonly logger: Logger,
 		private readonly urlService: UrlService,
 		private readonly push: Push,
+		private readonly telemetry: Telemetry,
+		private readonly instanceSettings: InstanceSettings,
 	) {}
 
 	private async getService(): Promise<AiWorkflowBuilderService> {
 		if (!this.service) {
 			let client: AiAssistantClient | undefined;
 
-			// Create AiAssistantClient if baseUrl is configured
+			// Create AiAssistantClient only if baseUrl is configured AND we have valid license cert
+			// Otherwise, AI Builder will use N8N_AI_ANTHROPIC_KEY directly (bypassing token auth)
 			const baseUrl = this.config.aiAssistant.baseUrl;
 			if (baseUrl) {
 				const licenseCert = await this.license.loadCertStr();
 				const consumerId = this.license.getConsumerId();
 
-				client = new AiAssistantClient({
-					licenseCert,
-					consumerId,
-					baseUrl,
-					n8nVersion: N8N_VERSION,
-				});
+				// Only create client if we have a valid license cert (not empty and not placeholder)
+				// This allows AI Builder to use API key directly when license cert is not available
+				const hasValidLicenseCert =
+					licenseCert &&
+					licenseCert.trim() !== '' &&
+					licenseCert !== 'local-ai-no-license' &&
+					licenseCert !== 'unknown';
+
+				if (hasValidLicenseCert) {
+					client = new AiAssistantClient({
+						licenseCert,
+						consumerId,
+						baseUrl,
+						n8nVersion: N8N_VERSION,
+					});
+				}
+				// If no valid license cert, client remains undefined
+				// AI Builder will fall back to using N8N_AI_ANTHROPIC_KEY directly
 			}
 
 			// Create callback that uses the push service
@@ -61,14 +79,21 @@ export class WorkflowBuilderService {
 				);
 			};
 
+			// Callback for AI Builder to send telemetry events
+			const onTelemetryEvent = (event: string, properties: ITelemetryTrackProperties) => {
+				this.telemetry.track(event, properties);
+			};
+
 			const { nodes: nodeTypeDescriptions } = this.loadNodesAndCredentials.types;
 
 			this.service = new AiWorkflowBuilderService(
 				nodeTypeDescriptions,
 				client,
 				this.logger,
+				this.instanceSettings.instanceId,
 				this.urlService.getInstanceBaseUrl(),
 				onCreditsUpdated,
+				onTelemetryEvent,
 			);
 		}
 

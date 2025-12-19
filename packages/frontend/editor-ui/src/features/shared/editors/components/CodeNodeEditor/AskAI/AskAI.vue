@@ -185,7 +185,33 @@ async function onSubmit() {
 	try {
 		const { code } = await generateCodeForPrompt(restApiContext, payload);
 
+		// Debug logging
+		console.log('[AskAI] Received code from API:', code);
+		console.log('[AskAI] Code length:', code?.length);
+		console.log('[AskAI] Code type:', typeof code);
+		console.log('[AskAI] Has expressions:', /\{\{[\s\S]*?\}\}/.test(code || ''));
+
 		stopLoading();
+
+		if (!code || code.trim().length === 0) {
+			console.error('[AskAI] Code is empty!');
+			showMessage({
+				type: 'error',
+				title: i18n.baseText('codeNodeEditor.askAi.generationFailed'),
+				message: 'Generated code is empty',
+			});
+			return;
+		}
+
+		console.log('[AskAI] Emitting replaceCode event with code:', code.substring(0, 100) + '...');
+		console.log('[AskAI] Full code:', code);
+
+		// Alert for debugging
+		if (code.includes('{{')) {
+			console.log('[AskAI] Code contains expressions - will skip formatting');
+			alert(`Code received with expressions:\n${code.substring(0, 200)}...`);
+		}
+
 		emit('replaceCode', code);
 		showMessage({
 			type: 'success',

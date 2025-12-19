@@ -1,4 +1,20 @@
 {
-	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"target": "es2022",
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"lib": ["es2022"]
+	},
+	"include": ["src/**/*.ts"],
 	"exclude": ["**/*.test.ts", "**/*.spec.ts"]
 }

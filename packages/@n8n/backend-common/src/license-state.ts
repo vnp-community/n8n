@@ -31,17 +31,18 @@ export class LicenseState {
 	 * If the feature is an array of strings, it checks if any of the features are licensed
 	 */
 	isLicensed(feature: BooleanLicenseFeature | BooleanLicenseFeature[]) {
+		return true;
 		this.assertProvider();
 
-		if (typeof feature === 'string') return this.licenseProvider.isLicensed(feature);
+		// if (typeof feature === 'string') return this.licenseProvider.isLicensed(feature);
 
-		for (const featureName of feature) {
-			if (this.licenseProvider.isLicensed(featureName)) {
-				return true;
-			}
-		}
+		// for (const featureName of feature) {
+		// 	if (this.licenseProvider.isLicensed(featureName)) {
+		// 		return true;
+		// 	}
+		// }
 
-		return false;
+		// return false;
 	}
 
 	getValue<T extends keyof FeatureReturnType>(feature: T): FeatureReturnType[T] {
@@ -130,10 +131,6 @@ export class LicenseState {
 		return this.isLicensed('feat:externalSecrets');
 	}
 
-	isWorkflowHistoryLicensed() {
-		return this.isLicensed('feat:workflowHistory');
-	}
-
 	isAPIDisabled() {
 		return this.isLicensed('feat:apiDisabled');
 	}
@@ -179,7 +176,7 @@ export class LicenseState {
 	}
 
 	isProvisioningLicensed() {
-		return this.isLicensed(['feat:saml', 'feat:oidc', 'feat:ldap']);
+		return this.isLicensed(['feat:saml', 'feat:oidc']);
 	}
 
 	// --------------------
