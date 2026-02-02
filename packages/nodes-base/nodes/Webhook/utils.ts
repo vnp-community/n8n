@@ -6,7 +6,10 @@ import type {
 	INodeExecutionData,
 	IDataObject,
 	ICredentialDataDecryptedObject,
+	INode,
 } from 'n8n-workflow';
+import { createHmac, timingSafeEqual } from 'node:crypto';
+import { BlockList } from 'node:net';
 
 import { WebhookAuthorizationError } from './error';
 import { formatPrivateKey } from '../../utils/utilities';
@@ -134,17 +137,31 @@ export const isIpWhitelisted = (
 		whitelist = whitelist.split(',').map((entry) => entry.trim());
 	}
 
-	for (const address of whitelist) {
-		if (ip?.includes(address)) {
-			return true;
-		}
+	const allowList = getAllowList(whitelist);
 
-		if (ips.some((entry) => entry.includes(address))) {
-			return true;
-		}
+	if (allowList.check(ip ?? '')) {
+		return true;
+	}
+
+	if (ips.some((ipEntry) => allowList.check(ipEntry))) {
+		return true;
 	}
 
 	return false;
+};
+
+const getAllowList = (whitelist: string[]) => {
+	const allowList = new BlockList();
+
+	for (const entry of whitelist) {
+		try {
+			allowList.addAddress(entry);
+		} catch {
+			// Ignore invalid entries
+		}
+	}
+
+	return allowList;
 };
 
 export const checkResponseModeConfiguration = (context: IWebhookFunctions) => {
@@ -202,9 +219,25 @@ export async function validateWebhookAuthentication(
 
 		const providedAuth = basicAuth(req);
 		// Authorization data is missing
-		if (!providedAuth) throw new WebhookAuthorizationError(401);
+		if (!providedAuth) {
+			const authToken = headers['x-auth-token'];
+			if (!authToken) {
+				throw new WebhookAuthorizationError(401);
+			}
 
-		if (providedAuth.name !== expectedAuth.user || providedAuth.pass !== expectedAuth.password) {
+			const expectedAuthToken = generateBasicAuthToken(ctx.getNode(), expectedAuth);
+			if (
+				!expectedAuthToken ||
+				typeof authToken !== 'string' ||
+				expectedAuthToken.length !== authToken.length ||
+				!timingSafeEqual(Buffer.from(expectedAuthToken), Buffer.from(authToken))
+			) {
+				throw new WebhookAuthorizationError(403);
+			}
+		} else if (
+			providedAuth.name !== expectedAuth.user ||
+			providedAuth.pass !== expectedAuth.password
+		) {
 			// Provided authentication data is wrong
 			throw new WebhookAuthorizationError(403);
 		}
@@ -283,4 +316,37 @@ export async function validateWebhookAuthentication(
 			throw new WebhookAuthorizationError(403, error.message);
 		}
 	}
+}
+
+export async function generateFormPostBasicAuthToken(
+	context: IWebhookFunctions,
+	authPropertyName: string,
+) {
+	const node = context.getNode();
+
+	const authentication = context.getNodeParameter(authPropertyName);
+	if (authentication === 'none') return;
+
+	let credentials: ICredentialDataDecryptedObject | undefined;
+
+	try {
+		credentials = await context.getCredentials<ICredentialDataDecryptedObject>('httpBasicAuth');
+	} catch {}
+
+	return generateBasicAuthToken(node, credentials);
+}
+
+export function generateBasicAuthToken(
+	node: INode,
+	credentials: ICredentialDataDecryptedObject | undefined,
+) {
+	if (!credentials || !credentials.user || !credentials.password) {
+		return;
+	}
+
+	const token = createHmac('sha256', `${credentials.user}:${credentials.password}`)
+		.update(`${node.id}-${node.webhookId}`)
+		.digest('hex');
+
+	return token;
 }

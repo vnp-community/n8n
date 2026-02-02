@@ -27,7 +27,7 @@ export type ToolCallRequest = {
 export type ToolCallData = {
 	action: {
 		tool: string;
-		toolInput: Record<string, unknown>;
+		toolInput: Record<string, unknown> | string;
 		log: string | number | true | object;
 		messageLog?: AIMessage[];
 		toolCallId: IDataObject | GenericValue | GenericValue[] | IDataObject[];
@@ -58,4 +58,6 @@ export type RequestResponseMetadata = {
 	previousRequests?: ToolCallData[];
 	/** Current iteration count (for max iterations enforcement) */
 	iterationCount?: number;
+	/** Thought signature for Gemini 3 tool calls */
+	thoughtSignature?: string;
 };

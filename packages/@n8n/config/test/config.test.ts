@@ -137,6 +137,7 @@ describe('GlobalConfig', () => {
 					'credentials-shared': '',
 					'user-invited': '',
 					'password-reset-requested': '',
+					'workflow-deactivated': '',
 					'workflow-shared': '',
 					'project-shared': '',
 				},
@@ -319,6 +320,7 @@ describe('GlobalConfig', () => {
 		security: {
 			restrictFileAccessTo: '',
 			blockFileAccessToN8nFiles: true,
+			blockFilePatterns: '^(.*\\/)*\\.git(\\/.*)*$',
 			daysAbandonedWorkflow: 90,
 			contentSecurityPolicy: '{}',
 			contentSecurityPolicyReportOnly: false,
@@ -326,6 +328,7 @@ describe('GlobalConfig', () => {
 			disableBareRepos: false,
 			awsSystemCredentialsAccess: false,
 			enableGitNodeHooks: false,
+			enableGitNodeAllConfigKeys: false,
 		},
 		executions: {
 			mode: 'regular',
@@ -346,6 +349,10 @@ describe('GlobalConfig', () => {
 			queueRecovery: {
 				interval: 180,
 				batchSize: 100,
+			},
+			recovery: {
+				maxLastExecutions: 3,
+				workflowDeactivationEnabled: false,
 			},
 			saveDataOnError: 'all',
 			saveDataOnSuccess: 'all',

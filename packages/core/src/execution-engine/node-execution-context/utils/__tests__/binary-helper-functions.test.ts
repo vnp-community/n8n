@@ -1,3 +1,4 @@
+import type { Logger } from '@n8n/backend-common';
 import { Container } from '@n8n/di';
 import { mkdtempSync, readFileSync } from 'fs';
 import { IncomingMessage } from 'http';
@@ -46,11 +47,12 @@ describe('test binary data helper methods', () => {
 		localStoragePath: temporaryDir,
 	});
 	const errorReporter = mock<ErrorReporter>();
+	const logger = mock<Logger>();
 	let binaryDataService: BinaryDataService;
 
 	beforeEach(() => {
 		jest.resetAllMocks();
-		binaryDataService = new BinaryDataService(binaryDataConfig, errorReporter);
+		binaryDataService = new BinaryDataService(binaryDataConfig, errorReporter, logger);
 		Container.set(BinaryDataService, binaryDataService);
 	});
 
@@ -622,6 +624,16 @@ describe('copyBinaryFile', () => {
 				fileType: undefined,
 				mimeType: 'application/octet-stream',
 			},
+			filePath,
+		);
+	});
+
+	it('should sanitize filenames', async () => {
+		await copyBinaryFile(workflowId, executionId, filePath, '../../../etc/passwd');
+
+		expect(binaryDataService.copyBinaryFile).toHaveBeenCalledWith(
+			{ type: 'execution', workflowId, executionId },
+			expect.objectContaining({ fileName: 'passwd' }),
 			filePath,
 		);
 	});

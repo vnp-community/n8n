@@ -35,7 +35,7 @@ export class McpOAuthService implements OAuthServerProvider {
 		private readonly tokenService: McpOAuthTokenService,
 		private readonly authorizationCodeService: McpOAuthAuthorizationCodeService,
 		private readonly userConsentRepository: UserConsentRepository,
-	) {}
+	) { }
 
 	get clientsStore(): OAuthRegisteredClientsStore {
 		return {
@@ -57,8 +57,8 @@ export class McpOAuthService implements OAuthServerProvider {
 					}),
 					response_types: ['code'],
 					scope: SUPPORTED_SCOPES.join(' '),
-					logo_uri: '',
-					tos_uri: '',
+					logo_uri: undefined,
+					tos_uri: undefined,
 				};
 			},
 			registerClient: async (

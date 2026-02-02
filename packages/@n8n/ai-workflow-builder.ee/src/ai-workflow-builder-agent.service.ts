@@ -185,6 +185,7 @@ export class AiWorkflowBuilderService {
 			llmSimpleTask: anthropicClaude,
 			llmComplexTask: anthropicClaude,
 			logger: this.logger,
+			enableMultiAgent: process.env.N8N_ENABLE_MULTI_AGENT === 'true',
 			checkpointer: this.sessionManager.getCheckpointer(),
 			tracer: tracingClient
 				? new LangChainTracer({ client: tracingClient, projectName: 'n8n-workflow-builder' })
@@ -280,6 +281,10 @@ export class AiWorkflowBuilderService {
 			tools_called: toolsCalled,
 			techniques_categories: state.values.techniqueCategories,
 			validations: state.values.validationHistory,
+			// Only include templates_selected when templates were actually used
+			...(state.values.templateIds.length > 0 && {
+				templates_selected: state.values.templateIds,
+			}),
 		};
 
 		this.onTelemetryEvent('Builder replied to user message', properties);

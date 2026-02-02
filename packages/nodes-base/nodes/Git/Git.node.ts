@@ -18,6 +18,7 @@ import { URL } from 'url';
 import {
 	addConfigFields,
 	addFields,
+	ALLOWED_CONFIG_KEYS,
 	cloneFields,
 	commitFields,
 	logFields,
@@ -27,6 +28,7 @@ import {
 } from './descriptions';
 import { Container } from '@n8n/di';
 import { DeploymentConfig, SecurityConfig } from '@n8n/config';
+import { mapGitConfigList } from './GenericFunctions';
 
 export class Git implements INodeType {
 	description: INodeTypeDescription = {
@@ -34,7 +36,7 @@ export class Git implements INodeType {
 		name: 'git',
 		icon: 'file:git.svg',
 		group: ['transform'],
-		version: 1,
+		version: [1, 1.1],
 		description: 'Control git.',
 		defaults: {
 			name: 'Git',
@@ -287,7 +289,8 @@ export class Git implements INodeType {
 		for (let itemIndex = 0; itemIndex < items.length; itemIndex++) {
 			try {
 				const repositoryPath = this.getNodeParameter('repositoryPath', itemIndex, '') as string;
-				const isFilePathBlocked = await this.helpers.isFilePathBlocked(repositoryPath);
+				const resolvedRepositoryPath = await this.helpers.resolvePath(repositoryPath);
+				const isFilePathBlocked = this.helpers.isFilePathBlocked(resolvedRepositoryPath);
 				if (isFilePathBlocked) {
 					throw new NodeOperationError(
 						this.getNode(),
@@ -300,9 +303,9 @@ export class Git implements INodeType {
 				if (operation === 'clone') {
 					// Create repository folder if it does not exist
 					try {
-						await access(repositoryPath);
+						await access(resolvedRepositoryPath);
 					} catch (error) {
-						await mkdir(repositoryPath);
+						await mkdir(resolvedRepositoryPath);
 					}
 				}
 
@@ -321,7 +324,7 @@ export class Git implements INodeType {
 				}
 
 				const gitOptions: Partial<SimpleGitOptions> = {
-					baseDir: repositoryPath,
+					baseDir: resolvedRepositoryPath,
 					config: gitConfig,
 				};
 
@@ -337,8 +340,13 @@ export class Git implements INodeType {
 					// ----------------------------------
 
 					const pathsToAdd = this.getNodeParameter('pathsToAdd', itemIndex, '') as string;
+					const paths = pathsToAdd
+						.split(',')
+						.map((p) => p.trim())
+						.filter((p) => p.length > 0);
 
-					await git.add(pathsToAdd.split(','));
+					// Use -- separator to prevent argument injection
+					await git.add(['--', ...paths]);
 
 					returnItems.push({
 						json: {
@@ -355,7 +363,15 @@ export class Git implements INodeType {
 
 					const key = this.getNodeParameter('key', itemIndex, '') as string;
 					const value = this.getNodeParameter('value', itemIndex, '') as string;
+					const securityConfig = Container.get(SecurityConfig);
+					const enableGitNodeAllConfigKeys = securityConfig.enableGitNodeAllConfigKeys;
 					let append = false;
+					if (!enableGitNodeAllConfigKeys && !ALLOWED_CONFIG_KEYS.includes(key)) {
+						throw new NodeOperationError(
+							this.getNode(),
+							`The provided git config key '${key}' is not allowed`,
+						);
+					}
 
 					if (options.mode === 'append') {
 						append = true;
@@ -405,10 +421,18 @@ export class Git implements INodeType {
 
 					let pathsToAdd: string[] | undefined = undefined;
 					if (options.files !== undefined) {
-						pathsToAdd = (options.pathsToAdd as string).split(',');
+						pathsToAdd = (options.pathsToAdd as string)
+							.split(',')
+							.map((p) => p.trim())
+							.filter((p) => p.length > 0);
 					}
 
-					await git.commit(message, pathsToAdd);
+					// Use -- separator to prevent argument injection
+					if (pathsToAdd && pathsToAdd.length > 0) {
+						await git.commit(message, ['--', ...pathsToAdd]);
+					} else {
+						await git.commit(message);
+					}
 
 					returnItems.push({
 						json: {
@@ -540,13 +564,7 @@ export class Git implements INodeType {
 
 					const config = await git.listConfig();
 
-					const data = [];
-					for (const fileName of Object.keys(config.values)) {
-						data.push({
-							_file: fileName,
-							...config.values[fileName],
-						});
-					}
+					const data = mapGitConfigList(config);
 
 					returnItems.push(
 						...this.helpers.returnJsonArray(data).map((item) => {

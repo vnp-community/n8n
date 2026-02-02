@@ -37,9 +37,12 @@ import { createTestingPinia } from '@pinia/testing';
 import { mockedStore } from '@/__tests__/utils';
 import {
 	AGENT_NODE_TYPE,
+	EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
 	FORM_TRIGGER_NODE_TYPE,
+	MCP_TRIGGER_NODE_TYPE,
 	SET_NODE_TYPE,
 	STICKY_NODE_TYPE,
+	UPDATE_WEBHOOK_ID_NODE_TYPES,
 	VIEWS,
 	WEBHOOK_NODE_TYPE,
 } from '@/app/constants';
@@ -3985,6 +3988,193 @@ describe('useCanvasOperations', () => {
 				setStateDirty: true,
 			});
 		});
+
+		it('should not crash when importing nodes that exceed maxNodes limit', async () => {
+			const toast = useToast();
+			const workflowsStore = mockedStore(useWorkflowsStore);
+			const nodeTypesStore = useNodeTypesStore();
+
+			// Create a node type with maxNodes: 1
+			const executeWorkflowTriggerNodeType = mockNodeTypeDescription({
+				name: EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
+				maxNodes: 1,
+			});
+
+			nodeTypesStore.nodeTypes = {
+				[EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE]: { 1: executeWorkflowTriggerNodeType },
+			};
+
+			// Create workflow data with two nodes of the same type (that has maxNodes: 1)
+			const nodesToImport = [
+				{
+					id: 'import-1',
+					name: 'Execute Workflow Trigger 1',
+					type: EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
+					typeVersion: 1,
+					position: [200, 200] as [number, number],
+					parameters: {},
+				},
+				{
+					id: 'import-2',
+					name: 'Execute Workflow Trigger 2',
+					type: EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
+					typeVersion: 1,
+					position: [300, 300] as [number, number],
+					parameters: {},
+				},
+			];
+
+			const workflowDataToImport = {
+				nodes: nodesToImport,
+				connections: {},
+				pinData: {
+					'Execute Workflow Trigger 1': [{ json: { test: 'data1' } }],
+					'Execute Workflow Trigger 2': [{ json: { test: 'data2' } }],
+				},
+			};
+
+			// Mock createWorkflowObject to return a workflow with no nodes (since none can be created due to maxNodes limit)
+			const workflowObject = createTestWorkflowObject({ nodes: [], connections: {} });
+			workflowsStore.createWorkflowObject.mockReturnValue(workflowObject);
+
+			const canvasOperations = useCanvasOperations();
+
+			// This should not throw even when nodes can't be added due to maxNodes limit
+			await expect(
+				canvasOperations.importWorkflowData(workflowDataToImport, 'paste'),
+			).resolves.not.toThrow();
+			expect(toast.showError).not.toHaveBeenCalled();
+		});
+
+		it.each(UPDATE_WEBHOOK_ID_NODE_TYPES)(
+			'should regenerate webhook ids for node type "%s" on pasting into canvas',
+			async (type) => {
+				const workflowsStore = mockedStore(useWorkflowsStore);
+
+				// This mock is needed for addImportedNodesToWorkflow to work
+				workflowsStore.createWorkflowObject = vi.fn().mockReturnValue({
+					nodes: {},
+					connections: {},
+					connectionsBySourceNode: {},
+					renameNode: vi.fn(),
+				});
+
+				const nodesToImport = [
+					{
+						id: 'import-1',
+						name: 'Execute Workflow Trigger 1',
+						type,
+						typeVersion: 1,
+						position: [200, 200] as [number, number],
+						webhookId: 'first-webhook',
+						parameters: {
+							path: 'some-path',
+						},
+					},
+					{
+						id: 'import-2',
+						name: 'Execute Workflow Trigger 2',
+						type,
+						typeVersion: 1,
+						position: [300, 300] as [number, number],
+						webhookId: 'second-webhook',
+						parameters: {
+							options: {
+								path: 'some-path',
+							},
+						},
+					},
+				];
+
+				const workflowDataToImport = {
+					nodes: nodesToImport,
+					connections: {},
+					pinData: {
+						'Execute Workflow Trigger 1': [{ json: { test: 'data1' } }],
+						'Execute Workflow Trigger 2': [{ json: { test: 'data2' } }],
+					},
+				};
+
+				const canvasOperations = useCanvasOperations();
+
+				// This should not throw even when nodes can't be added due to maxNodes limit
+				const workflow = await canvasOperations.importWorkflowData(workflowDataToImport, 'paste');
+
+				expect(workflow.nodes).toHaveLength(2);
+				expect(workflow.nodes![0].name).toBe('Execute Workflow Trigger 1');
+				expect(workflow.nodes![0].webhookId).not.toBe('first-webhook');
+				expect(workflow.nodes![0].parameters.path).not.toBe('some-path');
+				expect(workflow.nodes![1].name).toBe('Execute Workflow Trigger 2');
+				expect(workflow.nodes![1].webhookId).not.toBe('second-webhook');
+				expect((workflow.nodes![1].parameters.options as { path: string }).path).not.toBe(
+					'some-path',
+				);
+			},
+		);
+
+		it.each([WEBHOOK_NODE_TYPE, MCP_TRIGGER_NODE_TYPE])(
+			'should not regenerate webhook ids for node type "%s" on pasting into canvas',
+			async (type) => {
+				const workflowsStore = mockedStore(useWorkflowsStore);
+
+				// This mock is needed for addImportedNodesToWorkflow to work
+				workflowsStore.createWorkflowObject = vi.fn().mockReturnValue({
+					nodes: {},
+					connections: {},
+					connectionsBySourceNode: {},
+					renameNode: vi.fn(),
+				});
+
+				const nodesToImport = [
+					{
+						id: 'import-1',
+						name: 'Execute Workflow Trigger 1',
+						type,
+						typeVersion: 1,
+						position: [200, 200] as [number, number],
+						webhookId: 'first-webhook',
+						parameters: {
+							path: 'some-path',
+						},
+					},
+					{
+						id: 'import-2',
+						name: 'Execute Workflow Trigger 2',
+						type,
+						typeVersion: 1,
+						position: [300, 300] as [number, number],
+						webhookId: 'second-webhook',
+						parameters: {
+							options: {
+								path: 'some-path',
+							},
+						},
+					},
+				];
+
+				const workflowDataToImport = {
+					nodes: nodesToImport,
+					connections: {},
+					pinData: {
+						'Execute Workflow Trigger 1': [{ json: { test: 'data1' } }],
+						'Execute Workflow Trigger 2': [{ json: { test: 'data2' } }],
+					},
+				};
+
+				const canvasOperations = useCanvasOperations();
+
+				// This should not throw even when nodes can't be added due to maxNodes limit
+				const workflow = await canvasOperations.importWorkflowData(workflowDataToImport, 'paste');
+
+				expect(workflow.nodes).toHaveLength(2);
+				expect(workflow.nodes![0].name).toBe('Execute Workflow Trigger 1');
+				expect(workflow.nodes![0].webhookId).toBe('first-webhook');
+				expect(workflow.nodes![0].parameters.path).toBe('some-path');
+				expect(workflow.nodes![1].name).toBe('Execute Workflow Trigger 2');
+				expect(workflow.nodes![1].webhookId).toBe('second-webhook');
+				expect((workflow.nodes![1].parameters.options as { path: string }).path).toBe('some-path');
+			},
+		);
 	});
 
 	describe('duplicateNodes', () => {

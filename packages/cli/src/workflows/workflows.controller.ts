@@ -96,6 +96,20 @@ export class WorkflowsController {
 		// mess with relations of other workflows
 		delete req.body.shared;
 
+		// @ts-expect-error: We shouldn't accept this, this will be set when activating
+		if (req.body.activeVersionId || req.body.active) {
+			this.logger.warn(
+				'Creating a workflow as active is not supported. The workflow will be created as inactive.',
+				{ userId: req.user.id },
+			);
+
+			// @ts-expect-error: We shouldn't accept this
+			delete req.body.activeVersionId;
+			// @ts-expect-error: We shouldn't accept this
+			delete req.body.activeVersion;
+			req.body.active = false;
+		}
+
 		const newWorkflow = new WorkflowEntity();
 
 		Object.assign(newWorkflow, req.body);
@@ -189,12 +203,6 @@ export class WorkflowsController {
 				workflow.id,
 				transactionManager,
 			);
-
-			const shouldActivate = req.body.active === true;
-			if (shouldActivate) {
-				workflow.activeVersionId = workflow.versionId;
-				await transactionManager.save(workflow);
-			}
 
 			return await this.workflowFinderService.findWorkflowForUser(
 				workflow.id,
@@ -343,7 +351,11 @@ export class WorkflowsController {
 				workflowId,
 				req.user,
 				['workflow:read'],
-				{ includeTags: !this.globalConfig.tags.disabled, includeParentFolder: true },
+				{
+					includeTags: !this.globalConfig.tags.disabled,
+					includeParentFolder: true,
+					includeActiveVersion: true,
+				},
 			);
 
 			if (!workflow) {
@@ -371,7 +383,11 @@ export class WorkflowsController {
 			workflowId,
 			req.user,
 			['workflow:read'],
-			{ includeTags: !this.globalConfig.tags.disabled, includeParentFolder: true },
+			{
+				includeTags: !this.globalConfig.tags.disabled,
+				includeParentFolder: true,
+				includeActiveVersion: true,
+			},
 		);
 
 		if (!workflow) {
@@ -397,6 +413,15 @@ export class WorkflowsController {
 
 		let updateData = new WorkflowEntity();
 		const { tags, parentFolderId, ...rest } = req.body;
+
+		// TODO: Add zod validation for entire `rest` object before assigning to `updateData`
+		if (
+			rest.settings?.timeSavedMode !== undefined &&
+			!['fixed', 'dynamic'].includes(rest.settings.timeSavedMode)
+		) {
+			throw new BadRequestError('Invalid timeSavedMode');
+		}
+
 		Object.assign(updateData, rest);
 
 		const isSharingEnabled = this.license.isSharingEnabled();
@@ -408,14 +433,11 @@ export class WorkflowsController {
 			);
 		}
 
-		const updatedWorkflow = await this.workflowService.update(
-			req.user,
-			updateData,
-			workflowId,
-			tags,
+		const updatedWorkflow = await this.workflowService.update(req.user, updateData, workflowId, {
+			tagIds: tags,
 			parentFolderId,
-			isSharingEnabled ? forceSave : true,
-		);
+			forceSave: isSharingEnabled ? forceSave : true,
+		});
 
 		const scopes = await this.workflowService.getWorkflowScopes(req.user, workflowId);
 
@@ -491,16 +513,11 @@ export class WorkflowsController {
 			throw new BadRequestError('versionId is required');
 		}
 
-		const options: { name?: string; description?: string } = {};
-		if (name !== undefined) options.name = name;
-		if (description !== undefined) options.description = description;
-
-		const workflow = await this.workflowService.activateWorkflow(
-			req.user,
-			workflowId,
+		const workflow = await this.workflowService.activateWorkflow(req.user, workflowId, {
 			versionId,
-			Object.keys(options).length > 0 ? options : undefined,
-		);
+			name,
+			description,
+		});
 
 		const scopes = await this.workflowService.getWorkflowScopes(req.user, workflowId);
 

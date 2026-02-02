@@ -2,8 +2,11 @@ import * as fsPromises from 'fs/promises';
 import { mock } from 'jest-mock-extended';
 import type { IExecuteFunctions } from 'n8n-workflow';
 import type { SimpleGit } from 'simple-git';
+import { Container } from '@n8n/di';
+import { SecurityConfig } from '@n8n/config';
 
 import { Git } from '../Git.node';
+import { ALLOWED_CONFIG_KEYS } from '../descriptions';
 
 // Mock simple-git
 const mockGit = {
@@ -50,6 +53,8 @@ describe('Git Node', () => {
 			continueOnFail: jest.fn(() => false),
 			helpers: {
 				returnJsonArray: jest.fn((data: any[]) => data.map((item: any) => ({ json: item }))),
+				resolvePath: jest.fn(async (path: string) => path as any),
+				isFilePathBlocked: jest.fn(() => false),
 			},
 		});
 		jest.clearAllMocks();
@@ -66,7 +71,7 @@ describe('Git Node', () => {
 			await gitNode.execute.call(mockExecuteFunctions);
 
 			expect(mockGit.checkout).toHaveBeenCalledWith('feature');
-			expect(mockGit.commit).toHaveBeenCalledWith('test commit', undefined);
+			expect(mockGit.commit).toHaveBeenCalledWith('test commit');
 		});
 
 		it('should commit specific files when pathsToAdd is provided', async () => {
@@ -85,7 +90,9 @@ describe('Git Node', () => {
 			const result = await gitNode.execute.call(mockExecuteFunctions);
 
 			expect(mockGit.checkout).toHaveBeenCalledWith('feature-branch');
+			// Uses -- separator to prevent argument injection
 			expect(mockGit.commit).toHaveBeenCalledWith('Add specific files', [
+				'--',
 				'src/file1.js',
 				'src/file2.js',
 				'README.md',
@@ -128,7 +135,7 @@ describe('Git Node', () => {
 				'branch.feature-branch.merge',
 				'refs/heads/feature-branch',
 			);
-			expect(mockGit.commit).toHaveBeenCalledWith('commit message', undefined);
+			expect(mockGit.commit).toHaveBeenCalledWith('commit message');
 		});
 
 		it('should set upstream when switching to existing branch for push operation', async () => {
@@ -341,7 +348,7 @@ describe('Git Node', () => {
 			await gitNode.execute.call(mockExecuteFunctions);
 
 			expect(mockGit.checkout).not.toHaveBeenCalled();
-			expect(mockGit.commit).toHaveBeenCalledWith('test commit', undefined);
+			expect(mockGit.commit).toHaveBeenCalledWith('test commit');
 		});
 
 		it('should not switch branch when empty string is provided', async () => {
@@ -354,7 +361,7 @@ describe('Git Node', () => {
 			await gitNode.execute.call(mockExecuteFunctions);
 
 			expect(mockGit.checkout).not.toHaveBeenCalled();
-			expect(mockGit.commit).toHaveBeenCalledWith('test commit', undefined);
+			expect(mockGit.commit).toHaveBeenCalledWith('test commit');
 		});
 	});
 
@@ -368,8 +375,81 @@ describe('Git Node', () => {
 
 			const result = await gitNode.execute.call(mockExecuteFunctions);
 
-			expect(mockGit.add).toHaveBeenCalledWith(['file.txt']);
+			// Should use -- separator to prevent argument injection
+			expect(mockGit.add).toHaveBeenCalledWith(['--', 'file.txt']);
 			expect(result[0]).toEqual([{ json: { success: true }, pairedItem: { item: 0 } }]);
+		});
+
+		ALLOWED_CONFIG_KEYS.forEach((key) => {
+			it(`should handle addConfig with key '${key}' operation`, async () => {
+				mockExecuteFunctions.getNodeParameter
+					.mockReturnValueOnce('addConfig')
+					.mockReturnValueOnce('/repo')
+					.mockReturnValueOnce({})
+					.mockReturnValueOnce(key)
+					.mockReturnValueOnce('test value');
+
+				await gitNode.execute.call(mockExecuteFunctions);
+
+				expect(mockGit.addConfig).toHaveBeenCalledWith(key, 'test value', false);
+			});
+		});
+
+		describe('enableGitNodeAllConfigKeys is false (default value)', () => {
+			[
+				'core.sshCommand',
+				'core.hooksPath',
+				'credential.helper',
+				'remote.origin.uploadpack',
+				'remote.origin.receivepack',
+				'url.xxx.insteadOf',
+				'user.name,core.sshCommand',
+			].forEach((key) => {
+				it(`should reject addConfig with key '${key}'`, async () => {
+					mockExecuteFunctions.getNodeParameter
+						.mockReturnValueOnce('addConfig')
+						.mockReturnValueOnce('/repo')
+						.mockReturnValueOnce({})
+						.mockReturnValueOnce(key)
+						.mockReturnValueOnce('test value');
+
+					await expect(gitNode.execute.call(mockExecuteFunctions)).rejects.toThrow(
+						`The provided git config key '${key}' is not allowed`,
+					);
+				});
+			});
+		});
+
+		describe('enableGitNodeAllConfigKeys is true', () => {
+			beforeEach(() => {
+				const securityConfig = mock<SecurityConfig>({
+					enableGitNodeAllConfigKeys: true,
+				});
+				Container.set(SecurityConfig, securityConfig);
+			});
+
+			[
+				'core.sshCommand',
+				'core.hooksPath',
+				'credential.helper',
+				'remote.origin.uploadpack',
+				'remote.origin.receivepack',
+				'url.xxx.insteadOf',
+				'user.name,core.sshCommand',
+			].forEach((key) => {
+				it(`should handle addConfig with key '${key}'`, async () => {
+					mockExecuteFunctions.getNodeParameter
+						.mockReturnValueOnce('addConfig')
+						.mockReturnValueOnce('/repo')
+						.mockReturnValueOnce({})
+						.mockReturnValueOnce(key)
+						.mockReturnValueOnce('test value');
+
+					await gitNode.execute.call(mockExecuteFunctions);
+
+					expect(mockGit.addConfig).toHaveBeenCalledWith(key, 'test value', false);
+				});
+			});
 		});
 
 		it('should handle addConfig operation', async () => {
