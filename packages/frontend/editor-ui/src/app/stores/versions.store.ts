@@ -93,11 +93,11 @@ export const useVersionsStore = defineStore(STORES.VERSIONS, () => {
 	});
 
 	const areNotificationsEnabled = computed(() => {
-		return versionNotificationSettings.value.enabled;
+		return versionNotificationSettings.value?.enabled ?? false;
 	});
 
 	const infoUrl = computed(() => {
-		return versionNotificationSettings.value.infoUrl;
+		return versionNotificationSettings.value?.infoUrl ?? '';
 	});
 
 	const readWhatsNewArticles = computed((): number[] => {
@@ -124,7 +124,7 @@ export const useVersionsStore = defineStore(STORES.VERSIONS, () => {
 
 	const fetchVersions = async () => {
 		try {
-			const { enabled, endpoint } = versionNotificationSettings.value;
+			const { enabled, endpoint } = versionNotificationSettings.value || {};
 			if (enabled && endpoint) {
 				const rootStore = useRootStore();
 				const current = rootStore.versionCli;
@@ -191,7 +191,8 @@ export const useVersionsStore = defineStore(STORES.VERSIONS, () => {
 
 	const fetchWhatsNew = async () => {
 		try {
-			const { enabled, whatsNewEnabled, whatsNewEndpoint } = versionNotificationSettings.value;
+			const { enabled, whatsNewEnabled, whatsNewEndpoint } =
+				versionNotificationSettings.value || {};
 			if (enabled && whatsNewEnabled && whatsNewEndpoint) {
 				const rootStore = useRootStore();
 				const current = rootStore.versionCli;
@@ -231,6 +232,7 @@ export const useVersionsStore = defineStore(STORES.VERSIONS, () => {
 	};
 
 	const initialize = (settings: IVersionNotificationSettings) => {
+		if (!settings) return;
 		versionNotificationSettings.value = settings;
 	};
 
