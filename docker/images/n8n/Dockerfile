@@ -58,8 +58,6 @@ COPY docker/images/n8n/n8n-task-runners.json /etc/n8n-task-runners.json
 
 RUN cd /usr/local/lib/node_modules/n8n && \
 		npm rebuild sqlite3 && \
-    apk update && \
-    apk upgrade --no-cache openssl libcrypto3 libssl3 libpng libheif c-ares && \
 		ln -s /usr/local/lib/node_modules/n8n/bin/n8n /usr/local/bin/n8n && \
     mkdir -p /home/node/.n8n && \
     chown -R node:node /home/node
