@@ -1,3 +1,53 @@
+## [1.123.23](https://github.com/n8n-io/n8n/compare/n8n@1.123.22...n8n@1.123.23) (2026-03-04)
+
+
+### Bug Fixes
+
+* Backport transitive dependency bumps to 1.x ([#26260](https://github.com/n8n-io/n8n/issues/26260)) ([aef8c80](https://github.com/n8n-io/n8n/commit/aef8c80491dc74ac8cef13b6bfdab375ba0a69dd))
+* **editor:** Replace jsonpath with jsonpath-plus to resolve CVE ([#26408](https://github.com/n8n-io/n8n/issues/26408)) ([10aa98f](https://github.com/n8n-io/n8n/commit/10aa98fceb8937bcd7a64a9c1ba3ca625f6ee6e6))
+* Fix 14 security issues in jsonpath, mailparser, mysql2 and 9 more ([#26363](https://github.com/n8n-io/n8n/issues/26363)) ([9b1d456](https://github.com/n8n-io/n8n/commit/9b1d4564e7cfb2f7c07fce3d7ca61ffa525aba43))
+
+
+
+## [1.123.22](https://github.com/n8n-io/n8n/compare/n8n@1.123.21...n8n@1.123.22) (2026-02-25)
+
+
+
+## [1.123.21](https://github.com/n8n-io/n8n/compare/n8n@1.123.20...n8n@1.123.21) (2026-02-20)
+
+
+### Bug Fixes
+
+* **core:** Remove --tunnel option after hooks.n8n.cloud shutdown ([#25944](https://github.com/n8n-io/n8n/issues/25944)) ([b045eb9](https://github.com/n8n-io/n8n/commit/b045eb9b5f04802054fb4d236f89bb54251375d1))
+* Dependency bump backport ([#25788](https://github.com/n8n-io/n8n/issues/25788)) ([d106182](https://github.com/n8n-io/n8n/commit/d1061826e9f753a9f572f253a265fbba0414a5da))
+* Use task runners for AI Transform node ([#25917](https://github.com/n8n-io/n8n/issues/25917)) ([b30ed4c](https://github.com/n8n-io/n8n/commit/b30ed4c662c5e67bfbc35ff5ab5789cc1d3d70d5))
+
+
+
+## [1.123.20](https://github.com/n8n-io/n8n/compare/n8n@1.123.19...n8n@1.123.20) (2026-02-06)
+
+
+### Bug Fixes
+
+* Fix status overwrite for donePromise (backport 1.x) ([#25416](https://github.com/n8n-io/n8n/issues/25416)) ([9e417b9](https://github.com/n8n-io/n8n/commit/9e417b9eaabc1bf2d04eb293da1cc35a7a007da7))
+
+
+### Features
+
+* **Kafka Trigger Node:** Refactoring and fixes (backport 1.x) ([#25424](https://github.com/n8n-io/n8n/issues/25424)) ([20c4ba9](https://github.com/n8n-io/n8n/commit/20c4ba9c1a4725903b7a83d53a9fb4dc9582290d))
+
+
+
+## [1.123.19](https://github.com/n8n-io/n8n/compare/n8n@1.123.18...n8n@1.123.19) (2026-02-06)
+
+
+### Bug Fixes
+
+* **core:** Use stricter flags when starting python runner (backport 1.x) ([#25157](https://github.com/n8n-io/n8n/issues/25157)) ([c39496e](https://github.com/n8n-io/n8n/commit/c39496eda92ff5c93241af42f21e839fb2abc239))
+* Update mime-types to fixed version 3.0.2 ([#25148](https://github.com/n8n-io/n8n/issues/25148)) ([dba9864](https://github.com/n8n-io/n8n/commit/dba9864e00ade452a5c09aa93784d42e7383b3ed))
+
+
+
 ## [1.123.18](https://github.com/n8n-io/n8n/compare/n8n@1.123.17...n8n@1.123.18) (2026-01-29)
 
 
