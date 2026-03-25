@@ -36,11 +36,14 @@ RUN set -e; \
 FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS system-deps
 ARG REPO_URL
 
+RUN echo 'Acquire::https::Verify-Peer "false";' > /etc/apt/apt.conf.d/99insecure && \
+    echo 'Acquire::https::Verify-Host "false";' >> /etc/apt/apt.conf.d/99insecure
+
 RUN rm -f /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources && \
-    echo "deb [trusted=yes] ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy main restricted universe multiverse" > /etc/apt/sources.list && \
-    echo "deb [trusted=yes] ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-updates main restricted universe multiverse" >> /etc/apt/sources.list && \
-    echo "deb [trusted=yes] ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-backports main restricted universe multiverse" >> /etc/apt/sources.list && \
-    echo "deb [trusted=yes] ${REPO_URL}/apt-proxy_security.ubuntu.com/ jammy-security main restricted universe multiverse" >> /etc/apt/sources.list
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy main restricted universe multiverse" > /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-updates main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-backports main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_security.ubuntu.com/ jammy-security main restricted universe multiverse" >> /etc/apt/sources.list
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
