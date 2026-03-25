@@ -21,7 +21,7 @@ stages:
 
 build:
   stage: build
-  image: registry.vnpay.vn/base/node:24.13.1-alpine
+  image: registry.vnpay.vn/base/node:24-slim
   variables:
     NPM_CONFIG_REGISTRY: https://artifact.vnpay.vn/nexus/repository/npm-group/
   before_script:
