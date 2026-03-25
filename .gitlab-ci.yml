@@ -25,8 +25,7 @@ build:
   variables:
     NPM_CONFIG_REGISTRY: https://artifact.vnpay.vn/nexus/repository/npm-group/
   before_script:
-    - corepack enable
-    - corepack prepare pnpm@latest --activate
+    - npm install -g pnpm
   script:
     - node scripts/build-n8n.mjs
   artifacts:
