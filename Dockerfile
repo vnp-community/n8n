@@ -37,7 +37,10 @@ FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS system-deps
 ARG REPO_URL
 
 RUN echo 'Acquire::https::Verify-Peer "false";' > /etc/apt/apt.conf.d/99insecure && \
-    echo 'Acquire::https::Verify-Host "false";' >> /etc/apt/apt.conf.d/99insecure
+    echo 'Acquire::https::Verify-Host "false";' >> /etc/apt/apt.conf.d/99insecure && \
+    echo 'Acquire::AllowInsecureRepositories "true";' >> /etc/apt/apt.conf.d/99insecure && \
+    echo 'Acquire::AllowDowngradeToInsecureRepositories "true";' >> /etc/apt/apt.conf.d/99insecure && \
+    echo 'APT::Get::AllowUnauthenticated "true";' >> /etc/apt/apt.conf.d/99insecure
 
 RUN rm -f /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources && \
     echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy main restricted universe multiverse" > /etc/apt/sources.list && \
@@ -45,8 +48,10 @@ RUN rm -f /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources && \
     echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-backports main restricted universe multiverse" >> /etc/apt/sources.list && \
     echo "deb ${REPO_URL}/apt-proxy_security.ubuntu.com/ jammy-security main restricted universe multiverse" >> /etc/apt/sources.list
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+RUN apt-get update \
+        -o Acquire::AllowInsecureRepositories=true \
+        -o Acquire::AllowDowngradeToInsecureRepositories=true && \
+    apt-get install -y --no-install-recommends --allow-unauthenticated \
         fontconfig \
         libxml2 \
         git \
