@@ -2,6 +2,7 @@ ARG NODE_VERSION=22-slim
 ARG LAUNCHER_VERSION=1.4.3
 ARG N8N_VERSION=snapshot
 ARG TARGETPLATFORM
+ARG REPO_URL="https://artifact.vnpay.vn/repository"
 
 # ==============================================================================
 # STAGE 1: Download task-runner-launcher binary
@@ -33,36 +34,33 @@ RUN set -e; \
 # STAGE 2: Runtime base — mirrors n8nio/base image
 # ==============================================================================
 FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS system-deps
+ARG REPO_URL
 
-RUN echo https://artifact.vnpay.vn/repository/apk-proxy_dl-cdn.alpinelinux.org/alpine/v3.22/main > /etc/apk/repositories && \
-    echo https://artifact.vnpay.vn/repository/apk-proxy_dl-cdn.alpinelinux.org/alpine/v3.22/community >> /etc/apk/repositories
+RUN echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy main restricted universe multiverse" > /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-updates main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-backports main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_security.ubuntu.com/ jammy-security main restricted universe multiverse" >> /etc/apt/sources.list
 
-RUN apk --no-cache add --virtual .build-deps-fonts msttcorefonts-installer fontconfig && \
-    update-ms-fonts && \
-    fc-cache -f && \
-    apk del .build-deps-fonts && \
-    find /usr/share/fonts/truetype/msttcorefonts/ -type l -exec unlink {} \;
-
-RUN apk update && \
-    apk upgrade --no-cache && \
-    apk add --no-cache libxml2 && \
-    apk add --no-cache \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        fontconfig \
+        libxml2 \
         git \
-        openssh \
+        openssh-client \
         openssl \
-        graphicsmagick=1.3.45-r0 \
+        graphicsmagick \
         tini \
         tzdata \
         ca-certificates \
-        libc6-compat \
-        jq=1.8.1-r0
+        jq \
+        wget && \
+    rm -rf /var/lib/apt/lists/*
 
 ENV NPM_CONFIG_REGISTRY=https://artifact.vnpay.vn/nexus/repository/npm-group/
 
 RUN npm install -g full-icu@1.5.0
 
-RUN rm -rf /tmp/* /root/.npm /root/.cache/node /opt/yarn* && \
-    apk del apk-tools
+RUN rm -rf /tmp/* /root/.npm /root/.cache/node
 
 WORKDIR /home/node
 ENV NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
