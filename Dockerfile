@@ -76,8 +76,23 @@ ENV NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
 EXPOSE 5678/tcp
 
 # ==============================================================================
-# STAGE 3: Final runtime image
-# Requires ./compiled to exist locally (run scripts/build-n8n.mjs first)
+# STAGE 3: Build n8n (create ./compiled inside the image)
+# ==============================================================================
+FROM system-deps AS builder
+
+WORKDIR /src
+
+# Install the repo's pnpm version (see packageManager in package.json)
+RUN corepack enable && corepack prepare pnpm@10.22.0 --activate || npm install -g pnpm@10.22.0
+
+# Copy the repo sources (respects .dockerignore)
+COPY . .
+
+# Build production deployment into /src/compiled
+RUN pnpm build:n8n
+
+# ==============================================================================
+# STAGE 4: Final runtime image
 # ==============================================================================
 FROM system-deps AS runtime
 
@@ -90,7 +105,7 @@ ENV SHELL=/bin/sh
 
 WORKDIR /home/node
 
-COPY compiled/                                  /usr/local/lib/node_modules/n8n
+COPY --from=builder /src/compiled/              /usr/local/lib/node_modules/n8n
 COPY --from=launcher-downloader /launcher-bin/* /usr/local/bin/
 COPY docker/images/n8n/docker-entrypoint.sh     /
 COPY docker/images/n8n/n8n-task-runners.json    /etc/n8n-task-runners.json
