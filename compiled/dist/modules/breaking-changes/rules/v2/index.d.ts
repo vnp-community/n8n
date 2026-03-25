@@ -1,0 +1,11 @@
+import { BinaryDataStorageRule } from './binary-data-storage.rule';
+import { CliActivateAllWorkflowsRule } from './cli-replace-update-workflow-command.rule';
+import { GitNodeBareReposRule } from './git-node-bare-repos.rule';
+import { RemovedDatabaseTypesRule } from './removed-database-types.rule';
+import { SettingsFilePermissionsRule } from './settings-file-permissions.rule';
+import { SqliteLegacyDriverRule } from './sqlite-legacy-driver.rule';
+import { TaskRunnerDockerImageRule } from './task-runner-docker-image.rule';
+import { TaskRunnersRule } from './task-runners.rule';
+import { WaitNodeSubworkflowRule } from './wait-node-subworkflow.rule';
+declare const v2Rules: (typeof BinaryDataStorageRule | typeof CliActivateAllWorkflowsRule | typeof GitNodeBareReposRule | typeof RemovedDatabaseTypesRule | typeof SettingsFilePermissionsRule | typeof SqliteLegacyDriverRule | typeof TaskRunnerDockerImageRule | typeof TaskRunnersRule | typeof WaitNodeSubworkflowRule)[];
+export { v2Rules };

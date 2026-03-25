@@ -1,0 +1,4 @@
+declare const allRules: (typeof import("./v2/binary-data-storage.rule").BinaryDataStorageRule | typeof import("./v2/cli-replace-update-workflow-command.rule").CliActivateAllWorkflowsRule | typeof import("./v2/git-node-bare-repos.rule").GitNodeBareReposRule | typeof import("./v2/removed-database-types.rule").RemovedDatabaseTypesRule | typeof import("./v2/settings-file-permissions.rule").SettingsFilePermissionsRule | typeof import("./v2/sqlite-legacy-driver.rule").SqliteLegacyDriverRule | typeof import("./v2/task-runner-docker-image.rule").TaskRunnerDockerImageRule | typeof import("./v2/task-runners.rule").TaskRunnersRule | typeof import("./v2/wait-node-subworkflow.rule").WaitNodeSubworkflowRule)[];
+type RuleConstructors = (typeof allRules)[number];
+type RuleInstances = InstanceType<RuleConstructors>;
+export { allRules, type RuleInstances };

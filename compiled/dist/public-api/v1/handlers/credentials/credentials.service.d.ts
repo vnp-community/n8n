@@ -1,0 +1,17 @@
+import type { User, ICredentialsDb } from '@n8n/db';
+import { CredentialsEntity, SharedCredentials } from '@n8n/db';
+import type { ICredentialDataDecryptedObject, IDataObject, INodeProperties } from 'n8n-workflow';
+import type { CredentialRequest } from '../../../../requests';
+export declare function getCredentials(credentialId: string): Promise<ICredentialsDb | null>;
+export declare function getSharedCredentials(userId: string, credentialId: string): Promise<SharedCredentials | null>;
+export declare function createCredential(properties: CredentialRequest.CredentialProperties): Promise<CredentialsEntity>;
+export declare function saveCredential(payload: {
+    type: string;
+    name: string;
+    data: ICredentialDataDecryptedObject;
+}, user: User): Promise<CredentialsEntity>;
+export declare function removeCredential(user: User, credentials: CredentialsEntity): Promise<ICredentialsDb>;
+export declare function encryptCredential(credential: CredentialsEntity): Promise<ICredentialsDb>;
+export declare function sanitizeCredentials(credentials: CredentialsEntity): Partial<CredentialsEntity>;
+export declare function sanitizeCredentials(credentials: CredentialsEntity[]): Array<Partial<CredentialsEntity>>;
+export declare function toJsonSchema(properties: INodeProperties[]): IDataObject;

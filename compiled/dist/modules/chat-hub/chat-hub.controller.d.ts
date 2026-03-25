@@ -1,0 +1,30 @@
+import { ChatHubSendMessageRequest, ChatModelsResponse, ChatHubConversationsResponse, ChatHubConversationResponse, ChatHubEditMessageRequest, ChatHubRegenerateMessageRequest, ChatHubUpdateConversationRequest, ChatSessionId, ChatMessageId, ChatHubCreateAgentRequest, ChatHubUpdateAgentRequest, ChatHubConversationsRequest } from '@n8n/api-types';
+import { Logger } from '@n8n/backend-common';
+import { AuthenticatedRequest } from '@n8n/db';
+import type { Response } from 'express';
+import { ChatHubAgentService } from './chat-hub-agent.service';
+import { ChatHubAttachmentService } from './chat-hub.attachment.service';
+import { ChatHubService } from './chat-hub.service';
+import { ChatModelsRequestDto } from './dto/chat-models-request.dto';
+export declare class ChatHubController {
+    private readonly chatService;
+    private readonly chatAgentService;
+    private readonly chatAttachmentService;
+    private readonly logger;
+    constructor(chatService: ChatHubService, chatAgentService: ChatHubAgentService, chatAttachmentService: ChatHubAttachmentService, logger: Logger);
+    getModels(req: AuthenticatedRequest, _res: Response, payload: ChatModelsRequestDto): Promise<ChatModelsResponse>;
+    getConversations(req: AuthenticatedRequest, _res: Response, query: ChatHubConversationsRequest): Promise<ChatHubConversationsResponse>;
+    getConversationMessages(req: AuthenticatedRequest, _res: Response, sessionId: ChatSessionId): Promise<ChatHubConversationResponse>;
+    getMessageAttachment(req: AuthenticatedRequest, res: Response, sessionId: ChatSessionId, messageId: ChatMessageId, index: string): Promise<void>;
+    sendMessage(req: AuthenticatedRequest, res: Response, payload: ChatHubSendMessageRequest): Promise<void>;
+    editMessage(req: AuthenticatedRequest, res: Response, sessionId: ChatSessionId, editId: ChatMessageId, payload: ChatHubEditMessageRequest): Promise<void>;
+    regenerateMessage(req: AuthenticatedRequest, res: Response, sessionId: ChatSessionId, retryId: ChatMessageId, payload: ChatHubRegenerateMessageRequest): Promise<void>;
+    stopGeneration(req: AuthenticatedRequest, res: Response, sessionId: ChatSessionId, messageId: ChatMessageId): Promise<void>;
+    updateConversation(req: AuthenticatedRequest, _res: Response, sessionId: ChatSessionId, payload: ChatHubUpdateConversationRequest): Promise<ChatHubConversationResponse>;
+    deleteConversation(req: AuthenticatedRequest, res: Response, sessionId: ChatSessionId): Promise<void>;
+    getAgents(req: AuthenticatedRequest): Promise<import("./chat-hub-agent.entity").ChatHubAgent[]>;
+    getAgent(req: AuthenticatedRequest, _res: Response, agentId: string): Promise<import("./chat-hub-agent.entity").ChatHubAgent>;
+    createAgent(req: AuthenticatedRequest, _res: Response, payload: ChatHubCreateAgentRequest): Promise<import("./chat-hub-agent.entity").ChatHubAgent>;
+    updateAgent(req: AuthenticatedRequest, _res: Response, agentId: string, payload: ChatHubUpdateAgentRequest): Promise<import("./chat-hub-agent.entity").ChatHubAgent>;
+    deleteAgent(req: AuthenticatedRequest, res: Response, agentId: string): Promise<void>;
+}

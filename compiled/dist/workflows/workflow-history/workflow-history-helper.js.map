@@ -1,0 +1,1 @@
+{"version":3,"file":"workflow-history-helper.js","sourceRoot":"","sources":["../../../src/workflows/workflow-history/workflow-history-helper.ts"],"names":[],"mappings":";;AAGA,gFAEC;AAGD,kEAEC;AAVD,wCAA2C;AAC3C,gCAAoC;AAEpC,SAAgB,kCAAkC;IACjD,OAAO,CAAC,CAAC,CAAC;AACX,CAAC;AAGD,SAAgB,2BAA2B;IAC1C,OAAO,cAAS,CAAC,GAAG,CAAC,qBAAY,CAAC,CAAC,eAAe,CAAC,SAAS,CAAC;AAC9D,CAAC"}
