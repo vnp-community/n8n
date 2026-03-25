@@ -1,4 +1,4 @@
-ARG NODE_VERSION=24.13.1
+ARG NODE_VERSION=22-slim
 ARG LAUNCHER_VERSION=1.4.3
 ARG N8N_VERSION=snapshot
 ARG TARGETPLATFORM
@@ -32,7 +32,7 @@ RUN set -e; \
 # ==============================================================================
 # STAGE 2: Runtime base — mirrors n8nio/base image
 # ==============================================================================
-FROM registry.vnpay.vn/base/node:${NODE_VERSION}-alpine AS system-deps
+FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS system-deps
 
 RUN echo https://artifact.vnpay.vn/repository/apk-proxy_dl-cdn.alpinelinux.org/alpine/v3.22/main > /etc/apk/repositories && \
     echo https://artifact.vnpay.vn/repository/apk-proxy_dl-cdn.alpinelinux.org/alpine/v3.22/community >> /etc/apk/repositories
