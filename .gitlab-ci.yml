@@ -1,0 +1,38 @@
+include:
+  - project: qtud/ci-template
+    ref: master
+    file: template-ci-vnpay.yaml
+
+variables:
+  IMAGE_NAME: n8n
+  LOCAL_REGISTRY: registry.vnpay.vn
+  NAMESPACE: n8ntt
+  IMAGE_TAG: $CI_COMMIT_SHORT_SHA
+  TAG_RUNNER: BLC
+  DOCKERFILE_NAME: Dockerfile
+  CI_PROJECT_DIR: .
+  PROJECT_NAME: n8ntt
+
+stages:
+  - build
+  - scan
+  - dockerize
+  - publish
+
+build:
+  stage: build
+  image: registry.vnpay.vn/base/node:24.13.1-alpine
+  variables:
+    NPM_CONFIG_REGISTRY: https://artifact.vnpay.vn/nexus/repository/npm-group/
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@latest --activate
+  script:
+    - node scripts/build-n8n.mjs
+  artifacts:
+    expire_in: 1h
+    paths:
+      - compiled/
+  tags:
+    - $TAG_RUNNER
+  allow_failure: false
