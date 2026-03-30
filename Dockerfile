@@ -89,6 +89,10 @@ RUN npm install -g pnpm@10.22.0 --force
 # Copy the repo sources (respects .dockerignore)
 COPY . .
 
+# Install dependencies (required before build-n8n.mjs can run, as it imports zx)
+RUN pnpm config set registry https://artifact.vnpay.vn/nexus/repository/npm-group/ && \
+    pnpm install --frozen-lockfile
+
 # Build production deployment into /src/compiled
 RUN pnpm build:n8n
 
