@@ -90,8 +90,19 @@ RUN npm install -g pnpm@10.22.0 --force
 COPY . .
 
 # Install dependencies (required before build-n8n.mjs can run, as it imports zx)
+# Large/external packages are vendored to avoid timeouts in air-gapped builds:
+#   - xlsx: hosted on cdn.sheetjs.com (unreachable), patched to use local file
+#   - pdf-parse, @iconify/json: large packages that timeout via Nexus proxy
 RUN pnpm config set registry https://artifact.vnpay.vn/nexus/repository/npm-group/ && \
-    pnpm install --frozen-lockfile
+    pnpm config set fetch-timeout 300000 && \
+    pnpm config set fetch-retries 5 && \
+    pnpm config set network-concurrency 4 && \
+    sed -i 's|https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz|file:/src/vendor/xlsx-0.20.2.tgz|g' \
+        packages/nodes-base/package.json && \
+    pnpm store add \
+        /src/vendor/pdf-parse-1.1.1.tgz \
+        /src/vendor/iconify-json-2.2.447.tgz && \
+    pnpm install --no-frozen-lockfile
 
 # Build production deployment into /src/compiled
 RUN pnpm build:n8n
