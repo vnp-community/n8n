@@ -83,7 +83,8 @@ FROM system-deps AS builder
 WORKDIR /src
 
 # Install the repo's pnpm version (see packageManager in package.json)
-RUN corepack enable && corepack prepare pnpm@10.22.0 --activate || npm install -g pnpm@10.22.0
+# Use npm directly (corepack bypasses NPM_CONFIG_REGISTRY and fails in air-gapped builds)
+RUN npm install -g pnpm@10.22.0 --force
 
 # Copy the repo sources (respects .dockerignore)
 COPY . .
