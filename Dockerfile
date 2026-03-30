@@ -99,9 +99,9 @@ RUN pnpm config set registry https://artifact.vnpay.vn/nexus/repository/npm-grou
     pnpm config set network-concurrency 4 && \
     sed -i 's|https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz|file:/src/vendor/xlsx-0.20.2.tgz|g' \
         packages/nodes-base/package.json && \
-    pnpm store add \
-        /src/vendor/pdf-parse-1.1.1.tgz \
-        /src/vendor/iconify-json-2.2.447.tgz && \
+    sed -i 's|"@iconify/json": "[^"]*"|"@iconify/json": "file:/src/vendor/iconify-json-2.2.447.tgz"|g' \
+        packages/frontend/editor-ui/package.json && \
+    pnpm store add /src/vendor/pdf-parse-1.1.1.tgz && \
     pnpm install --no-frozen-lockfile
 
 # Build production deployment into /src/compiled
