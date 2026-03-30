@@ -104,7 +104,13 @@ RUN sed -i 's|https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz|file:/src/vend
         packages/@n8n/nodes-langchain/package.json
 
 # Install dependencies
-RUN pnpm install --no-frozen-lockfile
+RUN pnpm install --no-frozen-lockfile --reporter=verbose 2>&1 | tee /tmp/pnpm-install.log; \
+    STATUS=${PIPESTATUS[0]}; \
+    if [ $STATUS -ne 0 ]; then \
+        echo "=== INSTALL FAILED - Last 100 lines ==="; \
+        tail -100 /tmp/pnpm-install.log; \
+        exit $STATUS; \
+    fi
 
 # Build production deployment into /src/compiled
 RUN pnpm build:n8n
