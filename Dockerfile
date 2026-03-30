@@ -31,9 +31,84 @@ RUN set -e; \
     cd / && rm -rf /launcher-temp
 
 # ==============================================================================
-# STAGE 2: Runtime base — mirrors n8nio/base image
+# STAGE 2: Build n8n (create ./compiled inside the image)
 # ==============================================================================
-FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS system-deps
+FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS builder
+ARG REPO_URL
+
+RUN echo 'Acquire::https::Verify-Peer "false";' > /etc/apt/apt.conf.d/99insecure && \
+    echo 'Acquire::https::Verify-Host "false";' >> /etc/apt/apt.conf.d/99insecure && \
+    echo 'Acquire::AllowInsecureRepositories "true";' >> /etc/apt/apt.conf.d/99insecure && \
+    echo 'Acquire::AllowDowngradeToInsecureRepositories "true";' >> /etc/apt/apt.conf.d/99insecure && \
+    echo 'APT::Get::AllowUnauthenticated "true";' >> /etc/apt/apt.conf.d/99insecure
+
+RUN rm -f /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy main restricted universe multiverse" > /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-updates main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_archive.ubuntu.com/ jammy-backports main restricted universe multiverse" >> /etc/apt/sources.list && \
+    echo "deb ${REPO_URL}/apt-proxy_security.ubuntu.com/ jammy-security main restricted universe multiverse" >> /etc/apt/sources.list
+
+RUN apt-get update \
+        -o Acquire::AllowInsecureRepositories=true \
+        -o Acquire::AllowDowngradeToInsecureRepositories=true && \
+    apt-get install -y --no-install-recommends --allow-unauthenticated \
+        fontconfig \
+        libxml2 \
+        git \
+        openssh-client \
+        openssl \
+        graphicsmagick \
+        tini \
+        tzdata \
+        ca-certificates \
+        jq \
+        wget \
+        python3 \
+        make \
+        g++ && \
+    rm -rf /var/lib/apt/lists/*
+
+ENV NPM_CONFIG_REGISTRY=https://artifact.vnpay.vn/nexus/repository/npm-group/
+
+RUN npm install -g full-icu@1.5.0
+
+RUN rm -rf /tmp/* /root/.npm /root/.cache/node
+
+ENV NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
+
+WORKDIR /src
+
+# Install pnpm via npm (corepack bypasses NPM_CONFIG_REGISTRY and fails in air-gapped builds)
+RUN npm install -g pnpm@10.22.0 --force
+
+# Copy the repo sources (respects .dockerignore)
+COPY . .
+
+# Configure pnpm registry and timeouts
+RUN pnpm config set registry https://artifact.vnpay.vn/nexus/repository/npm-group/ && \
+    pnpm config set fetch-timeout 300000 && \
+    pnpm config set fetch-retries 5 && \
+    pnpm config set network-concurrency 4
+
+# Patch vendored packages (unreachable external hosts or large packages that timeout via Nexus)
+RUN sed -i 's|https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz|file:/src/vendor/xlsx-0.20.2.tgz|g' \
+        packages/nodes-base/package.json && \
+    sed -i 's|"@iconify/json": "[^"]*"|"@iconify/json": "file:/src/vendor/iconify-json-2.2.447.tgz"|g' \
+        packages/frontend/editor-ui/package.json && \
+    sed -i 's|"pdf-parse": "[^"]*"|"pdf-parse": "file:/src/vendor/pdf-parse-1.1.1.tgz"|g' \
+        packages/@n8n/nodes-langchain/package.json
+
+# Install dependencies
+RUN pnpm install --no-frozen-lockfile --reporter=verbose 2>&1 | tee /tmp/pnpm-install.log || \
+    { echo "=== INSTALL FAILED - Last 100 lines ==="; tail -100 /tmp/pnpm-install.log; exit 1; }
+
+# Build production deployment into /src/compiled
+RUN pnpm build:n8n
+
+# ==============================================================================
+# STAGE 4: Final runtime image
+# ==============================================================================
+FROM registry.vnpay.vn/base/node:${NODE_VERSION} AS runtime
 ARG REPO_URL
 
 RUN echo 'Acquire::https::Verify-Peer "false";' > /etc/apt/apt.conf.d/99insecure && \
@@ -74,46 +149,6 @@ RUN rm -rf /tmp/* /root/.npm /root/.cache/node
 WORKDIR /home/node
 ENV NODE_ICU_DATA=/usr/local/lib/node_modules/full-icu
 EXPOSE 5678/tcp
-
-# ==============================================================================
-# STAGE 3: Build n8n (create ./compiled inside the image)
-# ==============================================================================
-FROM system-deps AS builder
-
-WORKDIR /src
-
-# Install the repo's pnpm version (see packageManager in package.json)
-# Use npm directly (corepack bypasses NPM_CONFIG_REGISTRY and fails in air-gapped builds)
-RUN npm install -g pnpm@10.22.0 --force
-
-# Copy the repo sources (respects .dockerignore)
-COPY . .
-
-# Configure pnpm registry and timeouts
-RUN pnpm config set registry https://artifact.vnpay.vn/nexus/repository/npm-group/ && \
-    pnpm config set fetch-timeout 300000 && \
-    pnpm config set fetch-retries 5 && \
-    pnpm config set network-concurrency 4
-
-# Patch vendored packages (unreachable external hosts or large packages that timeout via Nexus)
-RUN sed -i 's|https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz|file:/src/vendor/xlsx-0.20.2.tgz|g' \
-        packages/nodes-base/package.json && \
-    sed -i 's|"@iconify/json": "[^"]*"|"@iconify/json": "file:/src/vendor/iconify-json-2.2.447.tgz"|g' \
-        packages/frontend/editor-ui/package.json && \
-    sed -i 's|"pdf-parse": "[^"]*"|"pdf-parse": "file:/src/vendor/pdf-parse-1.1.1.tgz"|g' \
-        packages/@n8n/nodes-langchain/package.json
-
-# Install dependencies
-RUN pnpm install --no-frozen-lockfile --reporter=verbose 2>&1 | tee /tmp/pnpm-install.log || \
-    { echo "=== INSTALL FAILED - Last 100 lines ==="; tail -100 /tmp/pnpm-install.log; exit 1; }
-
-# Build production deployment into /src/compiled
-RUN pnpm build:n8n
-
-# ==============================================================================
-# STAGE 4: Final runtime image
-# ==============================================================================
-FROM system-deps AS runtime
 
 ARG N8N_VERSION
 ARG N8N_RELEASE_TYPE=dev
