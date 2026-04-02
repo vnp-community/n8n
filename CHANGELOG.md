@@ -1,3 +1,36 @@
+## [1.123.27](https://github.com/n8n-io/n8n/compare/n8n@1.123.26...n8n@1.123.27) (2026-03-25)
+
+
+
+## [1.123.26](https://github.com/n8n-io/n8n/compare/n8n@1.123.25...n8n@1.123.26) (2026-03-19)
+
+
+### Bug Fixes
+
+* **core:** Old version of workflow still active after pulling [1.x] ([#27017](https://github.com/n8n-io/n8n/issues/27017)) ([13de8df](https://github.com/n8n-io/n8n/commit/13de8dfccccbf6f63b1201c1b3faa7450cac4d53))
+* Fix 16 security issues in hono, simple-git, multer and 5 more ([#27025](https://github.com/n8n-io/n8n/issues/27025)) ([5504844](https://github.com/n8n-io/n8n/commit/5504844633291e1805bc2dc094af306ae7077646))
+
+
+
+## [1.123.25](https://github.com/n8n-io/n8n/compare/n8n@1.123.24...n8n@1.123.25) (2026-03-13)
+
+
+### Bug Fixes
+
+* **Form Node:** Improve custom CSS sanitization (backport to 1.x) ([#26668](https://github.com/n8n-io/n8n/issues/26668)) ([86191fe](https://github.com/n8n-io/n8n/commit/86191fee1ce5e0e79ef90595b615deeb6522f51e))
+
+
+
+## [1.123.24](https://github.com/n8n-io/n8n/compare/n8n@1.123.23...n8n@1.123.24) (2026-03-11)
+
+
+### Bug Fixes
+
+* **core:** Fix entity import failing in Kubernetes due to ZIP self-inclusion and local header size placeholders (backport to 1.x) ([#26823](https://github.com/n8n-io/n8n/issues/26823)) ([ebf7721](https://github.com/n8n-io/n8n/commit/ebf7721a59604d6dd78cb58dc53501dd414aeb8e))
+* **Form Node:** Improve form rendering consistency (backport to 1.x) ([#26656](https://github.com/n8n-io/n8n/issues/26656)) ([4849d95](https://github.com/n8n-io/n8n/commit/4849d95b4b70a309f778c698540aa8c1a4d24966))
+
+
+
 ## [1.123.23](https://github.com/n8n-io/n8n/compare/n8n@1.123.22...n8n@1.123.23) (2026-03-04)
 
 
