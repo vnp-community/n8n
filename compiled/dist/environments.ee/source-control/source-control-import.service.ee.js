@@ -512,9 +512,26 @@ let SourceControlImportService = class SourceControlImportService {
                 fallbackProject: personalProject,
                 repository: this.sharedWorkflowRepository,
             });
-            await this.activateImportedWorkflowIfAlreadyActive({ existingWorkflow, importedWorkflow }, userId);
+            if (importedWorkflow.active &&
+                existingWorkflow?.activeVersionId &&
+                importedWorkflow.versionId) {
+                await this.activateImportedWorkflow({
+                    workflowId: importedWorkflow.id,
+                    versionIdToActivate: importedWorkflow.versionId,
+                }, userId);
+            }
+            else if (importedWorkflow.isArchived && existingWorkflow?.activeVersionId) {
+                await this.activeWorkflowManager.remove(existingWorkflow.id);
+                await this.workflowPublishHistoryRepository.addRecord({
+                    workflowId: existingWorkflow.id,
+                    versionId: existingWorkflow.activeVersionId,
+                    event: 'deactivated',
+                    userId,
+                });
+                await this.workflowRepository.updateActiveState(existingWorkflow.id, false);
+            }
             importWorkflowsResult.push({
-                id: importedWorkflow.id ?? 'unknown',
+                id: importedWorkflow.id,
                 name: candidate.file,
             });
         }
@@ -531,38 +548,26 @@ let SourceControlImportService = class SourceControlImportService {
             throw new n8n_workflow_1.UnexpectedError(`Failed to parse workflow file ${file}: ${error instanceof Error ? error.message : String(error)}`);
         }
     }
-    async activateImportedWorkflowIfAlreadyActive({ existingWorkflow, importedWorkflow, }, userId) {
-        if (!existingWorkflow?.activeVersionId)
-            return;
-        let didAdd = false;
+    async activateImportedWorkflow({ workflowId, versionIdToActivate, }, userId) {
+        let didPublish = false;
         try {
-            this.logger.debug(`Deactivating workflow id ${existingWorkflow.id}`);
-            await this.activeWorkflowManager.remove(existingWorkflow.id);
-            if (importedWorkflow.activeVersionId) {
-                this.logger.debug(`Reactivating workflow id ${existingWorkflow.id}`);
-                await this.activeWorkflowManager.add(existingWorkflow.id, 'activate');
-                didAdd = true;
-            }
+            this.logger.debug(`Deactivating workflow id ${workflowId}`);
+            await this.activeWorkflowManager.remove(workflowId);
+            this.logger.debug(`Reactivating workflow id ${workflowId}`);
+            await this.workflowRepository.updateActiveState(workflowId, true);
+            await this.activeWorkflowManager.add(workflowId, 'activate');
+            didPublish = true;
         }
         catch (e) {
             const error = (0, n8n_workflow_1.ensureError)(e);
-            this.logger.error(`Failed to activate workflow ${existingWorkflow.id}`, { error });
+            this.logger.error(`Failed to activate workflow ${workflowId}`, { error });
         }
         finally {
-            await this.workflowRepository.update({ id: existingWorkflow.id }, { versionId: importedWorkflow.versionId });
-            if (didAdd) {
+            if (didPublish) {
                 await this.workflowPublishHistoryRepository.addRecord({
-                    workflowId: existingWorkflow.id,
-                    versionId: existingWorkflow.activeVersionId,
+                    workflowId,
+                    versionId: versionIdToActivate,
                     event: 'activated',
-                    userId,
-                });
-            }
-            else {
-                await this.workflowPublishHistoryRepository.addRecord({
-                    workflowId: existingWorkflow.id,
-                    versionId: existingWorkflow.activeVersionId,
-                    event: 'deactivated',
                     userId,
                 });
             }

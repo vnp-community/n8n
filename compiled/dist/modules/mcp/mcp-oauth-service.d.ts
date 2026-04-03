@@ -3,6 +3,7 @@ import type { AuthorizationParams, OAuthServerProvider } from '@modelcontextprot
 import type { AuthInfo } from '@modelcontextprotocol/sdk/server/auth/types';
 import type { OAuthClientInformationFull, OAuthTokens, OAuthTokenRevocationRequest } from '@modelcontextprotocol/sdk/shared/auth';
 import { Logger } from '@n8n/backend-common';
+import { GlobalConfig } from '@n8n/config';
 import type { Response } from 'express';
 import { OAuthClient } from './database/entities/oauth-client.entity';
 import { OAuthClientRepository } from './database/repositories/oauth-client.repository';
@@ -13,13 +14,16 @@ import { OAuthSessionService } from './oauth-session.service';
 export declare const SUPPORTED_SCOPES: string[];
 export declare class McpOAuthService implements OAuthServerProvider {
     private readonly logger;
+    private readonly globalConfig;
     private readonly oauthSessionService;
     private readonly oauthClientRepository;
     private readonly tokenService;
     private readonly authorizationCodeService;
     private readonly userConsentRepository;
-    constructor(logger: Logger, oauthSessionService: OAuthSessionService, oauthClientRepository: OAuthClientRepository, tokenService: McpOAuthTokenService, authorizationCodeService: McpOAuthAuthorizationCodeService, userConsentRepository: UserConsentRepository);
+    constructor(logger: Logger, globalConfig: GlobalConfig, oauthSessionService: OAuthSessionService, oauthClientRepository: OAuthClientRepository, tokenService: McpOAuthTokenService, authorizationCodeService: McpOAuthAuthorizationCodeService, userConsentRepository: UserConsentRepository);
     get clientsStore(): OAuthRegisteredClientsStore;
+    private enforceClientLimit;
+    private validateClientRegistration;
     authorize(client: OAuthClientInformationFull, params: AuthorizationParams, res: Response): Promise<void>;
     challengeForAuthorizationCode(client: OAuthClientInformationFull, authorizationCode: string): Promise<string>;
     exchangeAuthorizationCode(client: OAuthClientInformationFull, authorizationCode: string, _codeVerifier?: string, redirectUri?: string): Promise<OAuthTokens>;

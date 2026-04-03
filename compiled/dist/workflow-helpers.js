@@ -48,7 +48,7 @@ function addNodeIds(workflow) {
         }
     });
 }
-async function replaceInvalidCredentials(workflow) {
+async function replaceInvalidCredentials(workflow, projectId) {
     const { nodes } = workflow;
     if (!nodes)
         return workflow;
@@ -66,10 +66,7 @@ async function replaceInvalidCredentials(workflow) {
                     credentialsByName[nodeCredentialType] = {};
                 }
                 if (credentialsByName[nodeCredentialType][name] === undefined) {
-                    const credentials = await di_1.Container.get(db_1.CredentialsRepository).findBy({
-                        name,
-                        type: nodeCredentialType,
-                    });
+                    const credentials = await di_1.Container.get(db_1.CredentialsRepository).findByNameAndTypeInProject(name, nodeCredentialType, projectId);
                     if (credentials?.length === 1) {
                         credentialsByName[nodeCredentialType][name] = {
                             id: credentials[0].id,
@@ -105,10 +102,7 @@ async function replaceInvalidCredentials(workflow) {
                         credentialsById[nodeCredentialType][nodeCredentials.id];
                     continue;
                 }
-                const credsByName = await di_1.Container.get(db_1.CredentialsRepository).findBy({
-                    name: nodeCredentials.name,
-                    type: nodeCredentialType,
-                });
+                const credsByName = await di_1.Container.get(db_1.CredentialsRepository).findByNameAndTypeInProject(nodeCredentials.name, nodeCredentialType, projectId);
                 if (credsByName?.length === 1) {
                     credentialsById[nodeCredentialType][credsByName[0].id] = {
                         id: credsByName[0].id,

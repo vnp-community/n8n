@@ -128,7 +128,10 @@ let WorkflowsController = class WorkflowsController {
         if (tagIds?.length && !this.globalConfig.tags.disabled) {
             newWorkflow.tags = await this.tagRepository.findMany(tagIds);
         }
-        await WorkflowHelpers.replaceInvalidCredentials(newWorkflow);
+        const { projectId } = req.body;
+        if (projectId) {
+            await WorkflowHelpers.replaceInvalidCredentials(newWorkflow, projectId);
+        }
         WorkflowHelpers.addNodeIds(newWorkflow);
         if (this.license.isSharingEnabled()) {
             const allCredentials = await this.credentialsService.getMany(req.user, {

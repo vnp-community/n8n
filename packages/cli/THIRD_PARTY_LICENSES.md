@@ -258,7 +258,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * bson 6.10.4
 * cluster-key-slot 1.1.2, Copyright (c) 2018 Mike Diarmid (Salakar) <mike.diarmid@gmail.com>
 * comlink 4.4.2
-* convict 6.2.4, Copyright 2012 the lloydster
+* convict 6.2.5, Copyright 2012 the lloydster
 * crc-32 1.2.2
 * denque 2.1.0
 * detect-libc 1.0.3
@@ -1565,7 +1565,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * express 5.1.0, Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>. Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>. Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 * express-openapi-validator 5.5.3, Copyright (c) 2019-2024 Carmine M. DiMascio
 * express-prom-bundle 8.0.0, Copyright (c) 2016 Jochen Schweizer Technology Solutions GmbH
-* express-rate-limit 7.5.0, Copyright 2023 Nathan Friedly, Vedant K
+* express-rate-limit 8.2.2, Copyright 2023 Nathan Friedly, Vedant K
 * exsolve 1.0.8, Copyright (c) Pooya Parsa <pooya@pi0.io>*
 * extend 3.0.2, Copyright (c) 2014 Stefan Thomas
 * external-editor 3.1.0, Copyright (c) 2016 Kevin Gravier
@@ -1653,7 +1653,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * graphql-request 6.1.0, Copyright (c) 2022 Jason Kuhrt
 * gtoken 8.0.0, Copyright (c) 2014 Ryan Seys
 * gzip-size 6.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
-* handlebars 4.7.8, Copyright (C) 2011-2019 by Yehuda Katz
+* handlebars 4.7.9, Copyright (C) 2011-2019 by Yehuda Katz
 * has-bigints 1.1.0, Copyright (c) 2019 Jordan Harband
 * has-flag 3.0.0, Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 * has-property-descriptors 1.0.2, Copyright (c) 2022 Inspect JS
@@ -1673,7 +1673,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * help-me 5.0.0, Copyright (c) 2014-2022 Matteo Collina
 * hmac-drbg 1.0.1, Copyright Fedor Indutny, 2017.
 * homedir-polyfill 1.0.3, Copyright (c) 2016 Brian Woodward
-* hono 4.11.10, Copyright (c) 2021 - present, Yusuke Wada and Hono contributors
+* hono 4.12.7, Copyright (c) 2021 - present, Yusuke Wada and Hono contributors
 * hookable 5.5.3, Copyright (c) Pooya Parsa <pooya@pi0.io>
 * hookified 1.13.0
 * html-encoding-sniffer 4.0.0, Copyright © Domenic Denicola <d@domenic.me>
@@ -2329,7 +2329,7 @@ The n8n software includes open source packages, libraries, and modules, each of 
 * side-channel-weakmap 1.0.2, Copyright (c) 2019 Jordan Harband
 * simple-concat 1.0.1, Copyright (c) Feross Aboukhadijeh
 * simple-get 4.0.1, Copyright (c) Feross Aboukhadijeh
-* simple-git 3.28.0
+* simple-git 3.32.3
 * simple-lru-cache 0.0.2, Copyright (c) 2013 Mercadolibre.com
 * simple-update-notifier 2.0.0, Copyright (c) 2022 Alex Brazier
 * simple-wcswidth 1.1.2, Copyright (c) 2020 Nahiyan Kamal

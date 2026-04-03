@@ -116,7 +116,7 @@ let ImportService = class ImportService {
             });
             const hasInvalidCreds = workflow.nodes.some((node) => !node.credentials?.id);
             if (hasInvalidCreds)
-                await this.replaceInvalidCreds(workflow);
+                await this.replaceInvalidCreds(workflow, projectId);
             if (workflow.id && activeVersionIdByWorkflow.has(workflow.id)) {
                 await this.activeWorkflowManager.remove(workflow.id);
             }
@@ -176,9 +176,9 @@ let ImportService = class ImportService {
             }
         }
     }
-    async replaceInvalidCreds(workflow) {
+    async replaceInvalidCreds(workflow, projectId) {
         try {
-            await (0, workflow_helpers_1.replaceInvalidCredentials)(workflow);
+            await (0, workflow_helpers_1.replaceInvalidCredentials)(workflow, projectId);
         }
         catch (e) {
             this.logger.error('Failed to replace invalid credential', { error: e });

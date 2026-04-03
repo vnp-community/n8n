@@ -69,7 +69,7 @@ export declare class SourceControlImportService {
         name: string;
     }[]>;
     private parseWorkflowFromFile;
-    private activateImportedWorkflowIfAlreadyActive;
+    private activateImportedWorkflow;
     importCredentialsFromWorkFolder(candidates: SourceControlledFile[], userId: string): Promise<{
         id: string;
         name: string;

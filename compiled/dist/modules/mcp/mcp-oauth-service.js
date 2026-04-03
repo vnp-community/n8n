@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.McpOAuthService = exports.SUPPORTED_SCOPES = void 0;
 const backend_common_1 = require("@n8n/backend-common");
+const config_1 = require("@n8n/config");
 const di_1 = require("@n8n/di");
 const oauth_client_repository_1 = require("./database/repositories/oauth-client.repository");
 const oauth_user_consent_repository_1 = require("./database/repositories/oauth-user-consent.repository");
@@ -18,9 +19,12 @@ const mcp_oauth_authorization_code_service_1 = require("./mcp-oauth-authorizatio
 const mcp_oauth_token_service_1 = require("./mcp-oauth-token.service");
 const oauth_session_service_1 = require("./oauth-session.service");
 exports.SUPPORTED_SCOPES = ['tool:listWorkflows', 'tool:getWorkflowDetails'];
+const MAX_REDIRECT_URIS = 10;
+const MAX_REDIRECT_URI_LENGTH = 2048;
 let McpOAuthService = class McpOAuthService {
-    constructor(logger, oauthSessionService, oauthClientRepository, tokenService, authorizationCodeService, userConsentRepository) {
+    constructor(logger, globalConfig, oauthSessionService, oauthClientRepository, tokenService, authorizationCodeService, userConsentRepository) {
         this.logger = logger;
+        this.globalConfig = globalConfig;
         this.oauthSessionService = oauthSessionService;
         this.oauthClientRepository = oauthClientRepository;
         this.tokenService = tokenService;
@@ -51,26 +55,39 @@ let McpOAuthService = class McpOAuthService {
                 };
             },
             registerClient: async (client) => {
-                try {
-                    await this.oauthClientRepository.insert({
-                        id: client.client_id,
-                        name: client.client_name,
-                        redirectUris: client.redirect_uris,
-                        grantTypes: client.grant_types,
-                        clientSecret: client.client_secret ?? null,
-                        clientSecretExpiresAt: client.client_secret_expires_at ?? null,
-                        tokenEndpointAuthMethod: client.token_endpoint_auth_method ?? 'none',
-                    });
-                }
-                catch (error) {
-                    this.logger.error('Error registering OAuth client', {
-                        error,
-                        clientId: client.client_id,
-                    });
-                }
+                this.validateClientRegistration(client);
+                await this.oauthClientRepository.insert({
+                    id: client.client_id,
+                    name: client.client_name,
+                    redirectUris: client.redirect_uris,
+                    grantTypes: client.grant_types,
+                    clientSecret: client.client_secret ?? null,
+                    clientSecretExpiresAt: client.client_secret_expires_at ?? null,
+                    tokenEndpointAuthMethod: client.token_endpoint_auth_method ?? 'none',
+                });
+                await this.enforceClientLimit(client.client_id);
                 return client;
             },
         };
+    }
+    async enforceClientLimit(clientId) {
+        const clientCount = await this.oauthClientRepository.count();
+        if (clientCount > this.globalConfig.endpoints.mcpMaxRegisteredClients) {
+            await this.oauthClientRepository.delete({ id: clientId });
+            throw new Error(`Maximum number of registered clients (${this.globalConfig.endpoints.mcpMaxRegisteredClients}) reached`);
+        }
+    }
+    validateClientRegistration(client) {
+        if (client.redirect_uris) {
+            if (client.redirect_uris.length > MAX_REDIRECT_URIS) {
+                throw new Error(`redirect_uris exceeds maximum count of ${MAX_REDIRECT_URIS}`);
+            }
+            for (const uri of client.redirect_uris) {
+                if (uri.length > MAX_REDIRECT_URI_LENGTH) {
+                    throw new Error(`redirect_uri exceeds maximum length of ${MAX_REDIRECT_URI_LENGTH} characters`);
+                }
+            }
+        }
     }
     async authorize(client, params, res) {
         this.logger.debug('Starting OAuth authorization', { clientId: client.client_id });
@@ -157,6 +174,7 @@ exports.McpOAuthService = McpOAuthService;
 exports.McpOAuthService = McpOAuthService = __decorate([
     (0, di_1.Service)(),
     __metadata("design:paramtypes", [backend_common_1.Logger,
+        config_1.GlobalConfig,
         oauth_session_service_1.OAuthSessionService,
         oauth_client_repository_1.OAuthClientRepository,
         mcp_oauth_token_service_1.McpOAuthTokenService,

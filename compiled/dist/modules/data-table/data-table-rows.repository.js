@@ -425,6 +425,8 @@ let DataTableRowsRepository = class DataTableRowsRepository {
     }
     applySortingByField(query, field, direction) {
         const dbType = this.dataSource.options.type;
+        if (!(0, sql_utils_1.isValidColumnName)(field))
+            throw new n8n_workflow_1.UserError('Incorrect column format');
         const quotedField = `${(0, sql_utils_1.quoteIdentifier)('dataTable', dbType)}.${(0, sql_utils_1.quoteIdentifier)(field, dbType)}`;
         query.orderBy(quotedField, direction);
     }

@@ -18,7 +18,18 @@ const decorators_1 = require("@n8n/decorators");
 const di_1 = require("@n8n/di");
 const url_service_1 = require("../../services/url.service");
 const mcp_oauth_service_1 = require("./mcp-oauth-service");
+const mcp_constants_1 = require("./mcp.constants");
+const mcp_settings_service_1 = require("./mcp.settings.service");
 const mcpOAuthService = di_1.Container.get(mcp_oauth_service_1.McpOAuthService);
+const mcpSettingsService = di_1.Container.get(mcp_settings_service_1.McpSettingsService);
+const mcpEnabledGuard = async (_req, res, next) => {
+    const enabled = await mcpSettingsService.getEnabled();
+    if (!enabled) {
+        res.status(403).json({ error: mcp_constants_1.MCP_ACCESS_DISABLED_ERROR_MESSAGE });
+        return;
+    }
+    next();
+};
 let McpOAuthController = class McpOAuthController {
     constructor(urlService) {
         this.urlService = urlService;
@@ -70,21 +81,25 @@ McpOAuthController.routers = [
         path: '/mcp-oauth/register',
         router: (0, register_js_1.clientRegistrationHandler)({ clientsStore: mcpOAuthService.clientsStore }),
         skipAuth: true,
+        middlewares: [mcpEnabledGuard],
     },
     {
         path: '/mcp-oauth/authorize',
         router: (0, authorize_js_1.authorizationHandler)({ provider: mcpOAuthService }),
         skipAuth: true,
+        middlewares: [mcpEnabledGuard],
     },
     {
         path: '/mcp-oauth/token',
         router: (0, token_js_1.tokenHandler)({ provider: mcpOAuthService }),
         skipAuth: true,
+        middlewares: [mcpEnabledGuard],
     },
     {
         path: '/mcp-oauth/revoke',
         router: (0, revoke_js_1.revocationHandler)({ provider: mcpOAuthService }),
         skipAuth: true,
+        middlewares: [mcpEnabledGuard],
     },
 ];
 __decorate([

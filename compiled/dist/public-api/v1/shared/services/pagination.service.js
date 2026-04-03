@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.encodeNextCursor = exports.decodeCursor = void 0;
+exports.paginateArray = paginateArray;
 const n8n_workflow_1 = require("n8n-workflow");
 const decodeCursor = (cursor) => {
     return (0, n8n_workflow_1.jsonParse)(Buffer.from(cursor, 'base64').toString());
@@ -31,4 +32,14 @@ const encodeNextCursor = (pagination) => {
     return encodeCursorPagination(pagination);
 };
 exports.encodeNextCursor = encodeNextCursor;
+function paginateArray(items, { offset, limit }) {
+    return {
+        data: items.slice(offset, offset + limit),
+        nextCursor: (0, exports.encodeNextCursor)({
+            offset,
+            limit,
+            numberOfTotalRecords: items.length,
+        }),
+    };
+}
 //# sourceMappingURL=pagination.service.js.map

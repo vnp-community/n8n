@@ -88,7 +88,7 @@ function quoteIdentifier(name, dbType) {
         case 'postgres':
         case 'sqlite':
         default:
-            return `"${name}"`;
+            return `"${name.replace(/"/g, '""')}"`;
     }
 }
 const isArrayOf = (data, itemGuard) => Array.isArray(data) && data.every(itemGuard);

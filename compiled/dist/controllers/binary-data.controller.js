@@ -84,9 +84,15 @@ let BinaryDataController = class BinaryDataController {
         if (mimeType) {
             res.setHeader('Content-Type', mimeType);
         }
-        if (action === 'download' && fileName) {
-            const encodedFilename = encodeURIComponent(fileName);
-            res.setHeader('Content-Disposition', `attachment; filename="${encodedFilename}"`);
+        res.setHeader('Content-Security-Policy', (0, n8n_core_1.getWebhookSandboxCSP)());
+        if (action === 'download') {
+            if (fileName) {
+                const encodedFilename = encodeURIComponent(fileName);
+                res.setHeader('Content-Disposition', `attachment; filename="${encodedFilename}"`);
+            }
+            else {
+                res.setHeader('Content-Disposition', 'attachment');
+            }
         }
     }
 };

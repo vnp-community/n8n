@@ -23,9 +23,9 @@ module.exports = {
             const workflow = req.body;
             workflow.active = false;
             workflow.versionId = (0, uuid_1.v4)();
-            await (0, workflow_helpers_1.replaceInvalidCredentials)(workflow);
-            (0, workflow_helpers_1.addNodeIds)(workflow);
             const project = await di_1.Container.get(db_1.ProjectRepository).getPersonalProjectForUserOrFail(req.user.id);
+            await (0, workflow_helpers_1.replaceInvalidCredentials)(workflow, project.id);
+            (0, workflow_helpers_1.addNodeIds)(workflow);
             const createdWorkflow = await (0, workflows_service_1.createWorkflow)(workflow, req.user, project, 'workflow:owner');
             await di_1.Container.get(workflow_history_service_1.WorkflowHistoryService).saveVersion(req.user, createdWorkflow, createdWorkflow.id);
             await di_1.Container.get(external_hooks_1.ExternalHooks).run('workflow.afterCreate', [createdWorkflow]);

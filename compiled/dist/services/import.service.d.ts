@@ -22,7 +22,7 @@ export declare class ImportService {
     constructor(logger: Logger, credentialsRepository: CredentialsRepository, tagRepository: TagRepository, dataSource: DataSource, cipher: Cipher, activeWorkflowManager: ActiveWorkflowManager, workflowIndexService: WorkflowIndexService, databaseConfig: DatabaseConfig);
     initRecords(): Promise<void>;
     importWorkflows(workflows: IWorkflowDb[], projectId: string): Promise<void>;
-    replaceInvalidCreds(workflow: IWorkflowBase): Promise<void>;
+    replaceInvalidCreds(workflow: IWorkflowBase, projectId: string): Promise<void>;
     isTableEmpty(tableName: string): Promise<boolean>;
     areAllEntityTablesEmpty(tableNames: string[]): Promise<boolean>;
     truncateEntityTable(tableName: string, transactionManager: EntityManager): Promise<void>;

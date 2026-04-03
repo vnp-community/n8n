@@ -207,7 +207,10 @@ let WorkflowService = class WorkflowService {
             workflowUpdateData.nodes = workflowUpdateData.nodes ?? workflow.nodes;
             workflowUpdateData.connections = workflowUpdateData.connections ?? workflow.connections;
         }
-        await WorkflowHelpers.replaceInvalidCredentials(workflowUpdateData);
+        const ownerProject = await this.ownershipService.getWorkflowProjectCached(workflowId);
+        if (ownerProject) {
+            await WorkflowHelpers.replaceInvalidCredentials(workflowUpdateData, ownerProject.id);
+        }
         WorkflowHelpers.addNodeIds(workflowUpdateData);
         if (workflowUpdateData.settings && workflow.settings) {
             workflowUpdateData.settings = {

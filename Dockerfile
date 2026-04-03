@@ -98,6 +98,7 @@ RUN sed -i 's|https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz|file:/src/vend
     sed -i 's|"pdf-parse": "[^"]*"|"pdf-parse": "file:/src/vendor/pdf-parse-1.1.1.tgz"|g' \
         packages/@n8n/nodes-langchain/package.json
 
+RUN rm pnpm-lock.yaml
 # Install dependencies
 RUN pnpm install --no-frozen-lockfile --reporter=verbose 2>&1 | tee /tmp/pnpm-install.log || \
     { echo "=== INSTALL FAILED - Last 100 lines ==="; tail -100 /tmp/pnpm-install.log; exit 1; }
